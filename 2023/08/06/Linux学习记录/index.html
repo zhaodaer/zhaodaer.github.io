@@ -194,7 +194,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"我的技术栈","path":"2023/08/07/My-New-Post/"},{"title":"ESP32学习记录","path":"2023/08/07/ESP32学习记录/"},{"title":"Hello World","path":"2023/08/06/hello-world/"},{"title":"计划表","path":"2023/08/07/Git/"},{"title":"Linux学习记录","path":"2023/08/06/Linux学习记录/"},{"title":"Rhino","path":"2023/08/08/Rhino/"},{"title":"使用说明","path":"2023/08/07/使用方法/"},{"title":"计划表","path":"2023/08/07/我的计划/"},{"title":"读书笔记","path":"2023/08/07/读书笔记/"}]`)
+  const posts = JSON.parse(`[{"title":"Rhino","path":"2023/08/08/Rhino/"},{"title":"我的技术栈","path":"2023/08/07/My-New-Post/"},{"title":"Linux学习记录","path":"2023/08/06/Linux学习记录/"},{"title":"计划表","path":"2023/08/07/Git/"},{"title":"ESP32学习记录","path":"2023/08/07/ESP32学习记录/"},{"title":"Hello World","path":"2023/08/06/hello-world/"},{"title":"使用说明","path":"2023/08/07/使用方法/"},{"title":"读书笔记","path":"2023/08/07/读书笔记/"},{"title":"计划表","path":"2023/08/07/我的计划/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
