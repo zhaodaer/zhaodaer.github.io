@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 08 Aug 2023 22:59:09 +0800</pubDate>
+        <lastBuildDate>Tue, 08 Aug 2023 22:59:09 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/08/Rhino/</guid>
+            <title>Rhino</title>
+            <link>http://example.com/2023/08/08/Rhino/</link>
+            <pubDate>Tue, 08 Aug 2023 22:59:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;抽离结构线 —&amp;gt; 可调节的混接曲线&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+            <title>使用说明</title>
+            <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+            <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
+            <description><![CDATA[ &lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;首行缩进方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#首行缩进方法&#34;&gt;#&lt;/a&gt; 首行缩进方法&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由于 markdowm 会自动限定格式，所以缩进显得比较困难，通常我们使用 Tab 按键或者打空格实现的缩进都只能缩进一小部分，这时可以通过占位符实现更多的缩进效果，使得文章变得美观&lt;/p&gt;
+&lt;p&gt;一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：&lt;/p&gt;
+&lt;p&gt;一个空格大小的表示： 或 ，此时只要在相应需要缩进的段落前加上 4 个 如上的标记即可，注意要带上分号。&lt;br&gt;
+两个空格的大小表示： 或 ，同理，使用 2 个即可缩进 2 个汉字，推荐使用该方式。&lt;br&gt;
+不换行空格： 或 ，使用 4 个 即可。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+            <title>ESP32学习记录</title>
+            <link>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+            <pubDate>Mon, 07 Aug 2023 21:54:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）&lt;/p&gt;
+&lt;p&gt;  利用 Thonny    和 Micropython    进行编程调试&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;点亮led灯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#点亮led灯&#34;&gt;#&lt;/a&gt; 点亮 LED 灯&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs python&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; machine&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; time&lt;br&gt;&lt;br&gt;pin2 = machine.Pin(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;, machine.Pin.OUT)&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;hljs-literal&#34;&gt;True&lt;/span&gt;:&lt;br&gt;    pin2. value(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;    time. sleep(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;    pin2. value(&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;)&lt;br&gt;    time. sleep(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;pwm呼吸灯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pwm呼吸灯&#34;&gt;#&lt;/a&gt; PWM 呼吸灯&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs python&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;from&lt;/span&gt; machine &lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; Pin, PWM&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; time&lt;br&gt;&lt;br&gt;led2 = PWM(Pin(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;))&lt;br&gt;led2 = freq(&lt;span class=&#34;hljs-number&#34;&gt;1000&lt;/span&gt;)&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;hljs-literal&#34;&gt;True&lt;/span&gt;:&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;# 控制整体的重复(1.从不亮便慢变亮  2. 从亮慢慢到不亮)&lt;/span&gt;&lt;br&gt;    &lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;# 1.从不亮慢慢变亮&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;hljs-keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;hljs-built_in&#34;&gt;range&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;1024&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;):&lt;br&gt;	led2.duty(i)&lt;br&gt;	time.sleep_ms(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;)&lt;br&gt;&lt;br&gt;	&lt;span class=&#34;hljs-comment&#34;&gt;# 2.从亮慢慢到不亮&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;hljs-keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;hljs-built_in&#34;&gt;range&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;1023&lt;/span&gt;, -&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;, -&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;):&lt;br&gt;	led2. duty(i)&lt;br&gt;	time.sleep_ms(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;连接wifi热点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接wifi热点&#34;&gt;#&lt;/a&gt; 连接 WIFI 热点&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+            <title>读书笔记</title>
+            <link>http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+            <pubDate>Mon, 07 Aug 2023 14:51:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;盖一座大房子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#盖一座大房子&#34;&gt;#&lt;/a&gt; 盖一座大房子&lt;/h1&gt;
+&lt;h4 id=&#34;➊二八定律&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#➊二八定律&#34;&gt;#&lt;/a&gt; ➊二八定律：&lt;/h4&gt;
+&lt;p&gt;   将时间分配给更重要的事&lt;/p&gt;
+&lt;h4 id=&#34;❷事情优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❷事情优先级&#34;&gt;#&lt;/a&gt; ❷事情优先级：&lt;/h4&gt;
+&lt;p&gt;   什么重要就先做什么&lt;/p&gt;
+&lt;h4 id=&#34;❸没有最好的时机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❸没有最好的时机&#34;&gt;#&lt;/a&gt; ❸没有最好的时机：&lt;/h4&gt;
+&lt;p&gt;   不要想着一切准备好了才去做，这已经晚&lt;br&gt;
+了！！！&lt;/p&gt;
+&lt;h4 id=&#34;❹学会理财&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❹学会理财&#34;&gt;#&lt;/a&gt; ❹学会理财&lt;/h4&gt;
+&lt;h4 id=&#34;❺环境时间周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❺环境时间周期&#34;&gt;#&lt;/a&gt; ❺环境时间周期：&lt;/h4&gt;
+&lt;p&gt;   3-4 年会产生厌倦心理，不妨造当换个环境&lt;/p&gt;
+&lt;h4 id=&#34;❻做自己喜欢的事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❻做自己喜欢的事&#34;&gt;#&lt;/a&gt; ❻做自己喜欢的事：&lt;/h4&gt;
+&lt;p&gt;   且视他人之疑目如盏盏鬼火，大胆地去走你的夜路&lt;br&gt;
+   要么撞得头破血流，要么我把南墙撞倒&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/Git/</guid>
+            <title>计划表</title>
+            <link>http://example.com/2023/08/07/Git/</link>
+            <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h6 id=&#34;git是一款免费-开源的分布式版本控制系统&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git是一款免费-开源的分布式版本控制系统&#34;&gt;#&lt;/a&gt; Git 是一款免费、开源的分布式版本控制系统&lt;/h6&gt;
+&lt;h6 id=&#34;github是用git做版本控制的代码托管平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github是用git做版本控制的代码托管平台&#34;&gt;#&lt;/a&gt; Github 是用 Git 做版本控制的代码托管平台&lt;/h6&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Git 是目前世界上最先进的分布式版本控制系统。&lt;/li&gt;
+&lt;li&gt;Git 安装在终端输入 &lt;code&gt;sudo apt-get install git&lt;/code&gt;  即可。&lt;/li&gt;
+&lt;li&gt;初始化一个 Git 仓库，使用 &lt;code&gt;git init&lt;/code&gt;  命令。&lt;/li&gt;
+&lt;li&gt;添加文件到 Git 仓库，分两步： 使用命令 &lt;code&gt;git add &amp;lt;file&amp;gt;&lt;/code&gt; ，注意，可反复多次使用，添加多个文件； 使用命令 &lt;code&gt;git commit -m &amp;lt;message&amp;gt;&lt;/code&gt; ，完成。&lt;/li&gt;
+&lt;li&gt;要随时掌握工作区的状态，使用 git status 命令。&lt;/li&gt;
+&lt;li&gt;如果 git status 告诉你有文件被修改过，用 git diff 可以查看修改内容。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HEAD&lt;/code&gt;  指向的版本就是当前版本，因此，Git 允许我们在版本的历史之间穿梭，使用命令 &lt;code&gt;git reset --hard commit_id&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;穿梭前，用 &lt;code&gt;git log&lt;/code&gt;  可以查看提交历史，以便确定要回退到哪个版本。&lt;/li&gt;
+&lt;li&gt;要重返未来，用 &lt;code&gt;git reflog&lt;/code&gt;  查看命令历史，以便确定要回到未来的哪个版本。&lt;/li&gt;
+&lt;li&gt;本地仓库由 git 维护的三棵 “树” 组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。&lt;/li&gt;
+&lt;li&gt;命令 &lt;code&gt;git rm&lt;/code&gt;  用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</guid>
+            <title>计划表</title>
+            <link>http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</link>
+            <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h6 id=&#34;只有做好了计划人生才能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#只有做好了计划人生才能&#34;&gt;#&lt;/a&gt; 只有做好了计划，人生才能&lt;/h6&gt;
+&lt;h4 id=&#34;学习永无止境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#学习永无止境&#34;&gt;#&lt;/a&gt; 学习（永无止境）：&lt;/h4&gt;
+&lt;p&gt;​			边学边补，哪里不会去学哪里，不要全学&lt;/p&gt;
+&lt;p&gt;​				需要补充的知识有：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;工作游刃有余&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工作游刃有余&#34;&gt;#&lt;/a&gt; 工作（游刃有余）：&lt;/h4&gt;
+&lt;p&gt;​		全栈工程师，既要广度，也要深度&lt;/p&gt;
+&lt;h5 id=&#34;emsp-想找的工作有&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#emsp-想找的工作有&#34;&gt;#&lt;/a&gt; emsp; 想找的工作有：&lt;/h5&gt;
+&lt;p&gt;​			FPGA、嵌入式、硬件&lt;/p&gt;
+&lt;h5 id=&#34;emsp-想去的公司&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#emsp-想去的公司&#34;&gt;#&lt;/a&gt; emsp; 想去的公司：&lt;/h5&gt;
+&lt;p&gt;​			大疆、华为&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;生活儒雅随和&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生活儒雅随和&#34;&gt;#&lt;/a&gt; 生活（儒雅随和）：&lt;/h4&gt;
+&lt;p&gt;​		理财：&lt;/p&gt;
+&lt;p&gt;​		锻炼：&lt;/p&gt;
+&lt;p&gt;​		游戏：&lt;/p&gt;
+&lt;p&gt;​		车：&lt;/p&gt;
+&lt;p&gt;​		打扮：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;爱好随心所欲天马行空&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#爱好随心所欲天马行空&#34;&gt;#&lt;/a&gt; 爱好（随心所欲，天马行空）：&lt;/h4&gt;
+&lt;p&gt;​		永无止境地探索&lt;/p&gt;
+&lt;hr&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/My-New-Post/</guid>
+            <title>我的技术栈</title>
+            <link>http://example.com/2023/08/07/My-New-Post/</link>
+            <pubDate>Mon, 07 Aug 2023 10:03:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;problem-based-learning&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#problem-based-learning&#34;&gt;#&lt;/a&gt; Problem-Based Learning&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;电子基础，电子元器件选型&lt;/li&gt;
+&lt;li&gt;电路原理图设计，高速电路 PCB 设计，电子元器件焊接技术，电路板调试&lt;/li&gt;
+&lt;li&gt;启动程序 Uboot 裁剪移植，Linux 内核裁剪移植，文件系统&lt;/li&gt;
+&lt;li&gt;底层驱动程序 (C 语言，ARM 架构汇编，Linux 内核架构)&lt;/li&gt;
+&lt;li&gt;上层应用程序 (C++、Qt、JAVA、Python 等，深度学习，机器学习，OpenCV，神经网络，自然语言处理)&lt;/li&gt;
+&lt;li&gt;静态博客服务器搭建&lt;/li&gt;
+&lt;li&gt;工业建模（Rhino）&lt;/li&gt;
+&lt;li&gt;3D 建模（Blender），3D 打印，雕刻机&lt;/li&gt;
+&lt;li&gt;视频拍摄，后期制作（PS、PR）&lt;/li&gt;
+&lt;li&gt;高等数学，线性代数，概率论，离散数学&lt;/li&gt;
+&lt;li&gt;防脱发技术&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/06/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+            <title>Linux学习记录</title>
+            <link>http://example.com/2023/08/06/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+            <pubDate>Sun, 06 Aug 2023 18:12:52 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;一-linux学习记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-linux学习记录&#34;&gt;#&lt;/a&gt; 一、Linux 学习记录&lt;/h2&gt;
+&lt;h3 id=&#34;1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1&#34;&gt;#&lt;/a&gt; 1、&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Shell 命令是支持自动补全功能的。&lt;br&gt;
+比如我们输入字母 “ifc”，然后按下 TAB 键，结果就会补全 ifconfig&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://baidu.com/&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2&#34;&gt;#&lt;/a&gt; 2、&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ sudo apt-get install package-name&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以看出上述命令是由 “apt-get” 和 “install” 组合在一起的，“package-name” 就是要安装的软件名字，“apt-get” 负责下载软件，“install” 负责安装软件。&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3&#34;&gt;#&lt;/a&gt; 3、&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo generate&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4&#34;&gt;#&lt;/a&gt; 4、&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo deploy&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/06/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://example.com/2023/08/06/hello-world/</link>
+            <pubDate>Sun, 06 Aug 2023 12:49:29 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo server&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo generate&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo deploy&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
