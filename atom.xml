@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-08T15:01:07.962Z</updated>
+  <updated>2023-08-09T13:55:10.072Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/08/09/Cadence%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2023/08/09/Cadence%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+    <published>2023-08-09T13:52:15.688Z</published>
+    <updated>2023-08-09T13:55:10.072Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/08/09/Untitled/"/>
+    <id>http://example.com/2023/08/09/Untitled/</id>
+    <published>2023-08-09T13:52:12.157Z</published>
+    <updated>2023-08-09T13:52:12.157Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Rhino</title>
@@ -38,11 +64,11 @@
   </entry>
   
   <entry>
-    <title>使用说明</title>
+    <title>Markdown使用说明</title>
     <link href="http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
     <id>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
     <published>2023-08-07T14:29:09.000Z</published>
-    <updated>2023-08-07T14:30:14.848Z</updated>
+    <updated>2023-08-09T13:51:05.846Z</updated>
     
     <content type="html"><![CDATA[<ol><li><h2 id="首行缩进方法"><a class="markdownIt-Anchor" href="#首行缩进方法">#</a> 首行缩进方法</h2></li></ol><p>由于 markdowm 会自动限定格式，所以缩进显得比较困难，通常我们使用 Tab 按键或者打空格实现的缩进都只能缩进一小部分，这时可以通过占位符实现更多的缩进效果，使得文章变得美观</p><p>一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：</p><p>一个空格大小的表示： 或 ，此时只要在相应需要缩进的段落前加上 4 个 如上的标记即可，注意要带上分号。<br>两个空格的大小表示： 或 ，同理，使用 2 个即可缩进 2 个汉字，推荐使用该方式。<br>不换行空格： 或 ，使用 4 个 即可。</p>]]></content>
     
@@ -67,19 +93,19 @@
     <link href="http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     <id>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
     <published>2023-08-07T13:54:09.000Z</published>
-    <updated>2023-08-08T02:36:44.308Z</updated>
+    <updated>2023-08-09T13:51:45.670Z</updated>
     
-    <content type="html"><![CDATA[<p>  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）</p><p>  利用 Thonny    和 Micropython    进行编程调试</p><hr><ol><li><h4 id="点亮led灯"><a class="markdownIt-Anchor" href="#点亮led灯">#</a> 点亮 LED 灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> machine<br><span class="hljs-keyword">import</span> time<br><br>pin2 = machine.Pin(<span class="hljs-number">2</span>, machine.Pin.OUT)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    pin2. value(<span class="hljs-number">1</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br>    pin2. value(<span class="hljs-number">0</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure><ol start="2"><li><h4 id="pwm呼吸灯"><a class="markdownIt-Anchor" href="#pwm呼吸灯">#</a> PWM 呼吸灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> machine <span class="hljs-keyword">import</span> Pin, PWM<br><span class="hljs-keyword">import</span> time<br><br>led2 = PWM(Pin(<span class="hljs-number">2</span>))<br>led2 = freq(<span class="hljs-number">1000</span>)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    <span class="hljs-comment"># 控制整体的重复(1.从不亮便慢变亮  2. 从亮慢慢到不亮)</span><br>    <br>    <span class="hljs-comment"># 1.从不亮慢慢变亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1024</span>, <span class="hljs-number">1</span>):<br>led2.duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br><br><span class="hljs-comment"># 2.从亮慢慢到不亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1023</span>, -<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>):<br>led2. duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure><ol start="3"><li><h4 id="连接wifi热点"><a class="markdownIt-Anchor" href="#连接wifi热点">#</a> 连接 WIFI 热点</h4></li></ol><hr>]]></content>
+    <content type="html"><![CDATA[<p>  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）</p><p>  利用 Thonny    和 Micropython 进行编程调试</p><hr><ol><li><h4 id="点亮led灯"><a class="markdownIt-Anchor" href="#点亮led灯">#</a> 点亮 LED 灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> machine<br><span class="hljs-keyword">import</span> time<br><br>pin2 = machine.Pin(<span class="hljs-number">2</span>, machine.Pin.OUT)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    pin2. value(<span class="hljs-number">1</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br>    pin2. value(<span class="hljs-number">0</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure><ol start="2"><li><h4 id="pwm呼吸灯"><a class="markdownIt-Anchor" href="#pwm呼吸灯">#</a> PWM 呼吸灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> machine <span class="hljs-keyword">import</span> Pin, PWM<br><span class="hljs-keyword">import</span> time<br><br>led2 = PWM(Pin(<span class="hljs-number">2</span>))<br>led2 = freq(<span class="hljs-number">1000</span>)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    <span class="hljs-comment"># 控制整体的重复(1.从不亮便慢变亮  2. 从亮慢慢到不亮)</span><br>    <br>    <span class="hljs-comment"># 1.从不亮慢慢变亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1024</span>, <span class="hljs-number">1</span>):<br>led2.duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br><br><span class="hljs-comment"># 2.从亮慢慢到不亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1023</span>, -<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>):<br>led2. duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure><ol start="3"><li><h4 id="连接wifi热点"><a class="markdownIt-Anchor" href="#连接wifi热点">#</a> 连接 WIFI 热点</h4></li></ol><hr>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）&lt;/p&gt;
-&lt;p&gt;  利用 Thonny    和 Micropython    进行编程调试&lt;/p&gt;
+&lt;p&gt;  利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;h4 id=&quot;点亮led灯&quot;&gt;&lt;a class=&quot;markdownIt-A</summary>
+&lt;h4 id=&quot;点亮led灯&quot;&gt;&lt;a class=&quot;markdownIt-Anch</summary>
       
     
     
@@ -133,7 +159,7 @@
     <link href="http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/"/>
     <id>http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</id>
     <published>2023-08-07T03:31:09.000Z</published>
-    <updated>2023-08-07T10:38:21.056Z</updated>
+    <updated>2023-08-09T13:51:30.410Z</updated>
     
     <content type="html"><![CDATA[<h6 id="只有做好了计划人生才能"><a class="markdownIt-Anchor" href="#只有做好了计划人生才能">#</a> 只有做好了计划，人生才能</h6><h4 id="学习永无止境"><a class="markdownIt-Anchor" href="#学习永无止境">#</a> 学习（永无止境）：</h4><p>​边学边补，哪里不会去学哪里，不要全学</p><p>​需要补充的知识有：</p><hr><h4 id="工作游刃有余"><a class="markdownIt-Anchor" href="#工作游刃有余">#</a> 工作（游刃有余）：</h4><p>​全栈工程师，既要广度，也要深度</p><h5 id="emsp-想找的工作有"><a class="markdownIt-Anchor" href="#emsp-想找的工作有">#</a> emsp; 想找的工作有：</h5><p>​FPGA、嵌入式、硬件</p><h5 id="emsp-想去的公司"><a class="markdownIt-Anchor" href="#emsp-想去的公司">#</a> emsp; 想去的公司：</h5><p>​大疆、华为</p><hr><h4 id="生活儒雅随和"><a class="markdownIt-Anchor" href="#生活儒雅随和">#</a> 生活（儒雅随和）：</h4><p>​理财：</p><p>​锻炼：</p><p>​游戏：</p><p>​车：</p><p>​打扮：</p><hr><h4 id="爱好随心所欲天马行空"><a class="markdownIt-Anchor" href="#爱好随心所欲天马行空">#</a> 爱好（随心所欲，天马行空）：</h4><p>​永无止境地探索</p><hr>]]></content>
     

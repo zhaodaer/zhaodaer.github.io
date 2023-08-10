@@ -5,8 +5,22 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 08 Aug 2023 22:59:09 +0800</pubDate>
-        <lastBuildDate>Tue, 08 Aug 2023 22:59:09 +0800</lastBuildDate>
+        <pubDate>Wed, 09 Aug 2023 21:52:15 +0800</pubDate>
+        <lastBuildDate>Wed, 09 Aug 2023 21:52:15 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/09/Cadence%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+            <title></title>
+            <link>http://example.com/2023/08/09/Cadence%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+            <pubDate>Wed, 09 Aug 2023 21:52:15 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/09/Untitled/</guid>
+            <title></title>
+            <link>http://example.com/2023/08/09/Untitled/</link>
+            <pubDate>Wed, 09 Aug 2023 21:52:12 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/08/08/Rhino/</guid>
             <title>Rhino</title>
@@ -17,7 +31,7 @@
         </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-            <title>使用说明</title>
+            <title>Markdown使用说明</title>
             <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
             <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
             <description><![CDATA[ &lt;ol&gt;
@@ -38,7 +52,7 @@
             <link>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Mon, 07 Aug 2023 21:54:09 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）&lt;/p&gt;
-&lt;p&gt;  利用 Thonny    和 Micropython    进行编程调试&lt;/p&gt;
+&lt;p&gt;  利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;
