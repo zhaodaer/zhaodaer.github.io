@@ -7,10 +7,16 @@
         <language>zh-CN</language>
         <pubDate>Thu, 10 Aug 2023 17:42:09 +0800</pubDate>
         <lastBuildDate>Thu, 10 Aug 2023 17:42:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/</guid>
             <title>超级电容</title>
             <link>http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/</link>
+            <category>jQuery</category>
+            <category>表格</category>
+            <category>表单验证</category>
             <pubDate>Thu, 10 Aug 2023 17:42:09 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介：&lt;/h4&gt;
 &lt;p&gt;  为了达到存贮非常高的能量并且能量可以在极短的时间内释放的性能，科学家研制出了单体高达数千法拉甚至数万法拉的电容，即我们俗称的：超级电容。&lt;/p&gt;
