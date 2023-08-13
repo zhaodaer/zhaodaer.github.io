@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;markdown&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Aug 2023 22:29:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+            <title>Markdown使用说明</title>
+            <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+            <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
+            <description><![CDATA[ &lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;首行缩进方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#首行缩进方法&#34;&gt;#&lt;/a&gt; 首行缩进方法&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由于 markdowm 会自动限定格式，所以缩进显得比较困难，通常我们使用 Tab 按键或者打空格实现的缩进都只能缩进一小部分，这时可以通过占位符实现更多的缩进效果，使得文章变得美观&lt;/p&gt;
+&lt;p&gt;一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：&lt;/p&gt;
+&lt;p&gt;一个空格大小的表示： 或 ，此时只要在相应需要缩进的段落前加上 4 个 如上的标记即可，注意要带上分号。&lt;br&gt;
+两个空格的大小表示： 或 ，同理，使用 2 个即可缩进 2 个汉字，推荐使用该方式。&lt;br&gt;
+不换行空格： 或 ，使用 4 个 即可。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

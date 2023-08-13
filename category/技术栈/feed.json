@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "盖一座大房子 • All posts by \"技术栈\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/08/07/My-New-Post/",
+            "url": "http://example.com/2023/08/07/My-New-Post/",
+            "title": "我的技术栈",
+            "date_published": "2023-08-07T02:03:09.000Z",
+            "content_html": "<h2 id=\"problem-based-learning\"><a class=\"markdownIt-Anchor\" href=\"#problem-based-learning\">#</a> Problem-Based Learning</h2>\n<ol>\n<li>电子基础，电子元器件选型</li>\n<li>电路原理图设计，高速电路 PCB 设计，电子元器件焊接技术，电路板调试</li>\n<li>启动程序 Uboot 裁剪移植，Linux 内核裁剪移植，文件系统</li>\n<li>底层驱动程序 (C 语言，ARM 架构汇编，Linux 内核架构)</li>\n<li>上层应用程序 (C++、Qt、JAVA、Python 等，深度学习，机器学习，OpenCV，神经网络，自然语言处理)</li>\n<li>静态博客服务器搭建</li>\n<li>工业建模（Rhino）</li>\n<li>3D 建模（Blender），3D 打印，雕刻机</li>\n<li>视频拍摄，后期制作（PS、PR）</li>\n<li>高等数学，线性代数，概率论，离散数学</li>\n<li>防脱发技术</li>\n</ol>\n",
+            "tags": []
+        }
+    ]
+}

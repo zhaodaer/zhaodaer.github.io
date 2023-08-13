@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;计算机相关&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 10 Aug 2023 12:59:09 +0800</pubDate>
+        <lastBuildDate>Thu, 10 Aug 2023 12:59:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/</guid>
+            <title>剧本</title>
+            <link>http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/</link>
+            <pubDate>Thu, 10 Aug 2023 12:59:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;服务器、爬虫、Linux&lt;/p&gt;
+&lt;p&gt;双系统&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

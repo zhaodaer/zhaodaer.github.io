@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;git&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Aug 2023 11:31:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/Git/</guid>
+            <title>计划表</title>
+            <link>http://example.com/2023/08/07/Git/</link>
+            <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h6 id=&#34;git是一款免费-开源的分布式版本控制系统&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git是一款免费-开源的分布式版本控制系统&#34;&gt;#&lt;/a&gt; Git 是一款免费、开源的分布式版本控制系统&lt;/h6&gt;
+&lt;h6 id=&#34;github是用git做版本控制的代码托管平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github是用git做版本控制的代码托管平台&#34;&gt;#&lt;/a&gt; Github 是用 Git 做版本控制的代码托管平台&lt;/h6&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Git 是目前世界上最先进的分布式版本控制系统。&lt;/li&gt;
+&lt;li&gt;Git 安装在终端输入 &lt;code&gt;sudo apt-get install git&lt;/code&gt;  即可。&lt;/li&gt;
+&lt;li&gt;初始化一个 Git 仓库，使用 &lt;code&gt;git init&lt;/code&gt;  命令。&lt;/li&gt;
+&lt;li&gt;添加文件到 Git 仓库，分两步： 使用命令 &lt;code&gt;git add &amp;lt;file&amp;gt;&lt;/code&gt; ，注意，可反复多次使用，添加多个文件； 使用命令 &lt;code&gt;git commit -m &amp;lt;message&amp;gt;&lt;/code&gt; ，完成。&lt;/li&gt;
+&lt;li&gt;要随时掌握工作区的状态，使用 git status 命令。&lt;/li&gt;
+&lt;li&gt;如果 git status 告诉你有文件被修改过，用 git diff 可以查看修改内容。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HEAD&lt;/code&gt;  指向的版本就是当前版本，因此，Git 允许我们在版本的历史之间穿梭，使用命令 &lt;code&gt;git reset --hard commit_id&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;穿梭前，用 &lt;code&gt;git log&lt;/code&gt;  可以查看提交历史，以便确定要回退到哪个版本。&lt;/li&gt;
+&lt;li&gt;要重返未来，用 &lt;code&gt;git reflog&lt;/code&gt;  查看命令历史，以便确定要回到未来的哪个版本。&lt;/li&gt;
+&lt;li&gt;本地仓库由 git 维护的三棵 “树” 组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。&lt;/li&gt;
+&lt;li&gt;命令 &lt;code&gt;git rm&lt;/code&gt;  用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

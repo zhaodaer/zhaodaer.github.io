@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "盖一座大房子 • All posts by \"markdown\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/",
+            "url": "http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/",
+            "title": "Markdown使用说明",
+            "date_published": "2023-08-07T14:29:09.000Z",
+            "content_html": "<ol>\n<li>\n<h2 id=\"首行缩进方法\"><a class=\"markdownIt-Anchor\" href=\"#首行缩进方法\">#</a> 首行缩进方法</h2>\n</li>\n</ol>\n<p>由于 markdowm 会自动限定格式，所以缩进显得比较困难，通常我们使用 Tab 按键或者打空格实现的缩进都只能缩进一小部分，这时可以通过占位符实现更多的缩进效果，使得文章变得美观</p>\n<p>一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：</p>\n<p>一个空格大小的表示： 或 ，此时只要在相应需要缩进的段落前加上 4 个 如上的标记即可，注意要带上分号。<br>\n两个空格的大小表示： 或 ，同理，使用 2 个即可缩进 2 个汉字，推荐使用该方式。<br>\n不换行空格： 或 ，使用 4 个 即可。</p>\n",
+            "tags": []
+        }
+    ]
+}

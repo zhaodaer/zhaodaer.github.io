@@ -25,6 +25,22 @@
             "tags": []
         },
         {
+            "id": "http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/",
+            "url": "http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/",
+            "title": "剧本",
+            "date_published": "2023-08-10T04:59:09.000Z",
+            "content_html": "<p>服务器、爬虫、Linux</p>\n<p>双系统</p>\n",
+            "tags": []
+        },
+        {
+            "id": "http://example.com/2023/08/10/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
+            "url": "http://example.com/2023/08/10/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
+            "title": "Linux学习记录",
+            "date_published": "2023-08-10T04:54:09.000Z",
+            "content_html": "<h2 id=\"一-linux学习记录\"><a class=\"markdownIt-Anchor\" href=\"#一-linux学习记录\">#</a> 一、Linux 学习记录</h2>\n<h3 id=\"1\"><a class=\"markdownIt-Anchor\" href=\"#1\">#</a> 1、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo new <span class=\"hljs-string\">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>\n<p>Shell 命令是支持自动补全功能的。<br>\n比如我们输入字母 “ifc”，然后按下 TAB 键，结果就会补全 ifconfig</p>\n<p>More info: <a href=\"https://baidu.com/\">Writing</a></p>\n<h3 id=\"2\"><a class=\"markdownIt-Anchor\" href=\"#2\">#</a> 2、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ sudo apt-get install package-name<br></code></pre></td></tr></table></figure>\n<p>可以看出上述命令是由 “apt-get” 和 “install” 组合在一起的，“package-name” 就是要安装的软件名字，“apt-get” 负责下载软件，“install” 负责安装软件。</p>\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"3\"><a class=\"markdownIt-Anchor\" href=\"#3\">#</a> 3、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo generate<br></code></pre></td></tr></table></figure>\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"4\"><a class=\"markdownIt-Anchor\" href=\"#4\">#</a> 4、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo deploy<br></code></pre></td></tr></table></figure>\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
+            "tags": []
+        },
+        {
             "id": "http://example.com/2023/08/10/%E5%89%A7%E6%9C%AC%E5%A4%A7%E7%BA%B2/",
             "url": "http://example.com/2023/08/10/%E5%89%A7%E6%9C%AC%E5%A4%A7%E7%BA%B2/",
             "title": "剧本大纲",
@@ -86,14 +102,6 @@
             "title": "我的技术栈",
             "date_published": "2023-08-07T02:03:09.000Z",
             "content_html": "<h2 id=\"problem-based-learning\"><a class=\"markdownIt-Anchor\" href=\"#problem-based-learning\">#</a> Problem-Based Learning</h2>\n<ol>\n<li>电子基础，电子元器件选型</li>\n<li>电路原理图设计，高速电路 PCB 设计，电子元器件焊接技术，电路板调试</li>\n<li>启动程序 Uboot 裁剪移植，Linux 内核裁剪移植，文件系统</li>\n<li>底层驱动程序 (C 语言，ARM 架构汇编，Linux 内核架构)</li>\n<li>上层应用程序 (C++、Qt、JAVA、Python 等，深度学习，机器学习，OpenCV，神经网络，自然语言处理)</li>\n<li>静态博客服务器搭建</li>\n<li>工业建模（Rhino）</li>\n<li>3D 建模（Blender），3D 打印，雕刻机</li>\n<li>视频拍摄，后期制作（PS、PR）</li>\n<li>高等数学，线性代数，概率论，离散数学</li>\n<li>防脱发技术</li>\n</ol>\n",
-            "tags": []
-        },
-        {
-            "id": "http://example.com/2023/08/06/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
-            "url": "http://example.com/2023/08/06/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
-            "title": "Linux学习记录",
-            "date_published": "2023-08-06T10:12:52.467Z",
-            "content_html": "<p>Welcome to <a href=\"https://hexo.io/\">Hexo</a>! This is your very first post. Check <a href=\"https://hexo.io/docs/\">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href=\"https://hexo.io/docs/troubleshooting.html\">troubleshooting</a> or you can ask me on <a href=\"https://github.com/hexojs/hexo/issues\">GitHub</a>.</p>\n<h2 id=\"一-linux学习记录\"><a class=\"markdownIt-Anchor\" href=\"#一-linux学习记录\">#</a> 一、Linux 学习记录</h2>\n<h3 id=\"1\"><a class=\"markdownIt-Anchor\" href=\"#1\">#</a> 1、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo new <span class=\"hljs-string\">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>\n<p>Shell 命令是支持自动补全功能的。<br>\n比如我们输入字母 “ifc”，然后按下 TAB 键，结果就会补全 ifconfig</p>\n<p>More info: <a href=\"https://baidu.com/\">Writing</a></p>\n<h3 id=\"2\"><a class=\"markdownIt-Anchor\" href=\"#2\">#</a> 2、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ sudo apt-get install package-name<br></code></pre></td></tr></table></figure>\n<p>可以看出上述命令是由 “apt-get” 和 “install” 组合在一起的，“package-name” 就是要安装的软件名字，“apt-get” 负责下载软件，“install” 负责安装软件。</p>\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"3\"><a class=\"markdownIt-Anchor\" href=\"#3\">#</a> 3、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo generate<br></code></pre></td></tr></table></figure>\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"4\"><a class=\"markdownIt-Anchor\" href=\"#4\">#</a> 4、</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo deploy<br></code></pre></td></tr></table></figure>\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
             "tags": []
         },
         {
