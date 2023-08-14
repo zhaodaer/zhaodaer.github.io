@@ -5,6 +5,22 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/2023/08/14/%E5%BC%80%E5%AD%A6%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92%EF%BC%9A/",
+            "url": "http://example.com/2023/08/14/%E5%BC%80%E5%AD%A6%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92%EF%BC%9A/",
+            "title": "你的努力在别人眼里一文不值",
+            "date_published": "2023-08-14T06:16:09.000Z",
+            "content_html": "<h1 id=\"你的努力在别人眼里一文不值\"><a class=\"markdownIt-Anchor\" href=\"#你的努力在别人眼里一文不值\">#</a> 你的努力在别人眼里一文不值</h1>\n<p>1、把没剪完的视频剪完</p>\n<p>2、传达、找的老婆</p>\n<p>3、接着熟悉 linux</p>\n<p>4、买手机</p>\n",
+            "tags": []
+        },
+        {
+            "id": "http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/",
+            "url": "http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/",
+            "title": "公司",
+            "date_published": "2023-08-14T03:01:09.000Z",
+            "content_html": "<h2 id=\"聚鑫微电子\"><a class=\"markdownIt-Anchor\" href=\"#聚鑫微电子\">#</a> 聚鑫微电子：</h2>\n<h4 id=\"fpga工程师\"><a class=\"markdownIt-Anchor\" href=\"#fpga工程师\">#</a>   FPGA 工程师：</h4>\n<p>    岗位职责 ：</p>\n<p>      1、FPGA 原型开发与系统验证，负责 FPGA 代码编写、模块设计、接口设计及仿真、调试；</p>\n<p>      2、FPGA 的资源及时序优化，分析并解决开发过程中的问题；</p>\n<p>      3、编写逻辑需求分析，概要设计工作；</p>\n<p>      4、配合软、硬件设计人员完成相关任务目标。</p>\n<p>    任职资格：</p>\n<p>     2、有 FPGA 芯片开发经验，熟练掌握 Verilog 语言，有 Xilinx FPGA 开发经验优先；</p>\n<p>      3、了解 FPGA 设计中逻辑综合、布局布线、时序优化的方法；</p>\n<hr>\n<h4 id=\"高级硬件工程师嵌入式硬件开发\"><a class=\"markdownIt-Anchor\" href=\"#高级硬件工程师嵌入式硬件开发\">#</a>   高级硬件工程师（嵌入式硬件开发）:</h4>\n<p>    工作职责：</p>\n<p>      1、主导完成系统级产品的硬件方案设计、验证，把产品推向量产；</p>\n<p>      2、组织完成对友商产品的分析和评估，输出对比分析报告及提升方案；</p>\n<p>      3、组织完成和客户的需求对接以及需求分析；</p>\n<p>      4、指导系统级研发测试和量产测试；</p>\n<p>      5、参与制定生产方案，指导工装夹具等的开发；</p>\n<p>      6、参与方案开发，主导系统开发文档的输出；</p>\n<p>     任职要求：</p>\n<p>      1、电子或信息类相关专业本科及以上学历，3 年以上工作经验，211/985 学校优先；</p>\n<p>      2、精通模拟电路设计。数字电路设计以及微弱模拟信号调理和数字信号处理方法；</p>\n<p>      3、熟悉应用 Cadence 或者 PADS 等相关 EDA 工具；</p>\n<p>      4、熟悉相关测量仪器的使用，熟知该测量仪器的测量原理，包括示波器、频谱分析仪、信号发生器、逻辑分析仪等；</p>\n<p>      5、有音频或者视频系统级解决方案开发经验者优先；</p>\n<p>      7、熟悉常见总线协议和通讯接口如：I2C、SPI、UART、USB2.0、USB3.0、MIPI-CSI2、RGMII、PCIE 等</p>\n<hr>\n<h4 id=\"嵌入式软件工程师\"><a class=\"markdownIt-Anchor\" href=\"#嵌入式软件工程师\">#</a> 嵌入式软件工程师：</h4>\n<p>   嵌入式软件开发、Linux、驱动开发、Android、ARM 开发</p>\n<p>    岗位职责：</p>\n<p>      1、根据功能和性能需求给出软件解决方案；</p>\n<p>      2、承担 ARM 平台嵌入式软件开发；</p>\n<p>      3、承担 ARM 平台软件算力优化；</p>\n<p>       4、解决软件开发和客户使用过程中出现的问题；</p>\n<p>       5、配合算法和 kernel driver 进行系统联调；</p>\n<p>       6、实现软件新需求。</p>\n<p>    任职要求：</p>\n<p>      1、计算机或信息类相关专业本科及以上学历，3 年以上开发经验；</p>\n<p>      2、熟练掌握 C/C++ 语言；</p>\n<p>      3、有较为丰富的 ARM/DSP/GPU/NPU 开发经验；</p>\n<p>      4、有 linux 下应用程序及驱动程序开发经验；</p>\n<p>      5、熟悉 linux 操作系统内核；</p>\n<p>      6、熟悉高通 / MTK 等手机平台的 camera 架构；</p>\n<p>      7、有 camera 相关内核驱动开发经验或软件优化经验者优先；</p>\n",
+            "tags": []
+        },
+        {
             "id": "http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/",
             "url": "http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/",
             "title": "超级电容",
@@ -27,7 +43,7 @@
         {
             "id": "http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/",
             "url": "http://example.com/2023/08/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/",
-            "title": "剧本",
+            "title": "学习",
             "date_published": "2023-08-10T04:59:09.000Z",
             "content_html": "<p>服务器、爬虫、Linux</p>\n<p>双系统</p>\n",
             "tags": []
@@ -83,7 +99,7 @@
         {
             "id": "http://example.com/2023/08/07/Git/",
             "url": "http://example.com/2023/08/07/Git/",
-            "title": "计划表",
+            "title": "Git",
             "date_published": "2023-08-07T03:31:09.000Z",
             "content_html": "<h6 id=\"git是一款免费-开源的分布式版本控制系统\"><a class=\"markdownIt-Anchor\" href=\"#git是一款免费-开源的分布式版本控制系统\">#</a> Git 是一款免费、开源的分布式版本控制系统</h6>\n<h6 id=\"github是用git做版本控制的代码托管平台\"><a class=\"markdownIt-Anchor\" href=\"#github是用git做版本控制的代码托管平台\">#</a> Github 是用 Git 做版本控制的代码托管平台</h6>\n<hr>\n<ol>\n<li>Git 是目前世界上最先进的分布式版本控制系统。</li>\n<li>Git 安装在终端输入 <code>sudo apt-get install git</code>  即可。</li>\n<li>初始化一个 Git 仓库，使用 <code>git init</code>  命令。</li>\n<li>添加文件到 Git 仓库，分两步： 使用命令 <code>git add &lt;file&gt;</code> ，注意，可反复多次使用，添加多个文件； 使用命令 <code>git commit -m &lt;message&gt;</code> ，完成。</li>\n<li>要随时掌握工作区的状态，使用 git status 命令。</li>\n<li>如果 git status 告诉你有文件被修改过，用 git diff 可以查看修改内容。</li>\n<li><code>HEAD</code>  指向的版本就是当前版本，因此，Git 允许我们在版本的历史之间穿梭，使用命令 <code>git reset --hard commit_id</code> 。</li>\n<li>穿梭前，用 <code>git log</code>  可以查看提交历史，以便确定要回退到哪个版本。</li>\n<li>要重返未来，用 <code>git reflog</code>  查看命令历史，以便确定要回到未来的哪个版本。</li>\n<li>本地仓库由 git 维护的三棵 “树” 组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。</li>\n<li>命令 <code>git rm</code>  用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。</li>\n</ol>\n",
             "tags": []
@@ -97,9 +113,9 @@
             "tags": []
         },
         {
-            "id": "http://example.com/2023/08/07/My-New-Post/",
-            "url": "http://example.com/2023/08/07/My-New-Post/",
-            "title": "我的技术栈",
+            "id": "http://example.com/2023/08/07/%E6%8A%80%E6%9C%AF%E6%A0%88/",
+            "url": "http://example.com/2023/08/07/%E6%8A%80%E6%9C%AF%E6%A0%88/",
+            "title": "技术栈",
             "date_published": "2023-08-07T02:03:09.000Z",
             "content_html": "<h2 id=\"problem-based-learning\"><a class=\"markdownIt-Anchor\" href=\"#problem-based-learning\">#</a> Problem-Based Learning</h2>\n<ol>\n<li>电子基础，电子元器件选型</li>\n<li>电路原理图设计，高速电路 PCB 设计，电子元器件焊接技术，电路板调试</li>\n<li>启动程序 Uboot 裁剪移植，Linux 内核裁剪移植，文件系统</li>\n<li>底层驱动程序 (C 语言，ARM 架构汇编，Linux 内核架构)</li>\n<li>上层应用程序 (C++、Qt、JAVA、Python 等，深度学习，机器学习，OpenCV，神经网络，自然语言处理)</li>\n<li>静态博客服务器搭建</li>\n<li>工业建模（Rhino）</li>\n<li>3D 建模（Blender），3D 打印，雕刻机</li>\n<li>视频拍摄，后期制作（PS、PR）</li>\n<li>高等数学，线性代数，概率论，离散数学</li>\n<li>防脱发技术</li>\n</ol>\n",
             "tags": []

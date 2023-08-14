@@ -14,15 +14,15 @@
 #aside-content > .card-widget.card-info {
   background: linear-gradient(
     -45deg,
-    #e8d8b9,
-    #eccec5,
-    #a3e9eb,
-    #bdbdf0,
-    #eec1ea
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
   );
-  box-shadow: 0 0 5px rgb(66, 68, 68);
+  box-shadow: 0 0 2px rgb(66, 68, 68);
   position: relative;
-  background-size: 400% 400%;
+  background-size: 300% 300%;
   animation: Gradient 10s ease infinite !important;
 }
 @keyframes Gradient {
@@ -63,7 +63,7 @@
   background: var(--trans-light);
   -webkit-backdrop-filter: var(--backdrop-filter);
           backdrop-filter: var(--backdrop-filter);
-  border-radius: 10px;
+  border-radius: 3px;
   border: var(--border-style);
 }
 
@@ -72,7 +72,7 @@
   background: var(--trans-light);
   -webkit-backdrop-filter: var(--backdrop-filter);
           backdrop-filter: var(--backdrop-filter);
-  border-radius: 15px;
+  border-radius: 5px;
   border: var(--border-style);
 }
 
@@ -84,7 +84,7 @@ div#archive {
   -webkit-backdrop-filter: var(--backdrop-filter);
           backdrop-filter: var(--backdrop-filter);
   border: var(--border-style);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* 导航栏 */

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;工作&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 14 Aug 2023 11:01:09 +0800</pubDate>
+        <lastBuildDate>Mon, 14 Aug 2023 11:01:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/</guid>
+            <title>公司</title>
+            <link>http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/</link>
+            <pubDate>Mon, 14 Aug 2023 11:01:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;聚鑫微电子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#聚鑫微电子&#34;&gt;#&lt;/a&gt; 聚鑫微电子：&lt;/h2&gt;
+&lt;h4 id=&#34;fpga工程师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#fpga工程师&#34;&gt;#&lt;/a&gt;   FPGA 工程师：&lt;/h4&gt;
+&lt;p&gt;    岗位职责 ：&lt;/p&gt;
+&lt;p&gt;      1、FPGA 原型开发与系统验证，负责 FPGA 代码编写、模块设计、接口设计及仿真、调试；&lt;/p&gt;
+&lt;p&gt;      2、FPGA 的资源及时序优化，分析并解决开发过程中的问题；&lt;/p&gt;
+&lt;p&gt;      3、编写逻辑需求分析，概要设计工作；&lt;/p&gt;
+&lt;p&gt;      4、配合软、硬件设计人员完成相关任务目标。&lt;/p&gt;
+&lt;p&gt;    任职资格：&lt;/p&gt;
+&lt;p&gt;     2、有 FPGA 芯片开发经验，熟练掌握 Verilog 语言，有 Xilinx FPGA 开发经验优先；&lt;/p&gt;
+&lt;p&gt;      3、了解 FPGA 设计中逻辑综合、布局布线、时序优化的方法；&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;高级硬件工程师嵌入式硬件开发&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#高级硬件工程师嵌入式硬件开发&#34;&gt;#&lt;/a&gt;   高级硬件工程师（嵌入式硬件开发）:&lt;/h4&gt;
+&lt;p&gt;    工作职责：&lt;/p&gt;
+&lt;p&gt;      1、主导完成系统级产品的硬件方案设计、验证，把产品推向量产；&lt;/p&gt;
+&lt;p&gt;      2、组织完成对友商产品的分析和评估，输出对比分析报告及提升方案；&lt;/p&gt;
+&lt;p&gt;      3、组织完成和客户的需求对接以及需求分析；&lt;/p&gt;
+&lt;p&gt;      4、指导系统级研发测试和量产测试；&lt;/p&gt;
+&lt;p&gt;      5、参与制定生产方案，指导工装夹具等的开发；&lt;/p&gt;
+&lt;p&gt;      6、参与方案开发，主导系统开发文档的输出；&lt;/p&gt;
+&lt;p&gt;     任职要求：&lt;/p&gt;
+&lt;p&gt;      1、电子或信息类相关专业本科及以上学历，3 年以上工作经验，211/985 学校优先；&lt;/p&gt;
+&lt;p&gt;      2、精通模拟电路设计。数字电路设计以及微弱模拟信号调理和数字信号处理方法；&lt;/p&gt;
+&lt;p&gt;      3、熟悉应用 Cadence 或者 PADS 等相关 EDA 工具；&lt;/p&gt;
+&lt;p&gt;      4、熟悉相关测量仪器的使用，熟知该测量仪器的测量原理，包括示波器、频谱分析仪、信号发生器、逻辑分析仪等；&lt;/p&gt;
+&lt;p&gt;      5、有音频或者视频系统级解决方案开发经验者优先；&lt;/p&gt;
+&lt;p&gt;      7、熟悉常见总线协议和通讯接口如：I2C、SPI、UART、USB2.0、USB3.0、MIPI-CSI2、RGMII、PCIE 等&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;嵌入式软件工程师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#嵌入式软件工程师&#34;&gt;#&lt;/a&gt; 嵌入式软件工程师：&lt;/h4&gt;
+&lt;p&gt;   嵌入式软件开发、Linux、驱动开发、Android、ARM 开发&lt;/p&gt;
+&lt;p&gt;    岗位职责：&lt;/p&gt;
+&lt;p&gt;      1、根据功能和性能需求给出软件解决方案；&lt;/p&gt;
+&lt;p&gt;      2、承担 ARM 平台嵌入式软件开发；&lt;/p&gt;
+&lt;p&gt;      3、承担 ARM 平台软件算力优化；&lt;/p&gt;
+&lt;p&gt;       4、解决软件开发和客户使用过程中出现的问题；&lt;/p&gt;
+&lt;p&gt;       5、配合算法和 kernel driver 进行系统联调；&lt;/p&gt;
+&lt;p&gt;       6、实现软件新需求。&lt;/p&gt;
+&lt;p&gt;    任职要求：&lt;/p&gt;
+&lt;p&gt;      1、计算机或信息类相关专业本科及以上学历，3 年以上开发经验；&lt;/p&gt;
+&lt;p&gt;      2、熟练掌握 C/C++ 语言；&lt;/p&gt;
+&lt;p&gt;      3、有较为丰富的 ARM/DSP/GPU/NPU 开发经验；&lt;/p&gt;
+&lt;p&gt;      4、有 linux 下应用程序及驱动程序开发经验；&lt;/p&gt;
+&lt;p&gt;      5、熟悉 linux 操作系统内核；&lt;/p&gt;
+&lt;p&gt;      6、熟悉高通 / MTK 等手机平台的 camera 架构；&lt;/p&gt;
+&lt;p&gt;      7、有 camera 相关内核驱动开发经验或软件优化经验者优先；&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

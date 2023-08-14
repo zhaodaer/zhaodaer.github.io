@@ -11,9 +11,9 @@
         <category>表格</category>
         <category>表单验证</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/My-New-Post/</guid>
-            <title>我的技术栈</title>
-            <link>http://example.com/2023/08/07/My-New-Post/</link>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+            <title>技术栈</title>
+            <link>http://example.com/2023/08/07/%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
             <pubDate>Mon, 07 Aug 2023 10:03:09 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;problem-based-learning&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#problem-based-learning&#34;&gt;#&lt;/a&gt; Problem-Based Learning&lt;/h2&gt;
 &lt;ol&gt;
