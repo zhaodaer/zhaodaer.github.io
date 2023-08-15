@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;每天一个新知识&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 15 Aug 2023 10:36:09 +0800</pubDate>
+        <lastBuildDate>Tue, 15 Aug 2023 10:36:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/15/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9F%A5%E8%AF%86/</guid>
+            <title>每天一个新知识</title>
+            <link>http://example.com/2023/08/15/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9F%A5%E8%AF%86/</link>
+            <pubDate>Tue, 15 Aug 2023 10:36:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#服务器&#34;&gt;#&lt;/a&gt; 服务器：&lt;/h3&gt;
+&lt;p&gt;可以用云服务器来做下面这些事情：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;搭建个人博客&lt;/li&gt;
+&lt;li&gt;搭建个人简历网站&lt;/li&gt;
+&lt;li&gt;搭建个人网盘&lt;/li&gt;
+&lt;li&gt;搭建个人云笔记&lt;/li&gt;
+&lt;li&gt;搭建在线编程环境&lt;/li&gt;
+&lt;li&gt;搭建 Linux 学习环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;爬虫、Linux&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;双系统&lt;/p&gt;
+&lt;p&gt;AD&lt;/p&gt;
+&lt;p&gt;网络、路由&lt;/p&gt;
+&lt;p&gt;上位机&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
