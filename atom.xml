@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-15T04:19:10.423Z</updated>
+  <updated>2023-08-16T15:39:02.634Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>复盘总结</title>
+    <link href="http://example.com/2023/08/16/%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/"/>
+    <id>http://example.com/2023/08/16/%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93/</id>
+    <published>2023-08-16T13:11:09.000Z</published>
+    <updated>2023-08-16T15:39:02.634Z</updated>
+    
+    <content type="html"><![CDATA[<p>还从来没在自己的博客上写过日记，今天是第一篇～<br>就先写一篇复盘总结吧，关于我过去一段时间的经历，以及对未来一段时间的计划</p><p>先写一段流水账哈哈：<br>4 月 14 日，RIPE 批准了我的 ASN 申请，我获得了人生中第一个属于自己的自治系统编号 AS205794，8 日，我通过 vultr 的私有 ASN (15 日换成了我自己的) 广播了一段自己的 IPv6 地址 2a0f:9400:7700::/48，在法兰克福、卢森堡、东京、拉斯维加斯、纽约、迈阿密均有节点，浅浅的看了一下 Anycast 长的什么样，7 日我把 web 服务器从 Caddy 又切换回了 Nginx (不过这次是 quic 分支)，上个月用开发版在内网搭建了一个递归 dns，折腾了一下 bind9、unbound、 powerdns，最后发现还是 Public dns 香，再稍早一些把博客从本地扔到了 Github 并使用 Actions 自动构建……<br> 嗯… 步入正题哈哈：<br>似乎自打进入 2022 年以来，一直都在各种折腾，有些还是折腾来折腾去的，似乎看起来好像也没什么意义 (bushi)&amp; 消耗了大量的时间和精力，可能也影响到了一些正常的学习生活，当兴趣爱好已经影响到原本该做的事情时，那可能就会有一定的问题了，也该反思一下了，虽说 No zuo No die，但不是还也有句话讲的是 No zuo No huo 嘛哈哈，话虽如此，但却是应该停一下了，所以，经过了几天的思考，决定还是先放下这些吧，那，2022 年就提前结束吧！接下来的重点主要放在学习上啦，嗯… 还有 Socialwiki 的两个共建项目 “愚公移山” 和 “好好睡覺”，以及 DNSPod 用户群的日常维护，为爱发电哈哈～不管怎么说，接下来这一年还是以稳为主，不再折腾了哈哈，生命不息，折腾已止！但奋斗不止。<br>2022 年 4 月 17 日夜</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;还从来没在自己的博客上写过日记，今天是第一篇～&lt;br&gt;
+就先写一篇复盘总结吧，关于我过去一段时间的经历，以及对未来一段时间的计划&lt;/p&gt;
+&lt;p&gt;先写一段流水账哈哈：&lt;br&gt;
+4 月 14 日，RIPE 批准了我的 ASN 申请，我获得了人生中第一个属于自己的自治系统编号 A</summary>
+      
+    
+    
+    
+    <category term="日记" scheme="http://example.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/08/15/hello-world/"/>
+    <id>http://example.com/2023/08/15/hello-world/</id>
+    <published>2023-08-15T13:46:37.715Z</published>
+    <updated>2023-08-15T01:53:22.027Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    <category term="Hello World" scheme="http://example.com/categories/Hello-World/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>每天一个新知识</title>
     <link href="http://example.com/2023/08/15/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9F%A5%E8%AF%86/"/>
     <id>http://example.com/2023/08/15/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9F%A5%E8%AF%86/</id>
     <published>2023-08-15T02:36:09.000Z</published>
-    <updated>2023-08-15T04:19:10.423Z</updated>
+    <updated>2023-08-15T09:53:42.340Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="服务器"><a class="markdownIt-Anchor" href="#服务器">#</a> 服务器：</h3><p>可以用云服务器来做下面这些事情：</p><ul><li>搭建个人博客</li><li>搭建个人简历网站</li><li>搭建个人网盘</li><li>搭建个人云笔记</li><li>搭建在线编程环境</li><li>搭建 Linux 学习环境</li></ul><hr><p>爬虫、Linux</p><p> </p><p> </p><p> </p><p> </p><p>双系统</p><p>AD</p><p>网络、路由</p><p>上位机</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="服务器"><a class="markdownIt-Anchor" href="#服务器">#</a> 服务器：</h3><p>可以用云服务器来做下面这些事情：</p><ul><li>搭建个人博客</li><li>搭建个人简历网站</li><li>搭建个人网盘</li><li>搭建个人云笔记</li><li>搭建在线编程环境</li><li>搭建 Linux 学习环境</li></ul><hr><p>爬虫、Linux</p><p> </p><p> </p><p> </p><p> </p><p>双系统</p><p>网络、路由</p><p>上位机</p>]]></content>
     
     
       
@@ -352,28 +399,6 @@
     
     
     <category term="技术栈" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/08/06/hello-world/"/>
-    <id>http://example.com/2023/08/06/hello-world/</id>
-    <published>2023-08-06T04:49:29.792Z</published>
-    <updated>2023-08-15T01:53:22.027Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    <category term="Hello World" scheme="http://example.com/categories/Hello-World/"/>
     
     
   </entry>
