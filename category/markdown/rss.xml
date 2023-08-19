@@ -15,17 +15,44 @@
             <title>Markdown使用说明</title>
             <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
             <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;要在 Markdown 编辑器中实现按下 tab 效果，只需在文档中写入：&lt;br&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/178e1ebfaf974a3f962cbf9ed310a7d5.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
-同理，要实现添加空格的效果只需写如：&lt;br&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/f4b020b979374ed0bf584a62ccc08b54.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
-实现换行的操作则是直接在一个空行前面写入与 tab 或空格一样的输入内容即可&lt;/p&gt;
-&lt;p&gt;示例：在 Markdown 编辑器中写入以下内容&lt;br&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/bd956dc8223a4edb8ce6e744253c3705.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;一-空格-换行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-空格-换行&#34;&gt;#&lt;/a&gt; 一、空格、换行&lt;/h2&gt;
+&lt;p&gt;tab 效果：这里有 —&amp;gt; &lt;br&gt;
+&lt;img src=&#34;https://img-blog.csdnimg.cn/178e1ebfaf974a3f962cbf9ed310a7d5.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;空格效果：这里有 —&amp;gt;  &lt;br&gt;
+&lt;img src=&#34;https://img-blog.csdnimg.cn/f4b020b979374ed0bf584a62ccc08b54.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;换行：tab 或空格后加一个空格&lt;/p&gt;
+&lt;p&gt;这里有 —&amp;gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/bd956dc8223a4edb8ce6e744253c3705.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
 &lt;p&gt;以下是渲染效果：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这句话前面有个 tab，且它下面有两个空行&lt;/p&gt;
 &lt;p&gt;这句话前面有个空格，且它上面有两个空行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二-更改字体大小-颜色-更改字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-更改字体大小-颜色-更改字体&#34;&gt;#&lt;/a&gt; 二、更改字体大小、颜色、更改字体&lt;/h2&gt;
+&lt;p&gt;&lt;font face=&#34;逐浪新宋&#34;&gt;我是逐浪新宋&lt;/font&gt;&lt;br&gt;
+&lt;font face=&#34;逐浪圆体&#34;&gt;我是逐浪圆体&lt;/font&gt;&lt;br&gt;
+&lt;font face=&#34;逐浪花体&#34;&gt;我是逐浪花体&lt;/font&gt;&lt;br&gt;
+&lt;font face=&#34;逐浪像素字&#34;&gt;我是逐浪像素字&lt;/font&gt;&lt;br&gt;
+&lt;font face=&#34;华文楷体&#34;&gt;我是华文楷体&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;font color=red&gt;我是红色&lt;/font&gt;&lt;br&gt;
+&lt;font color=#008000&gt;我是绿色&lt;/font&gt;&lt;br&gt;
+&lt;font color=yellow&gt;我是黄色&lt;/font&gt;&lt;br&gt;
+&lt;font color=Blue&gt;我是蓝色&lt;/font&gt;&lt;br&gt;
+&lt;font color= #871F78&gt;我是紫色&lt;/font&gt;&lt;br&gt;
+&lt;font color= #DCDCDC&gt;我是浅灰色&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;   &lt;font size=5&gt;我是尺寸&lt;/font&gt;&lt;br&gt;
+&lt;font size=10&gt;我是尺寸&lt;/font&gt;&lt;br&gt;
+&lt;font face=&#34;逐浪立楷&#34; color=green size=10&gt;我是逐浪立楷，绿色，尺寸为 5&lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三-居中居右居左&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-居中居右居左&#34;&gt;#&lt;/a&gt; 三、居中居右居左&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;居中 &lt;code&gt;&amp;lt;center&amp;gt;文本&amp;lt;/center&amp;gt;&lt;/code&gt; &lt;br&gt;
+ 居右 &lt;code&gt;&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;文本&amp;lt;/p&amp;gt;&lt;/code&gt; &lt;br&gt;
+ 居左 &lt;code&gt;&amp;lt;p align=&amp;quot;left&amp;quot;&amp;gt;文本&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
  ]]></description>
         </item>

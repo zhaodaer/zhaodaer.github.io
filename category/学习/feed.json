@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "盖一座大房子 • All posts by \"学习\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+            "url": "http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+            "title": "BAT学习记录",
+            "date_published": "2023-08-16T13:11:09.000Z",
+            "content_html": "<h2 id=\"font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font\"><a class=\"markdownIt-Anchor\" href=\"#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font\">#</a> <font face=\"宋体\" size=4>前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供<font color=#008000>日后回忆</font>，也给和我一样是小白们一个学习的开端思路</font></h2>\n<h2 id=\"font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font\"><a class=\"markdownIt-Anchor\" href=\"#font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font\">#</a> <font face=\"宋体\" size=4>背景：源于我的工作经历，我开始也是不很懂批处理脚本，在工作中会遇到一些批处理的脚本也会用到批处理脚本，但是每次用到的时候，都是找别人要，这样总是不妥的。正所谓求人，不如求自己，这也是我开始批处理脚本的开端</font></h2>\n<hr>\n<p>批处理脚本是为了自动执行重复的命令序列</p>\n<h1 id=\"教程看这里bat批处理学习笔记总结-知乎-zhihucom\"><a class=\"markdownIt-Anchor\" href=\"#教程看这里bat批处理学习笔记总结-知乎-zhihucom\">#</a> 教程看这里 —&gt;<a href=\"https://zhuanlan.zhihu.com/p/523558706\">BAT（批处理）学习笔记总结 - 知乎 (zhihu.com)</a></h1>\n",
+            "tags": []
+        }
+    ]
+}

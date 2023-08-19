@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>盖一座大房子 • Posts by &#34;学习&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 16 Aug 2023 21:11:09 +0800</pubDate>
+        <lastBuildDate>Wed, 16 Aug 2023 21:11:09 +0800</lastBuildDate>
+        <category>jQuery</category>
+        <category>表格</category>
+        <category>表单验证</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+            <title>BAT学习记录</title>
+            <link>http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+            <pubDate>Wed, 16 Aug 2023 21:11:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供&lt;font color=#008000&gt;日后回忆&lt;/font&gt;，也给和我一样是小白们一个学习的开端思路&lt;/font&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;背景：源于我的工作经历，我开始也是不很懂批处理脚本，在工作中会遇到一些批处理的脚本也会用到批处理脚本，但是每次用到的时候，都是找别人要，这样总是不妥的。正所谓求人，不如求自己，这也是我开始批处理脚本的开端&lt;/font&gt;&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;批处理脚本是为了自动执行重复的命令序列&lt;/p&gt;
+&lt;h1 id=&#34;教程看这里bat批处理学习笔记总结-知乎-zhihucom&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#教程看这里bat批处理学习笔记总结-知乎-zhihucom&#34;&gt;#&lt;/a&gt; 教程看这里 —&amp;gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/523558706&#34;&gt;BAT（批处理）学习笔记总结 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/h1&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
