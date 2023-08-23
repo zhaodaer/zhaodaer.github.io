@@ -54,6 +54,21 @@
  居右 &lt;code&gt;&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;文本&amp;lt;/p&amp;gt;&lt;/code&gt; &lt;br&gt;
  居左 &lt;code&gt;&amp;lt;p align=&amp;quot;left&amp;quot;&amp;gt;文本&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;四-加粗&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-加粗&#34;&gt;#&lt;/a&gt; 四、加粗&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;我是加粗&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;五-插入图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-插入图片&#34;&gt;#&lt;/a&gt; 五、插入图片&lt;/h2&gt;
+&lt;p&gt;  采用相对路径，&lt;strong&gt;注意&lt;/strong&gt;图片地址和.md 在同一文件夹下：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;![Alternative text](link &amp;quot;optional title&amp;quot;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;20230821204027.jpg&#34; alt=&#34;这是图片&#34; title=&#34;Magic Gardens&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注释：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Alternative text：替代文本，即当图片不能正常显示的时候显示的文本。这个字段中不能有空格，如果一定要填空格可以使用 &lt;code&gt;%20&lt;/code&gt;  代替，我一般是使用下划线代替空格～&lt;/p&gt;
+&lt;p&gt;Link：图片的本地地址，或者网络地址，这个地址最好选择相对地址，不能使用绝对地址，如果非要引用不同文件夹的文件，那么解决办法在下面～&lt;/p&gt;
+&lt;p&gt;Optional Title：鼠标悬停的时候显示的标题和文字，可以不写&lt;/p&gt;
+&lt;/blockquote&gt;
  ]]></description>
         </item>
     </channel>
