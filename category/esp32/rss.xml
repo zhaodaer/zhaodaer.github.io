@@ -15,8 +15,8 @@
             <title>ESP32学习记录</title>
             <link>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Mon, 07 Aug 2023 21:54:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）&lt;/p&gt;
-&lt;p&gt;  利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）   利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;

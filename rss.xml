@@ -15,7 +15,8 @@
             <title>Hello World</title>
             <link>http://example.com/2023/08/17/hello-world/</link>
             <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -36,11 +37,12 @@
             <title>BAT学习记录</title>
             <link>http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
             <pubDate>Wed, 16 Aug 2023 21:11:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供font-color008000日后回忆font也给和我一样是小白们一个学习的开端思路font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供&lt;font color=#008000&gt;日后回忆&lt;/font&gt;，也给和我一样是小白们一个学习的开端思路&lt;/font&gt;&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供日后回忆，也给和我一样是小白们一个学习的开端思路&lt;/font&gt;&lt;/h2&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h2 id=&#34;font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;背景：源于我的工作经历，我开始也是不很懂批处理脚本，在工作中会遇到一些批处理的脚本也会用到批处理脚本，但是每次用到的时候，都是找别人要，这样总是不妥的。正所谓求人，不如求自己，这也是我开始批处理脚本的开端&lt;/font&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;批处理脚本是为了自动执行重复的命令序列&lt;/p&gt;
-&lt;h1 id=&#34;教程看这里bat批处理学习笔记总结-知乎-zhihucom&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#教程看这里bat批处理学习笔记总结-知乎-zhihucom&#34;&gt;#&lt;/a&gt; 教程看这里 —&amp;gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/523558706&#34;&gt;BAT（批处理）学习笔记总结 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;font-face微软雅黑-size5教程看这里bat批处理学习笔记总结-知乎-zhihucomfont&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face微软雅黑-size5教程看这里bat批处理学习笔记总结-知乎-zhihucomfont&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;微软雅黑&#34; size=5&gt;教程看这里 —&amp;gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/523558706&#34;&gt;BAT（批处理）学习笔记总结 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/font&gt;&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
@@ -48,7 +50,8 @@
             <title>你的努力在别人眼里一文不值</title>
             <link>http://example.com/2023/08/14/%E5%BC%80%E5%AD%A6%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92%EF%BC%9A/</link>
             <pubDate>Mon, 14 Aug 2023 14:16:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;你的努力在别人眼里一文不值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你的努力在别人眼里一文不值&#34;&gt;#&lt;/a&gt; 你的努力在别人眼里一文不值&lt;/h1&gt;
+            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h1 id=&#34;你的努力在别人眼里一文不值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你的努力在别人眼里一文不值&#34;&gt;#&lt;/a&gt; 你的努力在别人眼里一文不值&lt;/h1&gt;
 &lt;p&gt;1、把没剪完的视频剪完&lt;/p&gt;
 &lt;p&gt;2、传达、找的老婆&lt;/p&gt;
 &lt;p&gt;3、接着熟悉 linux&lt;/p&gt;
@@ -61,6 +64,7 @@
             <link>http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/</link>
             <pubDate>Mon, 14 Aug 2023 11:01:09 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;聚鑫微电子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#聚鑫微电子&#34;&gt;#&lt;/a&gt; 聚鑫微电子：&lt;/h2&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h4 id=&#34;fpga工程师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#fpga工程师&#34;&gt;#&lt;/a&gt;   FPGA 工程师：&lt;/h4&gt;
 &lt;p&gt;    岗位职责 ：&lt;/p&gt;
 &lt;p&gt;      1、FPGA 原型开发与系统验证，负责 FPGA 代码编写、模块设计、接口设计及仿真、调试；&lt;/p&gt;
@@ -151,20 +155,17 @@
             <title>Linux学习记录</title>
             <link>http://example.com/2023/08/10/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Thu, 10 Aug 2023 12:54:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;一-linux学习记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-linux学习记录&#34;&gt;#&lt;/a&gt; 一、Linux 学习记录&lt;/h2&gt;
-&lt;h3 id=&#34;1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1&#34;&gt;#&lt;/a&gt; 1、&lt;/h3&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;-more-&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-more-&#34;&gt;#&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;Shell 命令是支持自动补全功能的。&lt;br&gt;
 比如我们输入字母 “ifc”，然后按下 TAB 键，结果就会补全 ifconfig&lt;/p&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://baidu.com/&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2&#34;&gt;#&lt;/a&gt; 2、&lt;/h3&gt;
+&lt;!--more--&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ sudo apt-get install package-name&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;可以看出上述命令是由 “apt-get” 和 “install” 组合在一起的，“package-name” 就是要安装的软件名字，“apt-get” 负责下载软件，“install” 负责安装软件。&lt;/p&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3&#34;&gt;#&lt;/a&gt; 3、&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo generate&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4&#34;&gt;#&lt;/a&gt; 4、&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo deploy&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
  ]]></description>
@@ -174,7 +175,8 @@
             <title>Rhino</title>
             <link>http://example.com/2023/08/08/Rhino/</link>
             <pubDate>Tue, 08 Aug 2023 22:59:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;抽离结构线 —&amp;gt; 可调节的混接曲线&lt;/p&gt;
+            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;抽离结构线 —&amp;gt; 可调节的混接曲线&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -182,7 +184,8 @@
             <title>Markdown使用说明</title>
             <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
             <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;一-空格-换行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-空格-换行&#34;&gt;#&lt;/a&gt; 一、空格、换行&lt;/h2&gt;
+            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;一-空格-换行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-空格-换行&#34;&gt;#&lt;/a&gt; 一、空格、换行&lt;/h2&gt;
 &lt;p&gt;tab 效果：这里有 —&amp;gt; &lt;br&gt;
 &lt;img src=&#34;https://img-blog.csdnimg.cn/178e1ebfaf974a3f962cbf9ed310a7d5.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
@@ -243,8 +246,8 @@
             <title>ESP32学习记录</title>
             <link>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Mon, 07 Aug 2023 21:54:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）&lt;/p&gt;
-&lt;p&gt;  利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）   利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -275,6 +278,7 @@
 &lt;h1 id=&#34;盖一座大房子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#盖一座大房子&#34;&gt;#&lt;/a&gt; 盖一座大房子&lt;/h1&gt;
 &lt;h4 id=&#34;➊二八定律&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#➊二八定律&#34;&gt;#&lt;/a&gt; ➊二八定律：&lt;/h4&gt;
 &lt;p&gt;   将时间分配给更重要的事&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h4 id=&#34;❷事情优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❷事情优先级&#34;&gt;#&lt;/a&gt; ❷事情优先级：&lt;/h4&gt;
 &lt;p&gt;   什么重要就先做什么&lt;/p&gt;
 &lt;h4 id=&#34;❸没有最好的时机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❸没有最好的时机&#34;&gt;#&lt;/a&gt; ❸没有最好的时机：&lt;/h4&gt;
@@ -293,8 +297,8 @@
             <title>Git</title>
             <link>http://example.com/2023/08/07/Git/</link>
             <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h6 id=&#34;git是一款免费-开源的分布式版本控制系统&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git是一款免费-开源的分布式版本控制系统&#34;&gt;#&lt;/a&gt; Git 是一款免费、开源的分布式版本控制系统&lt;/h6&gt;
-&lt;h6 id=&#34;github是用git做版本控制的代码托管平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github是用git做版本控制的代码托管平台&#34;&gt;#&lt;/a&gt; Github 是用 Git 做版本控制的代码托管平台&lt;/h6&gt;
+            <description><![CDATA[ &lt;h6 id=&#34;git是一款免费-开源的分布式版本控制系统github是用git做版本控制的代码托管平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git是一款免费-开源的分布式版本控制系统github是用git做版本控制的代码托管平台&#34;&gt;#&lt;/a&gt;   Git 是一款免费、开源的分布式版本控制系统 Github 是用 Git 做版本控制的代码托管平台&lt;/h6&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;Git 是目前世界上最先进的分布式版本控制系统。&lt;/li&gt;
@@ -316,7 +320,8 @@
             <title>计划表</title>
             <link>http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</link>
             <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h6 id=&#34;只有做好了计划人生才能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#只有做好了计划人生才能&#34;&gt;#&lt;/a&gt; 只有做好了计划，人生才能&lt;/h6&gt;
+            <description><![CDATA[ &lt;h6 id=&#34;-more-&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-more-&#34;&gt;#&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h6&gt;
+&lt;h6 id=&#34;只有做好了计划人生才能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#只有做好了计划人生才能&#34;&gt;#&lt;/a&gt; 只有做好了计划，人生才能&lt;/h6&gt;
 &lt;h4 id=&#34;学习永无止境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#学习永无止境&#34;&gt;#&lt;/a&gt; 学习（永无止境）：&lt;/h4&gt;
 &lt;p&gt;​			边学边补，哪里不会去学哪里，不要全学&lt;/p&gt;
 &lt;p&gt;​				需要补充的知识有：&lt;/p&gt;
