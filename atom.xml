@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-09-02T06:38:06.447Z</updated>
+  <updated>2023-09-02T06:39:41.186Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,12 @@
     <link href="http://example.com/2023/08/17/hello-world/"/>
     <id>http://example.com/2023/08/17/hello-world/</id>
     <published>2023-08-17T10:52:05.399Z</published>
-    <updated>2023-09-02T06:38:06.447Z</updated>
+    <updated>2023-09-02T06:39:41.186Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs</summary>
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
     
     
     
@@ -44,7 +40,7 @@
     <link href="http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2023-08-16T13:11:09.000Z</published>
-    <updated>2023-09-02T06:34:51.856Z</updated>
+    <updated>2023-09-02T11:52:39.519Z</updated>
     
     <content type="html"><![CDATA[<h2 id="font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font"><a class="markdownIt-Anchor" href="#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font">#</a> <font face="宋体" size=4>前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供日后回忆，也给和我一样是小白们一个学习的开端思路</font></h2><span id="more"></span><h2 id="font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font"><a class="markdownIt-Anchor" href="#font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font">#</a> <font face="宋体" size=4>背景：源于我的工作经历，我开始也是不很懂批处理脚本，在工作中会遇到一些批处理的脚本也会用到批处理脚本，但是每次用到的时候，都是找别人要，这样总是不妥的。正所谓求人，不如求自己，这也是我开始批处理脚本的开端</font></h2><hr><p>批处理脚本是为了自动执行重复的命令序列</p><h1 id="font-face微软雅黑-size5教程看这里bat批处理学习笔记总结-知乎-zhihucomfont"><a class="markdownIt-Anchor" href="#font-face微软雅黑-size5教程看这里bat批处理学习笔记总结-知乎-zhihucomfont">#</a> <font face="微软雅黑" size=5>教程看这里 —&gt;<a href="https://zhuanlan.zhihu.com/p/523558706">BAT（批处理）学习笔记总结 - 知乎 (zhihu.com)</a></font></h1>]]></content>
     

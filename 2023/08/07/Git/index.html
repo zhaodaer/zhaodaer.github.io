@@ -52,6 +52,12 @@
 
 </head>
 
+<!-- 代码块复制功能 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/clipboard.js"></script>  -->
+<script type="text/javascript" src="/js/clipboard_use.js"></script>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -75,15 +81,19 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="/categories" target="_blank">技术笔记</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/stories/%E5%89%A7%E6%9C%AC/" target="_blank">随笔</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">个人简历</a></li>
+				<li><a href="/archives/index.html" target="_blank">归档</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">Linux</a></li>
+				<li><a href="/categories" target="_blank">分类</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">心灵驿站</a></li>
+				<li><a href="/tags" target="_blank">标签</a></li>
+			
+				<li><a href="/artitalk/" target="_blank">心灵驿站</a></li>
+			
+				<li><a href="/about/" target="_blank">个人简历</a></li>
 			
 			</ul>
 		</nav>
@@ -123,6 +133,11 @@
 					
 						<a class="jianshu" href="#" 
 												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+					
+				
+					
+						<a class="bilibili" href="#" 
+												title="哔哩哔哩" target="_blank"><i class="icon-bilibili"></i></a>
 					
 				
 			</div>
@@ -183,6 +198,10 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -208,6 +227,11 @@
 							href="#" title="简书"><i class="icon-jianshu"></i></a>
 						
 					
+						
+						<a class="bilibili" target="_blank" 
+							href="#" title="哔哩哔哩"><i class="icon-bilibili"></i></a>
+						
+					
 				</div>
 			</nav>
 
@@ -215,17 +239,21 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
+					<li style="width: 12.5%"><a href="/">主页</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 12.5%"><a href="/categories">技术笔记</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 12.5%"><a href="/stories/%E5%89%A7%E6%9C%AC/">随笔</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">个人简历</a></li>
+					<li style="width: 12.5%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">Linux</a></li>
+					<li style="width: 12.5%"><a href="/categories">分类</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/%E9%9A%8F%E7%AC%94/">心灵驿站</a></li>
+					<li style="width: 12.5%"><a href="/tags">标签</a></li>
+		        
+					<li style="width: 12.5%"><a href="/artitalk/">心灵驿站</a></li>
+		        
+					<li style="width: 12.5%"><a href="/about/">个人简历</a></li>
 		        
 				</ul>
 			</nav>
@@ -551,23 +579,6 @@
 
 
 <!--  -->
-
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
 
 
     
