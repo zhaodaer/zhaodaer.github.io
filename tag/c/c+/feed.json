@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "E=MC2 • All posts by \"c/c+\" tag",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/10/02/C++/",
+            "url": "http://example.com/2023/10/02/C++/",
+            "title": "C/C++",
+            "date_published": "2023-10-02T07:45:20.033Z",
+            "content_html": "<p>C<ins> 基础入门<br>\n》1C</ins> 初识<br>\n 2 数据类型<br>\n 2.1 整型<br>\n 2.2 sizeof 关键字<br>\n 2.3 实型 (浮点型)<br>\n 2.4 字符型<br>\n 2.5 转义字符<br>\n 2.6 字符串型<br>\n 2.7 布尔类型 bool<br>\n2.8 数据的输入<br>\n》3 运算符<br>\n》4 程序流程结构<br>\n 5 数组 &quot;<br>\n6 函数<br>\n 7 指针</p>\n<blockquote>\n<p>8 结构体</p>\n</blockquote>\n<p><strong>强制类型转换</strong>：（数据类型）变量名</p>\n<p>例如：</p>\n<figure class=\"highlight c++\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs c++\"><span class=\"hljs-type\">char</span> ch = <span class=\"hljs-string\">&#x27;a&#x27;</span><br><br>count &lt;&lt; (<span class=\"hljs-type\">int</span>)ch &lt;&lt; end1;\t<span class=\"hljs-comment\">//打印命令，将字符型变量char型强制转换成int型</span><br></code></pre></td></tr></table></figure>\n<p>水平制表符 \\t:       8 个空格，有利于对齐，整齐输出数据</p>\n<div class=\"tag-plugin image\"><div class=\"image-bg\"><img src=\"C:\\Users\\东瑞\\AppData\\Roaming\\Typora\\typora-user-images\\image-20230929173605629.png\"/></div></div>\n<p>C 中的 <code>\\n </code>     =      C++ 中的 <code>&lt;&lt; end1</code></p>\n<p>两个 \\ 输出一个 \\</p>\n",
+            "tags": [
+                "C/C+"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>Linux - E=MC2</title>
+
+  
+    <meta name="description" content="# 目录   环境配置 基础命令 vi 文本编辑器 Shell 与 Shell 脚本 软件管理 网络基础  XXX requests 使用多 IP 请求 Python 多线程模板         # 🥉碎碎念    你现在已经有了一些 Linux 的基础了，应该系统学一下了   先把韦东山嵌入式 Linux 完整看一遍 (不要全看，挑着看   看经典书籍（鸟哥的 Linux 私房菜很不错）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="http://example.com/2023/10/02/Linux/index.html">
+<meta property="og:site_name" content="E&#x3D;MC2">
+<meta property="og:description" content="# 目录   环境配置 基础命令 vi 文本编辑器 Shell 与 Shell 脚本 软件管理 网络基础  XXX requests 使用多 IP 请求 Python 多线程模板         # 🥉碎碎念    你现在已经有了一些 Linux 的基础了，应该系统学一下了   先把韦东山嵌入式 Linux 完整看一遍 (不要全看，挑着看   看经典书籍（鸟哥的 Linux 私房菜很不错）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214018290.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214034861.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214236693.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214706385.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214713139.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214720906.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214728331.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214801457.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214807351.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214815188.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214821495.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214837019.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20230929194253081.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20230929211817565.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20230929201835850.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001211323802.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001211515488.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001211805874.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001210510145.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001115718512.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001120049488.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001120120522.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20231001120522186.png">
+<meta property="og:image" content="c:\Users\%E4%B8%9C%E7%91%9E\AppData\Roaming\Typora\typora-user-images\image-20230929215054299.png">
+<meta property="article:published_time" content="2023-10-02T07:45:20.045Z">
+<meta property="article:modified_time" content="2023-10-02T07:46:44.325Z">
+<meta property="article:author" content="Daer">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214018290.png">
+  
+  
+  
+  <meta name="keywords" content="Linux">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="E=MC2" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css">
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">E=MC2</div><div class="sub normal cap">盖一座大房子</div><div class="sub hover cap" style="opacity:0"> 打不倒我的只会让我更强大</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/notes/">笔记</a><a class="nav-item" href="/artitalk/">碎碎念</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">Linux</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text"> 目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="toc-text"> 🥉碎碎念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text"> ❓遇到的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#start"><span class="toc-text"> START</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text"> 📉基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-text">   快捷键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vi%E5%91%BD%E4%BB%A4"><span class="toc-text">   vi 命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gcc%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-text"> 📉gcc 编译器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B"><span class="toc-text"> 1、编译过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8%E5%8A%A8%E6%80%81%E5%BA%93-%E9%9D%99%E6%80%81%E5%BA%93"><span class="toc-text"> 2、制作和使用动态库、静态库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%B8%80%E4%BA%9B%E5%BE%88%E6%9C%89%E7%94%A8%E7%9A%84%E9%80%89%E9%A1%B9"><span class="toc-text"> 3、一些很有用的选项</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shell%E8%84%9A%E6%9C%AC"><span class="toc-text"> 📉Shell 脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#makefile"><span class="toc-text"> 📉Makefile</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84"><span class="toc-text"> 1、最简单的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-makefile%E6%A0%B8%E5%BF%83%E8%A7%84%E5%88%99"><span class="toc-text"> 2、Makefile 核心 — 规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8Fmake-%E7%9B%AE%E6%A0%87"><span class="toc-text"> 3、命令格式： make [目标] </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-makefile%E7%9A%84%E5%87%BD%E6%95%B0"><span class="toc-text"> 4、Makefile 的函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E9%80%9A%E7%94%A8makefile%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3"><span class="toc-text"> 5、通用 Makefile 的设计思想</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6io"><span class="toc-text"> 📉文件 IO</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%A0%87%E5%87%86io%E5%92%8C%E7%B3%BB%E7%BB%9Fio"><span class="toc-text"> 1、标准 IO 和系统 IO</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%80%8E%E4%B9%88%E8%AE%BF%E9%97%AE%E6%96%87%E4%BB%B6"><span class="toc-text"> 2、怎么访问文件？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%80%8E%E4%B9%88%E8%BF%9B%E5%85%A5%E5%86%85%E6%A0%B8"><span class="toc-text"> 3、系统调用函数怎么进入内核？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%AF%8F%E4%B8%AA%E8%BF%9B%E7%A8%8B%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%96%87%E4%BB%B6%E5%8F%A5%E6%9F%84%E7%A9%BA%E9%97%B4"><span class="toc-text"> 4、每个进程有自己的文件句柄空间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-man%E6%89%8B%E5%86%8C"><span class="toc-text"> 5、man 手册</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%90%84%E7%A7%8D%E5%87%BD%E6%95%B0"><span class="toc-text"> 6、各种函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E9%9B%B6%E6%98%9F%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-text"> 7、零星知识点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E5%BC%84%E6%87%82%E7%9A%84"><span class="toc-text"> ❓未弄懂的</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%87%E4%BB%B6%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5"><span class="toc-text"> 1、文件从哪里来</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%86%85%E6%A0%B8%E7%9A%84sys_open-sys_read%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88"><span class="toc-text"> 2、内核的 sys_open、sys_read 会做什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-framebuffer%E7%9A%84%E5%BA%94%E7%94%A8%E7%BC%96%E7%A8%8Blcd%E6%98%BE%E7%A4%BA"><span class="toc-text"> 3、Framebuffer 的应用编程（LCD 显示）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F"><span class="toc-text"> 4、交叉编译程序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%8F%8A%E5%9B%BE%E5%83%8F%E6%98%BE%E7%A4%BA"><span class="toc-text"> 📉文字及图像显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B"><span class="toc-text"> 📉多线程编程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%BA%BF%E7%A8%8B%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text"> 1、线程的使用流程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BA%92%E6%96%A5%E9%94%81"><span class="toc-text"> 2、互斥锁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%BF%A1%E5%8F%B7%E9%87%8F%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%A8%8B%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6"><span class="toc-text"> 3、信号量（多个线程执行顺序控制）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B"><span class="toc-text"> 📉网络编程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text"> 1、网络编程的基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%A4%E7%A7%8D%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8Ftcpudp"><span class="toc-text"> 2、两种传输方式：TCP&#x2F;UDP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E4%B8%BB%E8%A6%81%E5%87%BD%E6%95%B0"><span class="toc-text"> 3、网络编程主要函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#i2c%E5%BA%94%E7%94%A8%E7%BC%96%E7%A8%8B"><span class="toc-text"> 📉I2C 应用编程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A9%B1%E5%8A%A8%E5%86%85%E6%A0%B8"><span class="toc-text"> 📉驱动内核</span></a></li></ol></div></div></widget>
+
+
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-10-02T07:45:20.045Z">2023-10-02</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>Linux</span></h1>
+<h3 id="目录"><a class="markdownIt-Anchor" href="#目录">#</a> 目录</h3>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://py3.io/doc/python/quickstart.html">环境配置</a></li>
+<li>基础命令</li>
+<li>vi 文本编辑器</li>
+<li>Shell 与 Shell 脚本</li>
+<li>软件管理</li>
+<li>网络基础
+<ul>
+<li>XXX</li>
+<li>requests 使用多 IP 请求</li>
+<li><a href="code/MultiThread_Template.py">Python 多线程模板</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p> </p>
+<p> </p>
+<h3 id="碎碎念"><a class="markdownIt-Anchor" href="#碎碎念">#</a> 🥉碎碎念</h3>
+<hr>
+<ul>
+<li>
+<p>你现在已经有了一些 Linux 的基础了，应该系统学一下了</p>
+</li>
+<li>
+<p>先把韦东山嵌入式 Linux 完整看一遍 (不要全看，挑着看</p>
+</li>
+<li>
+<p>看经典书籍（鸟哥的 Linux 私房菜很不错）</p>
+</li>
+<li>
+<p>看大佬们的有关源码</p>
+</li>
+<li>
+<p>找 2-3 个相关项目巩固一下，最好能写在简历上</p>
+</li>
+<li>
+<p>刷题</p>
+<p> </p>
+</li>
+</ul>
+<h3 id="遇到的问题"><a class="markdownIt-Anchor" href="#遇到的问题">#</a> ❓遇到的问题</h3>
+<hr>
+<p>1、Windows 下 ipconfig 出问题了</p>
+<p>2、Mobaxterm 不能远程登录 Ubuntu</p>
+<p>3、FileZilla 连接不上 Ubuntu</p>
+<p><strong>解决方法</strong>：</p>
+<p><strong>打开本机服务，开启相关的服务</strong></p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214018290.png" width="500"/>
+<p>  <strong>重置虚拟网络编辑器</strong></p>
+<p>  打开虚拟网络编辑器 —&gt; 还原默认设置</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214034861.png" width="500"/>
+<p>  <strong>还原默认设置之后，就看见有了虚拟机的网卡了</strong></p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214236693.png" width="500"/>
+<hr>
+<h3 id="start"><a class="markdownIt-Anchor" href="#start">#</a> START</h3>
+<ul>
+<li>
+<p>绝对路径用 \   相对路径用 /</p>
+</li>
+<li>
+<p>Shell 命令  PATH 环境变量设置</p>
+</li>
+<li>
+<p>./ 表示当前目录下行命令</p>
+</li>
+<li>
+<p>在 Linux 系统中，每个设备都被当成一个文件来对待，例如 SATA 接口的硬盘文件名为 /dev/sd [a-d]</p>
+</li>
+<li>
+<p>绝对路径进入 cd /home/alien</p>
+</li>
+<li>
+<p>相对路径进入 cd ./XXX/</p>
+</li>
+</ul>
+<h3 id="基础命令"><a class="markdownIt-Anchor" href="#基础命令">#</a> 📉基础命令</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>意义</th>
+<th>用法</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pwd</td>
+<td></td>
+<td></td>
+<td style="text-align:left">显示当前目录</td>
+</tr>
+<tr>
+<td>cd</td>
+<td></td>
+<td>cd …</td>
+<td style="text-align:left">上一级目录</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>cd ~</td>
+<td style="text-align:left">进入家目录</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>cd -</td>
+<td style="text-align:left">切回上一次操作的目录</td>
+</tr>
+<tr>
+<td>cp</td>
+<td></td>
+<td>cp a b</td>
+<td style="text-align:left">将 a 复制一份命名为 b</td>
+</tr>
+<tr>
+<td>ls</td>
+<td></td>
+<td>ls -l</td>
+<td style="text-align:left">查看文件的属性权限</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td></td>
+<td></td>
+<td style="text-align:left">创建目录</td>
+</tr>
+<tr>
+<td>rmdir</td>
+<td></td>
+<td></td>
+<td style="text-align:left">删除目录 （只能删除空目录）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td></td>
+<td>rm -rf &lt;目录路径&gt;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>echo</td>
+<td></td>
+<td>echo abc &gt; 1.1.txt</td>
+<td style="text-align:left">创建一个文件</td>
+</tr>
+<tr>
+<td>cat</td>
+<td></td>
+<td></td>
+<td style="text-align:left">列出文件的内容</td>
+</tr>
+<tr>
+<td>touch a</td>
+<td></td>
+<td>touch a</td>
+<td style="text-align:left">摸一下该文件，只改时间，不改内容</td>
+</tr>
+<tr>
+<td>mv</td>
+<td></td>
+<td>mv a …/</td>
+<td style="text-align:left">将 a 移动到上一级目录里</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mv …/a .</td>
+<td style="text-align:left">将上一级目录里的 a 移动到当前目录</td>
+</tr>
+<tr>
+<td>tab 键</td>
+<td></td>
+<td></td>
+<td style="text-align:left">tab 键  补全当前目录下的文件名</td>
+</tr>
+<tr>
+<td>chmod</td>
+<td></td>
+<td>chmod 675 &lt;某个文件&gt;</td>
+<td style="text-align:left">改变文件的权限（拥有者、同组其他用户和其他用户的可读 r、可写 w、可执行 r 等）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>chmod -x &lt;某个文件&gt;</td>
+<td style="text-align:left">权限全部去掉</td>
+</tr>
+<tr>
+<td>chowm</td>
+<td>改变文件的所有者</td>
+<td>chown root root &lt;某个文件&gt;</td>
+<td style="text-align:left">改变文件的拥有者、其他用户等</td>
+</tr>
+<tr>
+<td>root</td>
+<td></td>
+<td></td>
+<td style="text-align:left">用户切换、登录、设置密码（不建议用</td>
+</tr>
+<tr>
+<td>sudo</td>
+<td></td>
+<td></td>
+<td style="text-align:left">临时切换为 root 用户  这个命令 nb</td>
+</tr>
+<tr>
+<td>find</td>
+<td></td>
+<td>find abc -name *.1.txt</td>
+<td style="text-align:left">指定当前目录下的 abc 文件夹下查找名字为 1.1.txt、2.1.txt 等文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td></td>
+<td>grep “xyz” * -nwr</td>
+<td style="text-align:left">递归查找当前目录下的所以文件中含有 xyz 字符的文件</td>
+</tr>
+<tr>
+<td>tar</td>
+<td>压缩</td>
+<td>tar czf abc def</td>
+<td style="text-align:left">创建压缩包 用 gzip 命令压缩 将 def 文件压缩为名为 abc 的压缩包（也可以压缩目录）</td>
+</tr>
+<tr>
+<td></td>
+<td>解压</td>
+<td>tar xzf abc -C aaa</td>
+<td style="text-align:left">将压缩包 abc 解压到 aaa 目录里去 用 gzip 解压</td>
+</tr>
+<tr>
+<td>man</td>
+<td></td>
+<td></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>echo</td>
+<td>覆盖型写法 (原来内容被覆盖)</td>
+<td>echo 122 &gt; 1.txt</td>
+<td style="text-align:left">将 1.txt 中的内容替换为 122</td>
+</tr>
+<tr>
+<td></td>
+<td>添加型写法 (新内容添加在原来内容的后面）</td>
+<td>echo abc &gt;&gt; 1.txt</td>
+<td style="text-align:left">输出为                                               122                                              abc</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="快捷键"><a class="markdownIt-Anchor" href="#快捷键">#</a>   快捷键</h4>
+<hr>
+<ol>
+<li>
+<p><code>Ctrl + C</code> ：中断当前正在运行的命令。</p>
+</li>
+<li>
+<p><code>Ctrl + Z</code> ：将当前正在运行的命令放入后台。</p>
+</li>
+<li>
+<p><code>Ctrl + P</code> ：重复上一条指令。</p>
+</li>
+<li>
+<p>Ctrl + D：在命令行中输入 EOF（End of File）。</p>
+</li>
+<li>
+<p>Ctrl + L：清屏，相当于执行 &quot;clear&quot; 命令。</p>
+</li>
+<li>
+<p>Ctrl + A：将光标移动到命令行的开头。</p>
+</li>
+<li>
+<p>Ctrl + E：将光标移动到命令行的末尾。</p>
+</li>
+<li>
+<p>Ctrl + K：删除光标位置到行末的内容。</p>
+</li>
+<li>
+<p>Ctrl + U：删除光标位置到行首的内容。</p>
+</li>
+<li>
+<p>Ctrl + W：删除光标前的一个单词。</p>
+</li>
+<li>
+<p>Ctrl + R：在历史命令中进行反向搜索。</p>
+</li>
+<li>
+<p>Ctrl + G：退出历史命令搜索模式。</p>
+</li>
+<li>
+<p>Tab 键：自动补全命令或文件名。</p>
+<p> </p>
+</li>
+</ol>
+<h4 id="vi命令"><a class="markdownIt-Anchor" href="#vi命令">#</a>   vi 命令</h4>
+<hr>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png" width="500"/>
+&emsp;保存退出        :wq  
+&emsp;不保存退出       :q!  
+&emsp;:set number   显示行号  
+&emsp;:set nonumber   不显示行号  
+&emsp;:256  跳到第256行  
+&emsp;ctrl+f  向前翻页  
+&emsp;ctrl+b  向后翻页  
+&emsp;G:跳到文件结尾  
+&emsp;0:跳到行首  
+&emsp;$:跳到行尾  
+<p><strong>编辑</strong></p>
+<p> 插入：输入 i 进入编辑模式<br>
+ 删除:<br>
+ x: 删除 - 一个字母<br>
+ dw: del word<br>
+ D: 删除光标之后的内容<br>
+ dd: 删除整行<br>
+ ndd // 删除当前行及其后的 n-1 行 (n 是数字)<br>
+ o: 在当前行下面新增加–行<br>
+ u: 撤销上一 - 步操作</p>
+<p><strong>复制 / 粘贴</strong></p>
+<p> yy: 复制当前行 (y:yank (复制))<br>
+ nyy: 复制当前行及其后的 n-1 行 (n 是数字)<br>
+ p: 粘贴 (p :paste)</p>
+<p><strong>查找 / 替换</strong></p>
+<p> /pattern: 从光标开始处向文件尾搜索 pattern, 后按下 n (向下查找) 或 N (向上查找)<br>
+ :8s/p1/p2/g : 将文件中所有的 p1 均用 p2 替换<br>
+ :8s/p1/p2/gc : 替换时需要确认</p>
+<p><strong>测试 NAT 网卡能不能用：</strong></p>
+<p> 利用 ping <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a> 测试<br>
+ 不行的话 打开服务，把关于 VMware 的所有服务都启动</p>
+<p><strong>用 Source insight 来阅读源码 (要破解，有点麻烦，我选择 VScode)</strong></p>
+<p><strong>Mount 命令录制宏</strong></p>
+<p>  </p>
+<p> </p>
+<h3 id="gcc编译器"><a class="markdownIt-Anchor" href="#gcc编译器">#</a> 📉gcc 编译器</h3>
+<hr>
+<h4 id="1-编译过程"><a class="markdownIt-Anchor" href="#1-编译过程">#</a> 1、编译过程</h4>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png" width="500"/>
+<p><strong>编译多个文件</strong></p>
+<p>一起编译、链接：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">gcc -o test a.c b.c<br></code></pre></td></tr></table></figure>
+<p>分开编译，统一链接：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c">gcc -c -o a.o a.c<br>gcc -c -o b.o b.c<br>gcc -o test a.o b.o<br></code></pre></td></tr></table></figure>
+<h4 id="2-制作和使用动态库-静态库"><a class="markdownIt-Anchor" href="#2-制作和使用动态库-静态库">#</a> <strong>2、制作和使用动态库、静态库</strong></h4>
+<h4 id="3-一些很有用的选项"><a class="markdownIt-Anchor" href="#3-一些很有用的选项">#</a> <strong>3、一些很有用的选项</strong></h4>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png" width="500"/>
+<p> gcc -E main.c// 查看预处理结果，比如头文件是哪个<br>
+ gcc -E -dM main.c &gt; 1.txt// 把所有的宏展开，存在 1.txt 里<br>
+ gcc -Wp,-MD,abc.dep -c -o main.o main.c// 生成依赖文件 abc.dep ，后面 Makefile 会用<br>
+ echo ‘main (){}’| gcc -E -v - // 它会列出头文件目录、库目录 (LIBRARY_PATH)</p>
+<p>  </p>
+<h3 id="shell脚本"><a class="markdownIt-Anchor" href="#shell脚本">#</a> 📉Shell 脚本</h3>
+<hr>
+<h3 id="makefile"><a class="markdownIt-Anchor" href="#makefile">#</a> 📉Makefile</h3>
+<hr>
+<h4 id="1-最简单的"><a class="markdownIt-Anchor" href="#1-最简单的">#</a> <strong>1、最简单的</strong></h4>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">gcc -o test a.c b.c<br></code></pre></td></tr></table></figure>
+<p>查看编译的详细信息：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">gcc -o test a.c b.c -v<br></code></pre></td></tr></table></figure>
+<p><font color=red>缺点</font>：修改一个文件再编译，会对所有的文件重新编译</p>
+<h4 id="2-makefile核心规则"><a class="markdownIt-Anchor" href="#2-makefile核心规则">#</a> <strong>2、Makefile 核心 — 规则</strong></h4>
+<p>  目标文件：依赖文件 1  依赖文件 2<br>
+   <code>[TAB]</code>  命令</p>
+<p>  当 &quot;目标文件&quot; 不存在，或某个依赖文件比目标文件 &quot;新&quot; ，则:<br>
+  执行 &quot;命令&quot; 规则：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c">test : a.o b.o<br>	gcc -o test a.o b.o<br>a.o : a.c<br>	gcc -c -o a.o a.c<br>b.o : b.c<br>	gcc -c -o b.o b.c<br></code></pre></td></tr></table></figure>
+<h4 id="3-命令格式make-目标"><a class="markdownIt-Anchor" href="#3-命令格式make-目标">#</a> <strong>3、命令格式： <code>make [目标]</code> </strong></h4>
+<p>  单独使用 make 命令，只执行第一个 test 命令，不会执行其他的。但使用 make clean 时只执行 clean 命令</p>
+<p><strong>语法</strong>：</p>
+<p><strong>通配符</strong>（若有很多文件，则使用）：</p>
+<p>$@：表示目标</p>
+<p>$&lt;：表示第 1 个依赖文件</p>
+<p>$^：表示所有依赖文件</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c">test : a.o b.o c.o<br>	gcc -o test $^<br>%.o : %.c<br>	gcc -c -o $@ $&lt;<br></code></pre></td></tr></table></figure>
+<p><strong>假想目标（.PHONY）</strong>：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c">test : a.o b.o c.o<br>	gcc -o test $^<br>%.o : %.c<br>	gcc -c -o $@ $&lt;<br><br>clean :<br>	rm *.o test<br>.PHONY : clean<br></code></pre></td></tr></table></figure>
+<p><strong>解释</strong>：</p>
+<p>​		我们的 Makefile 中有这样的目标：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c">clean:<br>    rm -f $(shell find -name <span class="hljs-string">&quot;*.o&quot;</span>)<br>    rm -f $(TARGET)<br></code></pre></td></tr></table></figure>
+<p>​		如果当前目录下恰好有名为 “clean” 的文件，那么执行 “make clean” 时它就不会执行那些删除命令。</p>
+<p>​		这时我们需要把 “clean” 这个目标，设置为 “假想目标”，这样可以确保执行 “make clean” 时那些删除命令肯定可以得到执行。</p>
+<p>​		使用下面的语句把 “clean” 设置为假想目标：</p>
+<p>​		 <code>.PHONY : clean</code></p>
+<p> </p>
+<p><strong>即时变量、延时变量</strong>：</p>
+<p>:=     即使变量，即刻确定，在定义时就确定了</p>
+<p>=      延时变量，使用时才确定它的值</p>
+<p>?=     延时变量，只有 1 次定义值才起效</p>
+<p>+=     附加，是即时变量还是延时变量取决于前面的定义</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs c">a := $(c)<br>b = $(c)<br>c = abc<br>d = <span class="hljs-number">100</span><br>d ?= <span class="hljs-number">2000</span><br><br>all :<br>   @echo a = $(a)<br>   @echo b = $(b)<br>   @echo c = $(d)<br><br>c += <span class="hljs-number">123</span><br></code></pre></td></tr></table></figure>
+<p><strong>结果</strong>：a = 无</p>
+<p>   b = abc 123</p>
+<p>   c= 100</p>
+<p> </p>
+<h4 id="4-makefile的函数"><a class="markdownIt-Anchor" href="#4-makefile的函数">#</a> <strong>4、Makefile 的函数</strong></h4>
+<p><strong>程序：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs c">A = a b c<br>B = $ (foreach f, $(A)，$(f).o)	<span class="hljs-comment">//将A中的所有文件加上.o</span><br><br>C = a b c d/<br>D = $ (filter  %/, $(C) )	<span class="hljs-comment">//找出在C中所有符合%/的文件</span><br>E = $ (filter-out  %/, $(C) )	<span class="hljs-comment">//找出在C中所有不符合%/的文件</span><br><br>files = a.c b.c c.c d.c e.c abc<br>files2 = $ (wildcard  $(files) )	<span class="hljs-comment">//取出files中处在的文件</span><br>dep_files = $ (patsubst %.c, %.d, $(files) )<br>    		<span class="hljs-comment">//从files中取出所有文件，找出符合.c的文件，然后全部替换成.d文件</span><br>    <br>all :<br>	@echo B = $ (B)<br>	@echo D = $ (D)<br>	@echo E = $ (E)<br>	@echo files2 = $ (files2)<br>    @dep_files = $ (dep_files)<br></code></pre></td></tr></table></figure>
+<p><strong>输出：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c">B = a.o b.o c.o<br>D = d/<br>E = a b c<br>files2 = a.c b.c c.c<br>dep_files = a.d b.d c.d d.d e.d abc<br></code></pre></td></tr></table></figure>
+<p> </p>
+<p><strong>字符替换函数</strong>：</p>
+<p>$(subst a, b, text)    <mark>// 注意空格，空格也会起作用</mark></p>
+<p>在文本 text 中使用 b 替换每一处 a</p>
+<p>比如：$(subst ee, EE, feet on the street)</p>
+<p>结果为：fEEt on the strEEt</p>
+<p><strong>格式替换函数</strong>：</p>
+<p>$(patsubst pattern,replacement,text)</p>
+<p>寻找 text 中符合格式 pattern 的字，用 replacement 替换它们。pattern 和 replacement 中可以使用通配符。</p>
+<p>比如：</p>
+<p>$(patsubst %.c, %.o, x.c.c bar.c)</p>
+<p>结果为：x.c.o bar.o</p>
+<p> </p>
+<p><strong>查找函数</strong>：</p>
+<p>$(findstring find,in)</p>
+<p>在字符串 <code>in’中搜寻</code>  find’，如果找到，则返回值是 `find’，否则返回值为空。</p>
+<p>比如：</p>
+<p>$(findstring a, a b c)</p>
+<p>$(findstring a, b c)</p>
+<p>结果：a 和 (空字符串)</p>
+<p> </p>
+<h4 id="5-通用makefile的设计思想"><a class="markdownIt-Anchor" href="#5-通用makefile的设计思想">#</a> <strong>5、通用 Makefile 的设计思想</strong></h4>
+<p><a href="E:%5Clearn%5Cweidongshan_Linux%5C01_all_series_quickstart%5C04_%E5%B5%8C%E5%85%A5%E5%BC%8FLinux%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%5Cdoc_pic%5C01.%E5%B5%8C%E5%85%A5%E5%BC%8FLinux%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.docx">链接</a></p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214706385.png" width="500"/>
+<p> </p>
+<p> </p>
+<h3 id="文件io"><a class="markdownIt-Anchor" href="#文件io">#</a> 📉文件 IO</h3>
+<hr>
+<h4 id="1-标准io和系统io"><a class="markdownIt-Anchor" href="#1-标准io和系统io">#</a> 1、标准 IO 和系统 IO</h4>
+<p><strong>二者的不同</strong>：</p>
+<p>​		系统 IO 是直接进入内核，标准 IO 是在系统 IO 上又封装了一层函数，它多了一个用户 Butter，不用每次执行函数时都进入内核，而是进入用户 Butter，提高了效率</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214713139.png" width="500"/>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214720906.png" width="500"/>
+<p>把 SD 卡插到开发板上，挂载它的分区，然后去访问对应的目录就可以了</p>
+<p>主设备号表示哪一个驱动，次设备号表示这个设备里面的哪一个硬件</p>
+<h4 id="2-怎么访问文件"><a class="markdownIt-Anchor" href="#2-怎么访问文件">#</a> 2、怎么访问文件？</h4>
+<p><strong>通用的 IO 模型</strong>：open/read/write/lseek/close<br>
+<strong> 不是通用的函数</strong>： ioctl/mmapl</p>
+<h4 id="3-系统调用函数怎么进入内核"><a class="markdownIt-Anchor" href="#3-系统调用函数怎么进入内核">#</a> 3、系统调用函数怎么进入内核？</h4>
+ <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214728331.png"/></div></div>
+<p>1、用户空间，通过各种函数去调用内核空间，</p>
+<p>2、gibc 系统调用的函数会设置异常的原因，将其存在某些地方，然后通过 swi 和 sic 汇编指令来触发异常</p>
+<p>3、CPU 发现异常，会调用内核处理异常的函数，然后分辨异常原因，处理异常</p>
+<h4 id="4-每个进程有自己的文件句柄空间"><a class="markdownIt-Anchor" href="#4-每个进程有自己的文件句柄空间">#</a> 4、<strong>每个进程有自己的文件句柄空间</strong></h4>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png" width="500"/>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png" width="500"/>
+<h4 id="5-man手册"><a class="markdownIt-Anchor" href="#5-man手册">#</a> 5、man 手册</h4>
+<p>​		当使用某些函数时，如果不知道包含哪些头文件时，可以用 man 手册，比如 <code>man open</code> ，如果找不到则 <code>man 2 open</code></p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214801457.png" width="500"/>
+<p>既可以查看命令的用法，还可以查看函数的详细介绍</p>
+<p>进入 man 手册后，输入 <code>./abc321</code>  可查看手册中关于 &quot;abc321&quot; 的内容，按 n 键查找下一项</p>
+<h4 id="6-各种函数"><a class="markdownIt-Anchor" href="#6-各种函数">#</a> 6、各种函数</h4>
+<p><strong>open 函数</strong>：</p>
+<p>用 open 函数可以创建一个新的文件</p>
+<p>可以自定义创建的文件属性，但有的权限不能改，是因为 umask 的权限保护</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214807351.png" width="500"/>
+<p><strong>write 函数</strong>：</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214815188.png" width="500"/>
+<p><strong>read 函数</strong>：</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214821495.png" width="500"/>
+<h4 id="7-零星知识点"><a class="markdownIt-Anchor" href="#7-零星知识点">#</a> 7、零星知识点</h4>
+<p><code>hexdump -C XXX.csv</code></p>
+<p>可以把文件以十六进制的形式打印出来</p>
+<p> </p>
+<h3 id="未弄懂的"><a class="markdownIt-Anchor" href="#未弄懂的">#</a> <mark>❓未弄懂的</mark></h3>
+<hr>
+<h4 id="1-文件从哪里来"><a class="markdownIt-Anchor" href="#1-文件从哪里来">#</a> 1、文件从哪里来</h4>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png" width="500"/>
+<h4 id="2-内核的sys_open-sys_read会做什么"><a class="markdownIt-Anchor" href="#2-内核的sys_open-sys_read会做什么">#</a> 2、内核的 sys_open、sys_read 会做什么？</h4>
+ <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214837019.png" width="500"/>
+<h4 id="3-framebuffer的应用编程lcd显示"><a class="markdownIt-Anchor" href="#3-framebuffer的应用编程lcd显示">#</a> 3、Framebuffer 的应用编程（LCD 显示）</h4>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929194253081.png"/></div></div>
+<h4 id="4-交叉编译程序"><a class="markdownIt-Anchor" href="#4-交叉编译程序">#</a> 4、交叉编译程序</h4>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929211817565.png"/></div></div>
+<h3 id="文字及图像显示"><a class="markdownIt-Anchor" href="#文字及图像显示">#</a> 📉文字及图像显示</h3>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929201835850.png"/></div></div>
+<h3 id="多线程编程"><a class="markdownIt-Anchor" href="#多线程编程">#</a> 📉多线程编程</h3>
+<hr>
+<p>​		<strong>进程</strong>可以看作是一家餐厅，而线程则是餐厅里的服务员。这家餐厅（进程）有自己的地址和空间，储存了所有的食物（数据）。每当有客人（新的进程）来餐厅吃饭时，餐厅（操作系统）就会为客人分配一个新的餐桌（内存空间），并且为客人准备食物（分配资源）。</p>
+<p>​		服务员（线程）则在餐厅（进程）内部工作，他们共享餐厅的资源，比如食物（数据）和餐具（内存）。每个服务员都可以在自己的工作区域内为客人服务，并且可以使用餐厅内的公共区域，比如厨房（共享内存）。但是，如果有一个服务员正在使用厨房（访问共享内存），其他服务员就需要等待他使用完毕后才能使用。</p>
+<p>​		这样，餐厅（进程）可以同时接待多个客人（运行多个线程），而每个客人都有自己的服务员（线程）为他们服务。服务员之间通过共享餐厅的资源来协同工作，完成客人的要求。</p>
+<p>​		如果一个程序拥有<strong>多线程</strong>能力，意味着它能够在同一时间执行多个线程，进而提升整体处理性能。这就像餐厅里有很多服务员，他们可以同时为多个客人服务，从而提高了餐厅的工作效率。</p>
+<hr>
+<h4 id="1-线程的使用流程"><a class="markdownIt-Anchor" href="#1-线程的使用流程">#</a> 1、线程的使用流程</h4>
+<p>​		首先需要创建线程，一旦线程创建完成后，线程与线程之间会发生竞争执行，抢占时间片来执行线程逻辑。在创建线程时候，可以通过创建线程的第四个参数传入参数，在线程退出时亦可传出参数被线程回收函数所回收，获取到传出的参数</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211323802.png" alt="image-20231001211323802" style="zoom:33%;" />
+<p><strong>1）获取线程号</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">pthread_t</span> <span class="hljs-title function_">pthread_self</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span>;<br></code></pre></td></tr></table></figure>
+<p>通过函数 pthread_self，来返回当前线程的线程号</p>
+<p><strong>2）线程的创建函数</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_create</span><span class="hljs-params">(<span class="hljs-type">pthread_t</span> *thread, <span class="hljs-type">const</span> <span class="hljs-type">pthread_attr_t</span> *attr,<span class="hljs-type">void</span> *(*start_routi</span><br><span class="hljs-params">ne) (<span class="hljs-type">void</span> *), <span class="hljs-type">void</span> *arg)</span>;<br></code></pre></td></tr></table></figure>
+<p>⚫ 第一个参数为 pthread_t 指针，用来保存新建线程的线程号；<br>
+⚫ 第二个参数表示了线程的属性，一般传入 NULL 表示默认属性；<br>
+⚫ 第三个参数是一个函数指针，就是线程执行的函数。这个函数返回值为 void*，形参为 void*<br>
+⚫ 第四个参数则表示为向线程处理函数传入的参数，若不传入，可用 NULL 填充，</p>
+<p><strong>程序分析：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;errno.h&gt;</span></span><br><br><span class="hljs-type">void</span> *<span class="hljs-title function_">fun</span><span class="hljs-params">(<span class="hljs-type">void</span> *arg)</span>	<span class="hljs-comment">//这是一个线程函数，它接受一个void指针作为参数，并返回一个void指针。</span><br>&#123;<br>	<span class="hljs-comment">// 打印出当前线程的tid 号</span><br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;pthread_New = %lu\n&quot;</span>,(<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span>)pthread_self());<br>&#125;<br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-comment">//定义一个pthread_t类型的变量tid1</span><br>	<span class="hljs-type">pthread_t</span> tid1;	<br>	<span class="hljs-type">int</span> ret = pthread_create(&amp;tid1,<span class="hljs-literal">NULL</span>,fun,<span class="hljs-literal">NULL</span>);	<span class="hljs-comment">//创建线程</span><br>	<span class="hljs-keyword">if</span>(ret != <span class="hljs-number">0</span>)<br>	&#123;<br>		perror(<span class="hljs-string">&quot;pthread_create&quot;</span>);<br>		<span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>	&#125;<br>     <span class="hljs-comment">//在主线程中打印主线程的ID和新创建的线程的ID。</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;tid_main = %lu tid_new = %lu \n&quot;</span>,(<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span>)pthread_self(),(<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span>)tid1);<br>   <span class="hljs-comment">//使主线程睡眠1秒。这是为了确保新创建的线程有时间运行并打印其ID。如果没有这个sleep语句，主线程可能在新线程开始运行之前就已经结束，导致你看不到新线程的输出。</span><br>	sleep(<span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p><strong>3）向线程传入参数</strong></p>
+<p><strong>4）线程的退出与回收</strong></p>
+<p><strong>线程主动退出</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">void</span> <span class="hljs-title function_">pthread_exit</span><span class="hljs-params">(<span class="hljs-type">void</span> *retval)</span>;<br><br></code></pre></td></tr></table></figure>
+<p>在退出时候可以传递一个 void * 类型的数据带给主线程，若选择不传出数据，可将参数填充为 NULL</p>
+<p><strong>线程被动退出</strong><br>
+其他线程使用该函数让另一个线程退出</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_cancel</span><span class="hljs-params">(<span class="hljs-type">pthread_t</span> thread)</span>;<br></code></pre></td></tr></table></figure>
+<p>该函数传入一个 tid 号，会强制退出该 tid 所指向的线程，若成功执行会返回 0</p>
+<p><strong>线程资源回收 (阻塞方式)</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_join</span><span class="hljs-params">(<span class="hljs-type">pthread_t</span> thread, <span class="hljs-type">void</span> **retval)</span>;<br></code></pre></td></tr></table></figure>
+<p>默认状态为阻塞状态，直到成功回收线程后才返回。第一个参数为要回收线程的 tid 号，第二个参数为线程回收后接受线程传出的数据</p>
+<p><strong>线程资源回收 (非阻塞方式)</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">define</span> _GNU_SOURCE</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_tryjoin_np</span><span class="hljs-params">(<span class="hljs-type">pthread_t</span> thread, <span class="hljs-type">void</span> **retval)</span>;<br></code></pre></td></tr></table></figure>
+<p>通过返回值判断是否回收掉线程，成功回收则返回 0，其余参数与 pthread_join 一致。</p>
+<h4 id="2-互斥锁"><a class="markdownIt-Anchor" href="#2-互斥锁">#</a> 2、互斥锁</h4>
+<p>​		当线程在运行过程中，去操作公共资源，如全局变量的时候，可能会发生彼此 “矛盾” 现象。例如线程 1 企图想让变量自增，而线程 2 企图想要变量自减，两个线程互相竞争，变量似乎永远在某个范围内浮动，无法到达期望数值</p>
+<p>​		多个线程都要访问某个临界资源，比如某个全局变量时，需要互斥地访问：我访问时，你不能访问。这就用到了互斥锁</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211515488.png" alt="image-20231001211515488" style="zoom: 50%;" />
+<p><strong>1）初始化互斥量</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_mutex_init</span><span class="hljs-params">(<span class="hljs-type">phtread_mutex_t</span> *mutex,</span><br><span class="hljs-params"><span class="hljs-type">const</span> <span class="hljs-type">pthread_mutexattr_t</span> *<span class="hljs-keyword">restrict</span> attr)</span>;<br></code></pre></td></tr></table></figure>
+<p>该函数初始化一个互斥量，第一个参数是改互斥量指针，第二个参数为控制互斥量的属性，一般为 NULL。当函数成功后会返回 0，代表初始化互斥量成功。<br>
+当然初始化互斥量也可以调用宏来快速初始化，代码如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">pthread_mutex_t</span> mutex = PTHREAD_MUTEX_INITALIZER;<br></code></pre></td></tr></table></figure>
+<p><strong>2）互斥量加锁（阻塞）/ 解锁</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_mutex_lock</span><span class="hljs-params">(<span class="hljs-type">pthread_mutex_t</span> *mutex)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_mutex_unlock</span><span class="hljs-params">(<span class="hljs-type">pthread_mutex_t</span> *mutex)</span>;<br></code></pre></td></tr></table></figure>
+<p>只需要传入已经初始化好的 pthread_mutex_t 互斥量指针。成功后会返回 0。<br>
+当某一个线程获得了执行权后，执行 lock 函数，一旦加锁成功后，其余线程遇到 lock 函数时候会发生阻塞，直至获取资源的线程执行 unlock 函数后。unlock 函数会唤醒其他正在等待互斥量的线程。</p>
+<p><strong>3）互斥量加锁（非阻塞）</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_mutex_trylock</span><span class="hljs-params">(<span class="hljs-type">pthread_mutex_t</span> *mutex)</span>;<br></code></pre></td></tr></table></figure>
+<p>该函数同样也是一个线程加锁函数，但该函数是非阻塞模式通过返回值来判断是否加锁成功，用法与上述阻塞加锁函数一致。</p>
+<p><strong>4）互斥量销毁</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">pthread_mutex_destory</span><span class="hljs-params">(<span class="hljs-type">pthread_mutex_t</span> *mutex)</span>;<br></code></pre></td></tr></table></figure>
+<p>该函数是用于销毁互斥量的，传入互斥量的指针，就可以完成互斥量的销毁，成功返回 0</p>
+<h4 id="3-信号量多个线程执行顺序控制"><a class="markdownIt-Anchor" href="#3-信号量多个线程执行顺序控制">#</a> 3、信号量（多个线程执行顺序控制）</h4>
+<p>​		解决了临界资源的访问，因线程都是无序执行，我们似乎对线程的执行顺序无法得到控制，于是便引入了信号量的概念，解决线程执行顺序，就用到了信号量。信号量起通知作用，线程 A 在等待某件事，线程 B 完成了这件事后就可以给线程 A 发信号。</p>
+<p>​		当多个线程出现后，同时会遇到无序执行的问题。有时候需要对线程的执行顺序做出限定，变引入了信号量，通过 PV 操作来控制线程的执行顺序。</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211805874.png" alt="image-20231001211805874" style="zoom:33%;" />
+<p><strong>1）初始化信号量</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> <span class="hljs-title function_">sem_init</span><span class="hljs-params">(<span class="hljs-type">sem_t</span> *sem,<span class="hljs-type">int</span> pshared,<span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> value)</span>;<br></code></pre></td></tr></table></figure>
+<p>⚫ 该函数可以初始化一个信号量，第一个参数传入 sem_t 类型指针；<br>
+⚫ 第二个参数传入 0 代表线程控制，否则为进程控制；<br>
+⚫ 第三个参数表示信号量的初始值，0 代表阻塞，1 代表运行。<br>
+⚫ 待初始化结束信号量后，若执行成功会返回 0。</p>
+<p><strong>2）信号量 P/V 操作</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">sem_wait</span><span class="hljs-params">(<span class="hljs-type">sem_t</span> *sem)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">sem_post</span><span class="hljs-params">(<span class="hljs-type">sem_t</span> *sem)</span>;<br></code></pre></td></tr></table></figure>
+<p>⚫ sem_wait 函数作用为检测指定信号量是否有资源可用，若无资源可用会阻塞等待，若有资源可用会自动的执行 “sem-1” 的操作。所谓的 “sem-1” 是与上述初始化函数中第三个参数值一致，成功执行会返回 0。<br>
+⚫ sem_post 函数会释放指定信号量的资源，执行 “sem+1” 操作。通过以上 2 个函数可以完成所谓的 PV 操作，即信号量的申请与释放，完成对线程执行顺序的控制</p>
+<p><strong>3）信号量申请 (非阻塞方式)</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">sem_trywait</span><span class="hljs-params">(<span class="hljs-type">sem_t</span> *sem)</span>;<br></code></pre></td></tr></table></figure>
+<p>功能与 sem_wait 一致，唯一区别在于此函数为非阻塞</p>
+<p><strong>4）信号量销毁</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;pthread.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">sem_destory</span><span class="hljs-params">(<span class="hljs-type">sem_t</span> *sem)</span>;<br></code></pre></td></tr></table></figure>
+<p>执行过后可将信号量进行销毁</p>
+<p><strong>5）举例</strong></p>
+<p>​		初始化 sem1 有资源，sem2、sem3 阻塞，  只有 14 行 fun1 执行了 <code>sem_post(&amp;sem2)</code> ，才会释放 sem2，才会使 20 行 fun2 中 <code>sem_wait(&amp;sem2)</code>  执行</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001210510145.png" alt="image-20231001210510145" style="zoom: 33%;" />
+<hr>
+<p>v</p>
+<p>查看进程和线程</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001115718512.png" alt="image-20231001115718512" style="zoom:50%;" />
+<p>杀死之前的进程：</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120049488.png" alt="image-20231001120049488" style="zoom:50%;" />
+<p>将其进行后台执行</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120120522.png" alt="image-20231001120120522" style="zoom: 80%;" />
+<p>使用 top 命令</p>
+<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120522186.png" alt="image-20231001120522186" style="zoom:50%;" />
+<h3 id="网络编程"><a class="markdownIt-Anchor" href="#网络编程">#</a> 📉网络编程</h3>
+<h4 id="1-网络编程的基本概念"><a class="markdownIt-Anchor" href="#1-网络编程的基本概念">#</a> 1、网络编程的基本概念</h4>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929215054299.png"/></div></div>
+<h4 id="2-两种传输方式tcpudp"><a class="markdownIt-Anchor" href="#2-两种传输方式tcpudp">#</a> 2、两种传输方式：TCP/UDP</h4>
+<p><strong>1、为何存在 UDP 协议，UDP 的优点：</strong></p>
+<h4 id="3-网络编程主要函数"><a class="markdownIt-Anchor" href="#3-网络编程主要函数">#</a> 3、网络编程主要函数</h4>
+<p><strong>socket 函数</strong>	创建一个套接字<br>
+ <code>int socket(int domain, int type,int protocol);</code></p>
+<p>**bind 函数	** 将地址绑定到一个套接字<br>
+ <code>int bind(int sockfd, struct sockaddr *my_addr, int addrlen);</code></p>
+<p>⚫ sockfd 是由 socket 函数调用返回的文件描述符。<br>
+⚫ my_addr 是一个指向 sockaddr 的指针。<br>
+⚫ addrlen 是 sockaddr 结构的长度。</p>
+<p><strong>listen 函数</strong>	宣告服务器可以接受连接请求<br>
+ <code>int listen(int sockfd,int backlog);</code> <br>
+⚫ sockfd 是 bind 后的文件描述符。<br>
+⚫ backlog 设置请求排队的最大长度。当有多个客户端程序和服务端相连时，<br>
+使用这个表示可以介绍的排队长度。<br>
+⚫ listen 函数将 bind 的文件描述符变为监听套接字，返回的情况和 bind 一<br>
+样。</p>
+<p><strong>accept 函数</strong>	服务器使用此函数获得连接请求，并且建立连接。<br>
+ <code>int accept(int sockfd, struct sockaddr *addr,int *addrlen);</code> <br>
+⚫ sockfd 是 listen 后的文件描述符。<br>
+⚫ addr ，addrlen 是用来给客户端的程序填写的，服务器端只要传递指针就可<br>
+以了， bind,listen 和 accept 是服务器端用的函数。<br>
+⚫ accept 调用时，服务器端的程序会一直阻塞到有一个客户程序发出了连接。<br>
+accept 成功时返回最后的服务器端的文件描述符，这个时候服务器端可以向该<br>
+描述符写信息了，失败时返回 - 1 。</p>
+<p><strong>connect 函数</strong>	可以用 connect 建立一个连接，在 connect 中所指定的地址是想与之通信的服<br>
+务器的地址。<br>
+ <code>int connect(int sockfd, struct sockaddr * serv_addr,int addrlen);</code></p>
+<p>⚫ sockfd 是 socket 函数返回的文件描述符。<br>
+⚫ serv_addr 储存了服务器端的连接信息，其中 sin_add 是服务端的地址。<br>
+⚫ addrlen 是 serv_addr 的长度<br>
+⚫ connect 函数是客户端用来同服务端连接的。成功时返回 0，sockfd 是同服<br>
+务端通讯的文件描述符，失败时返回 - 1。</p>
+<p><strong>send 函数</strong><br>
+ <code>ssize_t send(int sockfd, const void *buf, size_t len, int flags);</code> <br>
+⚫ sockfd 指定发送端套接字描述符；<br>
+⚫ buf 指明一个存放应用程序要发送数据的缓冲区；<br>
+⚫ len 指明实际要发送的数据的字节数；<br>
+⚫ flags 一般置 0。<br>
+⚫ 客户或者服务器应用程序都用 send 函数来向 TCP 连接的另一端发送数据</p>
+<p><strong>recv 函数</strong><br>
+ <code>ssize_t recv(int sockfd, void *buf, size_t len, int flags);</code> <br>
+⚫ sockfd 指定接收端套接字描述符；<br>
+⚫ buf 指明一个缓冲区，该缓冲区用来存放 recv 函数接收到的数据；<br>
+⚫ len 指明 buf 的长度；<br>
+⚫ flags 一般置 0。<br>
+⚫ 客户或者服务器应用程序都用 recv 函数从 TCP 连接的另一端接收数据。</p>
+<p><strong>recvfrom 函数</strong><br>
+ <code>ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,</code> <br>
+ <code>										struct sockaddr *src_addr, socklen_t *addrlen);</code> <br>
+⚫ recvfrom 通常用于无连接套接字，因为此函数可以获得发送者的地址。<br>
+⚫ src_addr 是一个 struct sockaddr 类型的变量，该变量保存源机的 IP<br>
+ 地址及端口号。<br>
+⚫ addrlen 常置为 sizeof （struct sockaddr）。</p>
+<p><strong>sendto 函数</strong><br>
+ <code>ssize_t sendto(int sockfd, const void *buf, size_t len, int flags,</code> <br>
+ <code>const struct sockaddr *dest_addr, socklen_t addrlen);</code> <br>
+⚫ sendto 和 send 相似，区别在于 sendto 允许在无连接的套接字上指定一个目标地址。<br>
+⚫ dest_addr 表示目地机的 IP 地址和端口号信息，<br>
+Hardware Development Manual<br>
+⚫ addrlen 常常被赋值为 sizeof （struct sockaddr）。<br>
+⚫ sendto 函数也返回实际发送的数据字节长度或在出现发送错误时返回 - 1。</p>
+<h3 id="i2c应用编程"><a class="markdownIt-Anchor" href="#i2c应用编程">#</a> 📉I2C 应用编程</h3>
+<h3 id="驱动内核"><a class="markdownIt-Anchor" href="#驱动内核">#</a> 📉驱动内核</h3>
+
+
+  
+  <script>
+    let tianliGPT_postSelector = '.md-text.content.post';
+    let tianliGPT_key = '5Q5mpqRK5DkwT1X9Gi5e';
+    let tianliGPT_typingAnimate = true;
+  </script>
+  <script defer src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.13/tianli_gpt.js"></script>
+
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名 - 非商业性使用 - 相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023/10/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">数据结构和算法</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/10/02/C++/">C/C++</a></div></section></div>
+
+
+<div class="related-wrap reveal" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="\2023\10\02\数据结构和算法\" title="数据结构和算法"><span class="title">数据结构和算法</span></a></div></section></div>
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>
+本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><a class="magnet_link_more"  href="http://example.com/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>

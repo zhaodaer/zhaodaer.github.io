@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>E=MC2 • Posts by &#34;git&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
+        <lastBuildDate>Thu, 17 Aug 2023 18:52:05 +0800</lastBuildDate>
+        <category>BAT</category>
+        <category>C/C+</category>
+        <category>Git</category>
+        <category>Linux</category>
+        <category>Markdown</category>
+        <category>数据结构和算法</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/17/Git/</guid>
+            <title>Git</title>
+            <link>http://example.com/2023/08/17/Git/</link>
+            <category>Git</category>
+            <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;复制一下代码，即可推送到远程仓库：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;git remote rm origin&lt;br&gt;git init&lt;br&gt;git add . &lt;br&gt;git commit -m “第N次修改” &lt;br&gt;git remote add origin git@github.com:zhaodaer/Notes.git&lt;br&gt;git pull origin main&lt;br&gt;git push -u origin main&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;git remote rm origin&lt;br&gt;git init&lt;br&gt;git add .&lt;br&gt;git commit -m “第N次修改”&lt;br&gt;git remote add origin git@github.com:zhaodaer/Stories.git&lt;br&gt;git pull origin main&lt;br&gt;git push -u origin main&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;1-使用git工具将本地代码推送到github远程仓库的具体步骤如下&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-使用git工具将本地代码推送到github远程仓库的具体步骤如下&#34;&gt;#&lt;/a&gt; 1、使用 Git 工具将本地代码推送到 GitHub 远程仓库的具体步骤如下：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;在本地项目文件夹打开 Git Bash&lt;/li&gt;
+&lt;li&gt;git init             初始化 git 仓库&lt;/li&gt;
+&lt;li&gt;git add .          将项目文件夹所有文件放入暂存区&lt;/li&gt;
+&lt;li&gt;git commit -m “第二次修改” 提交项目文件夹所有文件 - 提交文件&lt;/li&gt;
+&lt;li&gt;git remote add origin &lt;a href=&#34;mailto:git@github.com&#34;&gt;git@github.com&lt;/a&gt;:zhaodaer/Notes.git   添加远程连接&lt;/li&gt;
+&lt;li&gt;git pull origin main           // 把本地仓库的变化连接到远程仓库 main&lt;/li&gt;
+&lt;li&gt;git push -u origin main       // 把本地仓库的文件推送到远程仓库 main&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;若出现 error: remote origin already exists.&lt;/p&gt;
+&lt;p&gt;则  &lt;code&gt;git remote rm origin &lt;/code&gt;  删除关联的 origin 的远程库&lt;/p&gt;
+&lt;h4 id=&#34;2-使用githubpicgo搭建图床使用githubpicgo搭建图床保姆级教程来了-知乎-zhihucom&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-使用githubpicgo搭建图床使用githubpicgo搭建图床保姆级教程来了-知乎-zhihucom&#34;&gt;#&lt;/a&gt; 2、[使用 Github+picGo 搭建图床](&lt;a href=&#34;https://zhuanlan.zhihu.com/p/489236769&#34;&gt;使用 Github+picGo 搭建图床，保姆级教程来了 - 知乎 (zhihu.com)&lt;/a&gt;)&lt;/h4&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

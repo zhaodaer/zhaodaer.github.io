@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>E=MC2 • Posts by &#34;c/c+&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+        <lastBuildDate>Mon, 02 Oct 2023 15:45:20 +0800</lastBuildDate>
+        <category>BAT</category>
+        <category>C/C+</category>
+        <category>Git</category>
+        <category>Linux</category>
+        <category>Markdown</category>
+        <category>数据结构和算法</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/10/02/C++/</guid>
+            <title>C/C++</title>
+            <link>http://example.com/2023/10/02/C++/</link>
+            <category>C/C+</category>
+            <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;C&lt;ins&gt; 基础入门&lt;br&gt;
+》1C&lt;/ins&gt; 初识&lt;br&gt;
+ 2 数据类型&lt;br&gt;
+ 2.1 整型&lt;br&gt;
+ 2.2 sizeof 关键字&lt;br&gt;
+ 2.3 实型 (浮点型)&lt;br&gt;
+ 2.4 字符型&lt;br&gt;
+ 2.5 转义字符&lt;br&gt;
+ 2.6 字符串型&lt;br&gt;
+ 2.7 布尔类型 bool&lt;br&gt;
+2.8 数据的输入&lt;br&gt;
+》3 运算符&lt;br&gt;
+》4 程序流程结构&lt;br&gt;
+ 5 数组 &amp;quot;&lt;br&gt;
+6 函数&lt;br&gt;
+ 7 指针&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;8 结构体&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;强制类型转换&lt;/strong&gt;：（数据类型）变量名&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c++&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;char&lt;/span&gt; ch = &lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;a&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;br&gt;count &amp;lt;&amp;lt; (&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt;)ch &amp;lt;&amp;lt; end1;	&lt;span class=&#34;hljs-comment&#34;&gt;//打印命令，将字符型变量char型强制转换成int型&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;水平制表符 \t:       8 个空格，有利于对齐，整齐输出数据&lt;/p&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929173605629.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;C 中的 &lt;code&gt;\n &lt;/code&gt;     =      C++ 中的 &lt;code&gt;&amp;lt;&amp;lt; end1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;两个 \ 输出一个 \&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

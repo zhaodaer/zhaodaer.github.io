@@ -1,42 +1,758 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>盖一座大房子</title>
+        <title>E=MC2</title>
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
-        <lastBuildDate>Thu, 17 Aug 2023 18:52:05 +0800</lastBuildDate>
-        <category>jQuery</category>
-        <category>表格</category>
-        <category>表单验证</category>
+        <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+        <lastBuildDate>Mon, 02 Oct 2023 15:45:20 +0800</lastBuildDate>
+        <category>BAT</category>
+        <category>C/C+</category>
+        <category>Git</category>
+        <category>Linux</category>
+        <category>Markdown</category>
+        <category>数据结构和算法</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/08/17/hello-world/</guid>
-            <title>Hello World</title>
-            <link>http://example.com/2023/08/17/hello-world/</link>
-            <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo server&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo generate&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo deploy&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+            <guid isPermalink="true">http://example.com/2023/10/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
+            <title>数据结构和算法</title>
+            <link>http://example.com/2023/10/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</link>
+            <category>数据结构和算法</category>
+            <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;1-链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-链表&#34;&gt;#&lt;/a&gt; 1、链表&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;顺序存储结构&lt;/li&gt;
+&lt;li&gt;单链表&lt;/li&gt;
+&lt;li&gt;静态链表&lt;/li&gt;
+&lt;li&gt;循环链表&lt;/li&gt;
+&lt;li&gt;双向链表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-栈与队列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-栈与队列&#34;&gt;#&lt;/a&gt; 2、栈与队列&lt;/h3&gt;
+&lt;p&gt;二者都是特殊的线性表&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;栈&lt;/strong&gt;（仅在表尾进行插入和删除操作）：&lt;/p&gt;
+&lt;p&gt;​	栈的顺序存储结构、两栈共享空间&lt;/p&gt;
+&lt;p&gt;​	栈的链式存储结构（链栈）&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;应用&lt;/em&gt;：递归函数（斐波那契数列）、四则运算表达式求值（后缀表达式）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;队列&lt;/strong&gt;（只允许在一端插入，另一端删除）：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​				队列的顺序存储结构&lt;/p&gt;
+&lt;p&gt;​				循环队列的顺序存储结构&lt;/p&gt;
+&lt;p&gt;​				队列的链式存储结构&lt;/p&gt;
+&lt;h3 id=&#34;3-串&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-串&#34;&gt;#&lt;/a&gt; 3、串&lt;/h3&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;cordic算法原理-圆坐标系旋转原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cordic算法原理-圆坐标系旋转原理&#34;&gt;#&lt;/a&gt; CORDIC 算法原理 - 圆坐标系旋转原理&lt;/h3&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">http://example.com/2023/10/02/Linux/</guid>
+            <title>Linux</title>
+            <link>http://example.com/2023/10/02/Linux/</link>
+            <category>Linux</category>
+            <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#目录&#34;&gt;#&lt;/a&gt; 目录&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://py3.io/doc/python/quickstart.html&#34;&gt;环境配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;基础命令&lt;/li&gt;
+&lt;li&gt;vi 文本编辑器&lt;/li&gt;
+&lt;li&gt;Shell 与 Shell 脚本&lt;/li&gt;
+&lt;li&gt;软件管理&lt;/li&gt;
+&lt;li&gt;网络基础
+&lt;ul&gt;
+&lt;li&gt;XXX&lt;/li&gt;
+&lt;li&gt;requests 使用多 IP 请求&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;code/MultiThread_Template.py&#34;&gt;Python 多线程模板&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;碎碎念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#碎碎念&#34;&gt;#&lt;/a&gt; 🥉碎碎念&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你现在已经有了一些 Linux 的基础了，应该系统学一下了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先把韦东山嵌入式 Linux 完整看一遍 (不要全看，挑着看&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;看经典书籍（鸟哥的 Linux 私房菜很不错）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;看大佬们的有关源码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找 2-3 个相关项目巩固一下，最好能写在简历上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷题&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; ❓遇到的问题&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;1、Windows 下 ipconfig 出问题了&lt;/p&gt;
+&lt;p&gt;2、Mobaxterm 不能远程登录 Ubuntu&lt;/p&gt;
+&lt;p&gt;3、FileZilla 连接不上 Ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;打开本机服务，开启相关的服务&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214018290.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;  &lt;strong&gt;重置虚拟网络编辑器&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  打开虚拟网络编辑器 —&amp;gt; 还原默认设置&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214034861.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;  &lt;strong&gt;还原默认设置之后，就看见有了虚拟机的网卡了&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214236693.png&#34; width=&#34;500&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#start&#34;&gt;#&lt;/a&gt; START&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;绝对路径用 \   相对路径用 /&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shell 命令  PATH 环境变量设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;./ 表示当前目录下行命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Linux 系统中，每个设备都被当成一个文件来对待，例如 SATA 接口的硬盘文件名为 /dev/sd [a-d]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对路径进入 cd /home/alien&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相对路径进入 cd ./XXX/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基础命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基础命令&#34;&gt;#&lt;/a&gt; 📉基础命令&lt;/h3&gt;
+&lt;hr&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;意义&lt;/th&gt;
+&lt;th&gt;用法&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;pwd&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;显示当前目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cd&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;cd …&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;上一级目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;cd ~&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;进入家目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;cd -&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;切回上一次操作的目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cp&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;cp a b&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;将 a 复制一份命名为 b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ls&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ls -l&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;查看文件的属性权限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mkdir&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;创建目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rmdir&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;删除目录 （只能删除空目录）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rm&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;rm -rf &amp;lt;目录路径&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;echo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;echo abc &amp;gt; 1.1.txt&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;创建一个文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cat&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;列出文件的内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;touch a&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;touch a&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;摸一下该文件，只改时间，不改内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mv&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;mv a …/&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;将 a 移动到上一级目录里&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;mv …/a .&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;将上一级目录里的 a 移动到当前目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tab 键&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tab 键  补全当前目录下的文件名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chmod&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;chmod 675 &amp;lt;某个文件&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;改变文件的权限（拥有者、同组其他用户和其他用户的可读 r、可写 w、可执行 r 等）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;chmod -x &amp;lt;某个文件&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;权限全部去掉&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chowm&lt;/td&gt;
+&lt;td&gt;改变文件的所有者&lt;/td&gt;
+&lt;td&gt;chown root root &amp;lt;某个文件&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;改变文件的拥有者、其他用户等&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;root&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;用户切换、登录、设置密码（不建议用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sudo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;临时切换为 root 用户  这个命令 nb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;find abc -name *.1.txt&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;指定当前目录下的 abc 文件夹下查找名字为 1.1.txt、2.1.txt 等文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grep&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;grep “xyz” * -nwr&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;递归查找当前目录下的所以文件中含有 xyz 字符的文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tar&lt;/td&gt;
+&lt;td&gt;压缩&lt;/td&gt;
+&lt;td&gt;tar czf abc def&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;创建压缩包 用 gzip 命令压缩 将 def 文件压缩为名为 abc 的压缩包（也可以压缩目录）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;解压&lt;/td&gt;
+&lt;td&gt;tar xzf abc -C aaa&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;将压缩包 abc 解压到 aaa 目录里去 用 gzip 解压&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;man&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;echo&lt;/td&gt;
+&lt;td&gt;覆盖型写法 (原来内容被覆盖)&lt;/td&gt;
+&lt;td&gt;echo 122 &amp;gt; 1.txt&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;将 1.txt 中的内容替换为 122&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;添加型写法 (新内容添加在原来内容的后面）&lt;/td&gt;
+&lt;td&gt;echo abc &amp;gt;&amp;gt; 1.txt&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;输出为                                               122                                              abc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#快捷键&#34;&gt;#&lt;/a&gt;   快捷键&lt;/h4&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Ctrl + C&lt;/code&gt; ：中断当前正在运行的命令。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Ctrl + Z&lt;/code&gt; ：将当前正在运行的命令放入后台。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Ctrl + P&lt;/code&gt; ：重复上一条指令。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + D：在命令行中输入 EOF（End of File）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + L：清屏，相当于执行 &amp;quot;clear&amp;quot; 命令。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + A：将光标移动到命令行的开头。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + E：将光标移动到命令行的末尾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + K：删除光标位置到行末的内容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + U：删除光标位置到行首的内容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + W：删除光标前的一个单词。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + R：在历史命令中进行反向搜索。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ctrl + G：退出历史命令搜索模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tab 键：自动补全命令或文件名。&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;vi命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vi命令&#34;&gt;#&lt;/a&gt;   vi 命令&lt;/h4&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png&#34; width=&#34;500&#34;/&gt;
+&amp;emsp;保存退出        :wq  
+&amp;emsp;不保存退出       :q!  
+&amp;emsp;:set number   显示行号  
+&amp;emsp;:set nonumber   不显示行号  
+&amp;emsp;:256  跳到第256行  
+&amp;emsp;ctrl+f  向前翻页  
+&amp;emsp;ctrl+b  向后翻页  
+&amp;emsp;G:跳到文件结尾  
+&amp;emsp;0:跳到行首  
+&amp;emsp;$:跳到行尾  
+&lt;p&gt;&lt;strong&gt;编辑&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 插入：输入 i 进入编辑模式&lt;br&gt;
+ 删除:&lt;br&gt;
+ x: 删除 - 一个字母&lt;br&gt;
+ dw: del word&lt;br&gt;
+ D: 删除光标之后的内容&lt;br&gt;
+ dd: 删除整行&lt;br&gt;
+ ndd // 删除当前行及其后的 n-1 行 (n 是数字)&lt;br&gt;
+ o: 在当前行下面新增加–行&lt;br&gt;
+ u: 撤销上一 - 步操作&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;复制 / 粘贴&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; yy: 复制当前行 (y:yank (复制))&lt;br&gt;
+ nyy: 复制当前行及其后的 n-1 行 (n 是数字)&lt;br&gt;
+ p: 粘贴 (p :paste)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查找 / 替换&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; /pattern: 从光标开始处向文件尾搜索 pattern, 后按下 n (向下查找) 或 N (向上查找)&lt;br&gt;
+ :8s/p1/p2/g : 将文件中所有的 p1 均用 p2 替换&lt;br&gt;
+ :8s/p1/p2/gc : 替换时需要确认&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;测试 NAT 网卡能不能用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 利用 ping &lt;a href=&#34;http://www.baidu.com&#34;&gt;www.baidu.com&lt;/a&gt; 测试&lt;br&gt;
+ 不行的话 打开服务，把关于 VMware 的所有服务都启动&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用 Source insight 来阅读源码 (要破解，有点麻烦，我选择 VScode)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mount 命令录制宏&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;gcc编译器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#gcc编译器&#34;&gt;#&lt;/a&gt; 📉gcc 编译器&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-编译过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-编译过程&#34;&gt;#&lt;/a&gt; 1、编译过程&lt;/h4&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;&lt;strong&gt;编译多个文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一起编译、链接：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;gcc -o test a.c b.c&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;分开编译，统一链接：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;gcc -c -o a.o a.c&lt;br&gt;gcc -c -o b.o b.c&lt;br&gt;gcc -o test a.o b.o&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;2-制作和使用动态库-静态库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-制作和使用动态库-静态库&#34;&gt;#&lt;/a&gt; &lt;strong&gt;2、制作和使用动态库、静态库&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;3-一些很有用的选项&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-一些很有用的选项&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3、一些很有用的选项&lt;/strong&gt;&lt;/h4&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt; gcc -E main.c// 查看预处理结果，比如头文件是哪个&lt;br&gt;
+ gcc -E -dM main.c &amp;gt; 1.txt// 把所有的宏展开，存在 1.txt 里&lt;br&gt;
+ gcc -Wp,-MD,abc.dep -c -o main.o main.c// 生成依赖文件 abc.dep ，后面 Makefile 会用&lt;br&gt;
+ echo ‘main (){}’| gcc -E -v - // 它会列出头文件目录、库目录 (LIBRARY_PATH)&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;shell脚本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#shell脚本&#34;&gt;#&lt;/a&gt; 📉Shell 脚本&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;makefile&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#makefile&#34;&gt;#&lt;/a&gt; 📉Makefile&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-最简单的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-最简单的&#34;&gt;#&lt;/a&gt; &lt;strong&gt;1、最简单的&lt;/strong&gt;&lt;/h4&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;gcc -o test a.c b.c&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;查看编译的详细信息：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;gcc -o test a.c b.c -v&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;font color=red&gt;缺点&lt;/font&gt;：修改一个文件再编译，会对所有的文件重新编译&lt;/p&gt;
+&lt;h4 id=&#34;2-makefile核心规则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-makefile核心规则&#34;&gt;#&lt;/a&gt; &lt;strong&gt;2、Makefile 核心 — 规则&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;  目标文件：依赖文件 1  依赖文件 2&lt;br&gt;
+   &lt;code&gt;[TAB]&lt;/code&gt;  命令&lt;/p&gt;
+&lt;p&gt;  当 &amp;quot;目标文件&amp;quot; 不存在，或某个依赖文件比目标文件 &amp;quot;新&amp;quot; ，则:&lt;br&gt;
+  执行 &amp;quot;命令&amp;quot; 规则：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;test : a.o b.o&lt;br&gt;	gcc -o test a.o b.o&lt;br&gt;a.o : a.c&lt;br&gt;	gcc -c -o a.o a.c&lt;br&gt;b.o : b.c&lt;br&gt;	gcc -c -o b.o b.c&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;3-命令格式make-目标&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-命令格式make-目标&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3、命令格式： &lt;code&gt;make [目标]&lt;/code&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;  单独使用 make 命令，只执行第一个 test 命令，不会执行其他的。但使用 make clean 时只执行 clean 命令&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通配符&lt;/strong&gt;（若有很多文件，则使用）：&lt;/p&gt;
+&lt;p&gt;$@：表示目标&lt;/p&gt;
+&lt;p&gt;$&amp;lt;：表示第 1 个依赖文件&lt;/p&gt;
+&lt;p&gt;$^：表示所有依赖文件&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;test : a.o b.o c.o&lt;br&gt;	gcc -o test $^&lt;br&gt;%.o : %.c&lt;br&gt;	gcc -c -o $@ $&amp;lt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;假想目标（.PHONY）&lt;/strong&gt;：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;test : a.o b.o c.o&lt;br&gt;	gcc -o test $^&lt;br&gt;%.o : %.c&lt;br&gt;	gcc -c -o $@ $&amp;lt;&lt;br&gt;&lt;br&gt;clean :&lt;br&gt;	rm *.o test&lt;br&gt;.PHONY : clean&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;​		我们的 Makefile 中有这样的目标：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;clean:&lt;br&gt;    rm -f $(shell find -name &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;*.o&amp;quot;&lt;/span&gt;)&lt;br&gt;    rm -f $(TARGET)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;​		如果当前目录下恰好有名为 “clean” 的文件，那么执行 “make clean” 时它就不会执行那些删除命令。&lt;/p&gt;
+&lt;p&gt;​		这时我们需要把 “clean” 这个目标，设置为 “假想目标”，这样可以确保执行 “make clean” 时那些删除命令肯定可以得到执行。&lt;/p&gt;
+&lt;p&gt;​		使用下面的语句把 “clean” 设置为假想目标：&lt;/p&gt;
+&lt;p&gt;​		 &lt;code&gt;.PHONY : clean&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;即时变量、延时变量&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;:=     即使变量，即刻确定，在定义时就确定了&lt;/p&gt;
+&lt;p&gt;=      延时变量，使用时才确定它的值&lt;/p&gt;
+&lt;p&gt;?=     延时变量，只有 1 次定义值才起效&lt;/p&gt;
+&lt;p&gt;+=     附加，是即时变量还是延时变量取决于前面的定义&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;a := $(c)&lt;br&gt;b = $(c)&lt;br&gt;c = abc&lt;br&gt;d = &lt;span class=&#34;hljs-number&#34;&gt;100&lt;/span&gt;&lt;br&gt;d ?= &lt;span class=&#34;hljs-number&#34;&gt;2000&lt;/span&gt;&lt;br&gt;&lt;br&gt;all :&lt;br&gt;   @echo a = $(a)&lt;br&gt;   @echo b = $(b)&lt;br&gt;   @echo c = $(d)&lt;br&gt;&lt;br&gt;c += &lt;span class=&#34;hljs-number&#34;&gt;123&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;结果&lt;/strong&gt;：a = 无&lt;/p&gt;
+&lt;p&gt;   b = abc 123&lt;/p&gt;
+&lt;p&gt;   c= 100&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&#34;4-makefile的函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-makefile的函数&#34;&gt;#&lt;/a&gt; &lt;strong&gt;4、Makefile 的函数&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;程序：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;A = a b c&lt;br&gt;B = $ (foreach f, $(A)，$(f).o)	&lt;span class=&#34;hljs-comment&#34;&gt;//将A中的所有文件加上.o&lt;/span&gt;&lt;br&gt;&lt;br&gt;C = a b c d/&lt;br&gt;D = $ (filter  %/, $(C) )	&lt;span class=&#34;hljs-comment&#34;&gt;//找出在C中所有符合%/的文件&lt;/span&gt;&lt;br&gt;E = $ (filter-out  %/, $(C) )	&lt;span class=&#34;hljs-comment&#34;&gt;//找出在C中所有不符合%/的文件&lt;/span&gt;&lt;br&gt;&lt;br&gt;files = a.c b.c c.c d.c e.c abc&lt;br&gt;files2 = $ (wildcard  $(files) )	&lt;span class=&#34;hljs-comment&#34;&gt;//取出files中处在的文件&lt;/span&gt;&lt;br&gt;dep_files = $ (patsubst %.c, %.d, $(files) )&lt;br&gt;    		&lt;span class=&#34;hljs-comment&#34;&gt;//从files中取出所有文件，找出符合.c的文件，然后全部替换成.d文件&lt;/span&gt;&lt;br&gt;    &lt;br&gt;all :&lt;br&gt;	@echo B = $ (B)&lt;br&gt;	@echo D = $ (D)&lt;br&gt;	@echo E = $ (E)&lt;br&gt;	@echo files2 = $ (files2)&lt;br&gt;    @dep_files = $ (dep_files)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;输出：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;B = a.o b.o c.o&lt;br&gt;D = d/&lt;br&gt;E = a b c&lt;br&gt;files2 = a.c b.c c.c&lt;br&gt;dep_files = a.d b.d c.d d.d e.d abc&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;字符替换函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$(subst a, b, text)    &lt;mark&gt;// 注意空格，空格也会起作用&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;在文本 text 中使用 b 替换每一处 a&lt;/p&gt;
+&lt;p&gt;比如：$(subst ee, EE, feet on the street)&lt;/p&gt;
+&lt;p&gt;结果为：fEEt on the strEEt&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;格式替换函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$(patsubst pattern,replacement,text)&lt;/p&gt;
+&lt;p&gt;寻找 text 中符合格式 pattern 的字，用 replacement 替换它们。pattern 和 replacement 中可以使用通配符。&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;p&gt;$(patsubst %.c, %.o, x.c.c bar.c)&lt;/p&gt;
+&lt;p&gt;结果为：x.c.o bar.o&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查找函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$(findstring find,in)&lt;/p&gt;
+&lt;p&gt;在字符串 &lt;code&gt;in’中搜寻&lt;/code&gt;  find’，如果找到，则返回值是 `find’，否则返回值为空。&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;p&gt;$(findstring a, a b c)&lt;/p&gt;
+&lt;p&gt;$(findstring a, b c)&lt;/p&gt;
+&lt;p&gt;结果：a 和 (空字符串)&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&#34;5-通用makefile的设计思想&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-通用makefile的设计思想&#34;&gt;#&lt;/a&gt; &lt;strong&gt;5、通用 Makefile 的设计思想&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;E:%5Clearn%5Cweidongshan_Linux%5C01_all_series_quickstart%5C04_%E5%B5%8C%E5%85%A5%E5%BC%8FLinux%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%5Cdoc_pic%5C01.%E5%B5%8C%E5%85%A5%E5%BC%8FLinux%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.docx&#34;&gt;链接&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214706385.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;文件io&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文件io&#34;&gt;#&lt;/a&gt; 📉文件 IO&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-标准io和系统io&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-标准io和系统io&#34;&gt;#&lt;/a&gt; 1、标准 IO 和系统 IO&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;二者的不同&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;​		系统 IO 是直接进入内核，标准 IO 是在系统 IO 上又封装了一层函数，它多了一个用户 Butter，不用每次执行函数时都进入内核，而是进入用户 Butter，提高了效率&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214713139.png&#34; width=&#34;500&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214720906.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;把 SD 卡插到开发板上，挂载它的分区，然后去访问对应的目录就可以了&lt;/p&gt;
+&lt;p&gt;主设备号表示哪一个驱动，次设备号表示这个设备里面的哪一个硬件&lt;/p&gt;
+&lt;h4 id=&#34;2-怎么访问文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-怎么访问文件&#34;&gt;#&lt;/a&gt; 2、怎么访问文件？&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;通用的 IO 模型&lt;/strong&gt;：open/read/write/lseek/close&lt;br&gt;
+&lt;strong&gt; 不是通用的函数&lt;/strong&gt;： ioctl/mmapl&lt;/p&gt;
+&lt;h4 id=&#34;3-系统调用函数怎么进入内核&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-系统调用函数怎么进入内核&#34;&gt;#&lt;/a&gt; 3、系统调用函数怎么进入内核？&lt;/h4&gt;
+ &lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214728331.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;1、用户空间，通过各种函数去调用内核空间，&lt;/p&gt;
+&lt;p&gt;2、gibc 系统调用的函数会设置异常的原因，将其存在某些地方，然后通过 swi 和 sic 汇编指令来触发异常&lt;/p&gt;
+&lt;p&gt;3、CPU 发现异常，会调用内核处理异常的函数，然后分辨异常原因，处理异常&lt;/p&gt;
+&lt;h4 id=&#34;4-每个进程有自己的文件句柄空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-每个进程有自己的文件句柄空间&#34;&gt;#&lt;/a&gt; 4、&lt;strong&gt;每个进程有自己的文件句柄空间&lt;/strong&gt;&lt;/h4&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png&#34; width=&#34;500&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png&#34; width=&#34;500&#34;/&gt;
+&lt;h4 id=&#34;5-man手册&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-man手册&#34;&gt;#&lt;/a&gt; 5、man 手册&lt;/h4&gt;
+&lt;p&gt;​		当使用某些函数时，如果不知道包含哪些头文件时，可以用 man 手册，比如 &lt;code&gt;man open&lt;/code&gt; ，如果找不到则 &lt;code&gt;man 2 open&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214801457.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;既可以查看命令的用法，还可以查看函数的详细介绍&lt;/p&gt;
+&lt;p&gt;进入 man 手册后，输入 &lt;code&gt;./abc321&lt;/code&gt;  可查看手册中关于 &amp;quot;abc321&amp;quot; 的内容，按 n 键查找下一项&lt;/p&gt;
+&lt;h4 id=&#34;6-各种函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-各种函数&#34;&gt;#&lt;/a&gt; 6、各种函数&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;open 函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;用 open 函数可以创建一个新的文件&lt;/p&gt;
+&lt;p&gt;可以自定义创建的文件属性，但有的权限不能改，是因为 umask 的权限保护&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214807351.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;&lt;strong&gt;write 函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214815188.png&#34; width=&#34;500&#34;/&gt;
+&lt;p&gt;&lt;strong&gt;read 函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214821495.png&#34; width=&#34;500&#34;/&gt;
+&lt;h4 id=&#34;7-零星知识点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-零星知识点&#34;&gt;#&lt;/a&gt; 7、零星知识点&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;hexdump -C XXX.csv&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;可以把文件以十六进制的形式打印出来&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;未弄懂的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#未弄懂的&#34;&gt;#&lt;/a&gt; &lt;mark&gt;❓未弄懂的&lt;/mark&gt;&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-文件从哪里来&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-文件从哪里来&#34;&gt;#&lt;/a&gt; 1、文件从哪里来&lt;/h4&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png&#34; width=&#34;500&#34;/&gt;
+&lt;h4 id=&#34;2-内核的sys_open-sys_read会做什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-内核的sys_open-sys_read会做什么&#34;&gt;#&lt;/a&gt; 2、内核的 sys_open、sys_read 会做什么？&lt;/h4&gt;
+ &lt;img src=&#34;https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214837019.png&#34; width=&#34;500&#34;/&gt;
+&lt;h4 id=&#34;3-framebuffer的应用编程lcd显示&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-framebuffer的应用编程lcd显示&#34;&gt;#&lt;/a&gt; 3、Framebuffer 的应用编程（LCD 显示）&lt;/h4&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929194253081.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&#34;4-交叉编译程序&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-交叉编译程序&#34;&gt;#&lt;/a&gt; 4、交叉编译程序&lt;/h4&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929211817565.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;文字及图像显示&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文字及图像显示&#34;&gt;#&lt;/a&gt; 📉文字及图像显示&lt;/h3&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929201835850.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;多线程编程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#多线程编程&#34;&gt;#&lt;/a&gt; 📉多线程编程&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;​		&lt;strong&gt;进程&lt;/strong&gt;可以看作是一家餐厅，而线程则是餐厅里的服务员。这家餐厅（进程）有自己的地址和空间，储存了所有的食物（数据）。每当有客人（新的进程）来餐厅吃饭时，餐厅（操作系统）就会为客人分配一个新的餐桌（内存空间），并且为客人准备食物（分配资源）。&lt;/p&gt;
+&lt;p&gt;​		服务员（线程）则在餐厅（进程）内部工作，他们共享餐厅的资源，比如食物（数据）和餐具（内存）。每个服务员都可以在自己的工作区域内为客人服务，并且可以使用餐厅内的公共区域，比如厨房（共享内存）。但是，如果有一个服务员正在使用厨房（访问共享内存），其他服务员就需要等待他使用完毕后才能使用。&lt;/p&gt;
+&lt;p&gt;​		这样，餐厅（进程）可以同时接待多个客人（运行多个线程），而每个客人都有自己的服务员（线程）为他们服务。服务员之间通过共享餐厅的资源来协同工作，完成客人的要求。&lt;/p&gt;
+&lt;p&gt;​		如果一个程序拥有&lt;strong&gt;多线程&lt;/strong&gt;能力，意味着它能够在同一时间执行多个线程，进而提升整体处理性能。这就像餐厅里有很多服务员，他们可以同时为多个客人服务，从而提高了餐厅的工作效率。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-线程的使用流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-线程的使用流程&#34;&gt;#&lt;/a&gt; 1、线程的使用流程&lt;/h4&gt;
+&lt;p&gt;​		首先需要创建线程，一旦线程创建完成后，线程与线程之间会发生竞争执行，抢占时间片来执行线程逻辑。在创建线程时候，可以通过创建线程的第四个参数传入参数，在线程退出时亦可传出参数被线程回收函数所回收，获取到传出的参数&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211323802.png&#34; alt=&#34;image-20231001211323802&#34; style=&#34;zoom:33%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;1）获取线程号&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_self&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt;)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;通过函数 pthread_self，来返回当前线程的线程号&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2）线程的创建函数&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_create&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; *thread, &lt;span class=&#34;hljs-type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;pthread_attr_t&lt;/span&gt; *attr,&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *(*start_routi&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-params&#34;&gt;ne) (&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *), &lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *arg)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;⚫ 第一个参数为 pthread_t 指针，用来保存新建线程的线程号；&lt;br&gt;
+⚫ 第二个参数表示了线程的属性，一般传入 NULL 表示默认属性；&lt;br&gt;
+⚫ 第三个参数是一个函数指针，就是线程执行的函数。这个函数返回值为 void*，形参为 void*&lt;br&gt;
+⚫ 第四个参数则表示为向线程处理函数传入的参数，若不传入，可用 NULL 填充，&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;程序分析：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;unistd.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;errno.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *&lt;span class=&#34;hljs-title function_&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *arg)&lt;/span&gt;	&lt;span class=&#34;hljs-comment&#34;&gt;//这是一个线程函数，它接受一个void指针作为参数，并返回一个void指针。&lt;/span&gt;&lt;br&gt;&amp;#123;&lt;br&gt;	&lt;span class=&#34;hljs-comment&#34;&gt;// 打印出当前线程的tid 号&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;pthread_New = %lu\n&amp;quot;&lt;/span&gt;,(&lt;span class=&#34;hljs-type&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;long&lt;/span&gt;)pthread_self());&lt;br&gt;&amp;#125;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;()&lt;/span&gt;&lt;br&gt;&amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;//定义一个pthread_t类型的变量tid1&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; tid1;	&lt;br&gt;	&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; ret = pthread_create(&amp;amp;tid1,&lt;span class=&#34;hljs-literal&#34;&gt;NULL&lt;/span&gt;,fun,&lt;span class=&#34;hljs-literal&#34;&gt;NULL&lt;/span&gt;);	&lt;span class=&#34;hljs-comment&#34;&gt;//创建线程&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt;(ret != &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;)&lt;br&gt;	&amp;#123;&lt;br&gt;		perror(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;pthread_create&amp;quot;&lt;/span&gt;);&lt;br&gt;		&lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;-1&lt;/span&gt;;&lt;br&gt;	&amp;#125;&lt;br&gt;     &lt;span class=&#34;hljs-comment&#34;&gt;//在主线程中打印主线程的ID和新创建的线程的ID。&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;tid_main = %lu tid_new = %lu \n&amp;quot;&lt;/span&gt;,(&lt;span class=&#34;hljs-type&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;long&lt;/span&gt;)pthread_self(),(&lt;span class=&#34;hljs-type&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;long&lt;/span&gt;)tid1);&lt;br&gt;   &lt;span class=&#34;hljs-comment&#34;&gt;//使主线程睡眠1秒。这是为了确保新创建的线程有时间运行并打印其ID。如果没有这个sleep语句，主线程可能在新线程开始运行之前就已经结束，导致你看不到新线程的输出。&lt;/span&gt;&lt;br&gt;	sleep(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;);&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;3）向线程传入参数&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4）线程的退出与回收&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线程主动退出&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_exit&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; *retval)&lt;/span&gt;;&lt;br&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在退出时候可以传递一个 void * 类型的数据带给主线程，若选择不传出数据，可将参数填充为 NULL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线程被动退出&lt;/strong&gt;&lt;br&gt;
+其他线程使用该函数让另一个线程退出&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_cancel&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; thread)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;该函数传入一个 tid 号，会强制退出该 tid 所指向的线程，若成功执行会返回 0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线程资源回收 (阻塞方式)&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_join&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; thread, &lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; **retval)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;默认状态为阻塞状态，直到成功回收线程后才返回。第一个参数为要回收线程的 tid 号，第二个参数为线程回收后接受线程传出的数据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线程资源回收 (非阻塞方式)&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;define&lt;/span&gt; _GNU_SOURCE&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_tryjoin_np&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_t&lt;/span&gt; thread, &lt;span class=&#34;hljs-type&#34;&gt;void&lt;/span&gt; **retval)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;通过返回值判断是否回收掉线程，成功回收则返回 0，其余参数与 pthread_join 一致。&lt;/p&gt;
+&lt;h4 id=&#34;2-互斥锁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-互斥锁&#34;&gt;#&lt;/a&gt; 2、互斥锁&lt;/h4&gt;
+&lt;p&gt;​		当线程在运行过程中，去操作公共资源，如全局变量的时候，可能会发生彼此 “矛盾” 现象。例如线程 1 企图想让变量自增，而线程 2 企图想要变量自减，两个线程互相竞争，变量似乎永远在某个范围内浮动，无法到达期望数值&lt;/p&gt;
+&lt;p&gt;​		多个线程都要访问某个临界资源，比如某个全局变量时，需要互斥地访问：我访问时，你不能访问。这就用到了互斥锁&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211515488.png&#34; alt=&#34;image-20231001211515488&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;1）初始化互斥量&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_mutex_init&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;phtread_mutex_t&lt;/span&gt; *mutex,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-params&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;pthread_mutexattr_t&lt;/span&gt; *&lt;span class=&#34;hljs-keyword&#34;&gt;restrict&lt;/span&gt; attr)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;该函数初始化一个互斥量，第一个参数是改互斥量指针，第二个参数为控制互斥量的属性，一般为 NULL。当函数成功后会返回 0，代表初始化互斥量成功。&lt;br&gt;
+当然初始化互斥量也可以调用宏来快速初始化，代码如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;pthread_mutex_t&lt;/span&gt; mutex = PTHREAD_MUTEX_INITALIZER;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;2）互斥量加锁（阻塞）/ 解锁&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_mutex_lock&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_mutex_t&lt;/span&gt; *mutex)&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_mutex_unlock&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_mutex_t&lt;/span&gt; *mutex)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;只需要传入已经初始化好的 pthread_mutex_t 互斥量指针。成功后会返回 0。&lt;br&gt;
+当某一个线程获得了执行权后，执行 lock 函数，一旦加锁成功后，其余线程遇到 lock 函数时候会发生阻塞，直至获取资源的线程执行 unlock 函数后。unlock 函数会唤醒其他正在等待互斥量的线程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3）互斥量加锁（非阻塞）&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_mutex_trylock&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_mutex_t&lt;/span&gt; *mutex)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;该函数同样也是一个线程加锁函数，但该函数是非阻塞模式通过返回值来判断是否加锁成功，用法与上述阻塞加锁函数一致。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4）互斥量销毁&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;pthread_mutex_destory&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;pthread_mutex_t&lt;/span&gt; *mutex)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;该函数是用于销毁互斥量的，传入互斥量的指针，就可以完成互斥量的销毁，成功返回 0&lt;/p&gt;
+&lt;h4 id=&#34;3-信号量多个线程执行顺序控制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-信号量多个线程执行顺序控制&#34;&gt;#&lt;/a&gt; 3、信号量（多个线程执行顺序控制）&lt;/h4&gt;
+&lt;p&gt;​		解决了临界资源的访问，因线程都是无序执行，我们似乎对线程的执行顺序无法得到控制，于是便引入了信号量的概念，解决线程执行顺序，就用到了信号量。信号量起通知作用，线程 A 在等待某件事，线程 B 完成了这件事后就可以给线程 A 发信号。&lt;/p&gt;
+&lt;p&gt;​		当多个线程出现后，同时会遇到无序执行的问题。有时候需要对线程的执行顺序做出限定，变引入了信号量，通过 PV 操作来控制线程的执行顺序。&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211805874.png&#34; alt=&#34;image-20231001211805874&#34; style=&#34;zoom:33%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;1）初始化信号量&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sem_init&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;sem_t&lt;/span&gt; *sem,&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; pshared,&lt;span class=&#34;hljs-type&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; value)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;⚫ 该函数可以初始化一个信号量，第一个参数传入 sem_t 类型指针；&lt;br&gt;
+⚫ 第二个参数传入 0 代表线程控制，否则为进程控制；&lt;br&gt;
+⚫ 第三个参数表示信号量的初始值，0 代表阻塞，1 代表运行。&lt;br&gt;
+⚫ 待初始化结束信号量后，若执行成功会返回 0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2）信号量 P/V 操作&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sem_wait&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;sem_t&lt;/span&gt; *sem)&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sem_post&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;sem_t&lt;/span&gt; *sem)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;⚫ sem_wait 函数作用为检测指定信号量是否有资源可用，若无资源可用会阻塞等待，若有资源可用会自动的执行 “sem-1” 的操作。所谓的 “sem-1” 是与上述初始化函数中第三个参数值一致，成功执行会返回 0。&lt;br&gt;
+⚫ sem_post 函数会释放指定信号量的资源，执行 “sem+1” 操作。通过以上 2 个函数可以完成所谓的 PV 操作，即信号量的申请与释放，完成对线程执行顺序的控制&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3）信号量申请 (非阻塞方式)&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sem_trywait&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;sem_t&lt;/span&gt; *sem)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;功能与 sem_wait 一致，唯一区别在于此函数为非阻塞&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4）信号量销毁&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;&lt;span class=&#34;hljs-meta&#34;&gt;#&lt;span class=&#34;hljs-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;hljs-string&#34;&gt;&amp;lt;pthread.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sem_destory&lt;/span&gt;&lt;span class=&#34;hljs-params&#34;&gt;(&lt;span class=&#34;hljs-type&#34;&gt;sem_t&lt;/span&gt; *sem)&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;执行过后可将信号量进行销毁&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5）举例&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		初始化 sem1 有资源，sem2、sem3 阻塞，  只有 14 行 fun1 执行了 &lt;code&gt;sem_post(&amp;amp;sem2)&lt;/code&gt; ，才会释放 sem2，才会使 20 行 fun2 中 &lt;code&gt;sem_wait(&amp;amp;sem2)&lt;/code&gt;  执行&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001210510145.png&#34; alt=&#34;image-20231001210510145&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;hr&gt;
+&lt;p&gt;v&lt;/p&gt;
+&lt;p&gt;查看进程和线程&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001115718512.png&#34; alt=&#34;image-20231001115718512&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;杀死之前的进程：&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120049488.png&#34; alt=&#34;image-20231001120049488&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;将其进行后台执行&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120120522.png&#34; alt=&#34;image-20231001120120522&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;p&gt;使用 top 命令&lt;/p&gt;
+&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120522186.png&#34; alt=&#34;image-20231001120522186&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;网络编程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络编程&#34;&gt;#&lt;/a&gt; 📉网络编程&lt;/h3&gt;
+&lt;h4 id=&#34;1-网络编程的基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-网络编程的基本概念&#34;&gt;#&lt;/a&gt; 1、网络编程的基本概念&lt;/h4&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929215054299.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&#34;2-两种传输方式tcpudp&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-两种传输方式tcpudp&#34;&gt;#&lt;/a&gt; 2、两种传输方式：TCP/UDP&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;1、为何存在 UDP 协议，UDP 的优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3-网络编程主要函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-网络编程主要函数&#34;&gt;#&lt;/a&gt; 3、网络编程主要函数&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;socket 函数&lt;/strong&gt;	创建一个套接字&lt;br&gt;
+ &lt;code&gt;int socket(int domain, int type,int protocol);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;**bind 函数	** 将地址绑定到一个套接字&lt;br&gt;
+ &lt;code&gt;int bind(int sockfd, struct sockaddr *my_addr, int addrlen);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;⚫ sockfd 是由 socket 函数调用返回的文件描述符。&lt;br&gt;
+⚫ my_addr 是一个指向 sockaddr 的指针。&lt;br&gt;
+⚫ addrlen 是 sockaddr 结构的长度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;listen 函数&lt;/strong&gt;	宣告服务器可以接受连接请求&lt;br&gt;
+ &lt;code&gt;int listen(int sockfd,int backlog);&lt;/code&gt; &lt;br&gt;
+⚫ sockfd 是 bind 后的文件描述符。&lt;br&gt;
+⚫ backlog 设置请求排队的最大长度。当有多个客户端程序和服务端相连时，&lt;br&gt;
+使用这个表示可以介绍的排队长度。&lt;br&gt;
+⚫ listen 函数将 bind 的文件描述符变为监听套接字，返回的情况和 bind 一&lt;br&gt;
+样。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;accept 函数&lt;/strong&gt;	服务器使用此函数获得连接请求，并且建立连接。&lt;br&gt;
+ &lt;code&gt;int accept(int sockfd, struct sockaddr *addr,int *addrlen);&lt;/code&gt; &lt;br&gt;
+⚫ sockfd 是 listen 后的文件描述符。&lt;br&gt;
+⚫ addr ，addrlen 是用来给客户端的程序填写的，服务器端只要传递指针就可&lt;br&gt;
+以了， bind,listen 和 accept 是服务器端用的函数。&lt;br&gt;
+⚫ accept 调用时，服务器端的程序会一直阻塞到有一个客户程序发出了连接。&lt;br&gt;
+accept 成功时返回最后的服务器端的文件描述符，这个时候服务器端可以向该&lt;br&gt;
+描述符写信息了，失败时返回 - 1 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;connect 函数&lt;/strong&gt;	可以用 connect 建立一个连接，在 connect 中所指定的地址是想与之通信的服&lt;br&gt;
+务器的地址。&lt;br&gt;
+ &lt;code&gt;int connect(int sockfd, struct sockaddr * serv_addr,int addrlen);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;⚫ sockfd 是 socket 函数返回的文件描述符。&lt;br&gt;
+⚫ serv_addr 储存了服务器端的连接信息，其中 sin_add 是服务端的地址。&lt;br&gt;
+⚫ addrlen 是 serv_addr 的长度&lt;br&gt;
+⚫ connect 函数是客户端用来同服务端连接的。成功时返回 0，sockfd 是同服&lt;br&gt;
+务端通讯的文件描述符，失败时返回 - 1。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;send 函数&lt;/strong&gt;&lt;br&gt;
+ &lt;code&gt;ssize_t send(int sockfd, const void *buf, size_t len, int flags);&lt;/code&gt; &lt;br&gt;
+⚫ sockfd 指定发送端套接字描述符；&lt;br&gt;
+⚫ buf 指明一个存放应用程序要发送数据的缓冲区；&lt;br&gt;
+⚫ len 指明实际要发送的数据的字节数；&lt;br&gt;
+⚫ flags 一般置 0。&lt;br&gt;
+⚫ 客户或者服务器应用程序都用 send 函数来向 TCP 连接的另一端发送数据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recv 函数&lt;/strong&gt;&lt;br&gt;
+ &lt;code&gt;ssize_t recv(int sockfd, void *buf, size_t len, int flags);&lt;/code&gt; &lt;br&gt;
+⚫ sockfd 指定接收端套接字描述符；&lt;br&gt;
+⚫ buf 指明一个缓冲区，该缓冲区用来存放 recv 函数接收到的数据；&lt;br&gt;
+⚫ len 指明 buf 的长度；&lt;br&gt;
+⚫ flags 一般置 0。&lt;br&gt;
+⚫ 客户或者服务器应用程序都用 recv 函数从 TCP 连接的另一端接收数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recvfrom 函数&lt;/strong&gt;&lt;br&gt;
+ &lt;code&gt;ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;										struct sockaddr *src_addr, socklen_t *addrlen);&lt;/code&gt; &lt;br&gt;
+⚫ recvfrom 通常用于无连接套接字，因为此函数可以获得发送者的地址。&lt;br&gt;
+⚫ src_addr 是一个 struct sockaddr 类型的变量，该变量保存源机的 IP&lt;br&gt;
+ 地址及端口号。&lt;br&gt;
+⚫ addrlen 常置为 sizeof （struct sockaddr）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sendto 函数&lt;/strong&gt;&lt;br&gt;
+ &lt;code&gt;ssize_t sendto(int sockfd, const void *buf, size_t len, int flags,&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;const struct sockaddr *dest_addr, socklen_t addrlen);&lt;/code&gt; &lt;br&gt;
+⚫ sendto 和 send 相似，区别在于 sendto 允许在无连接的套接字上指定一个目标地址。&lt;br&gt;
+⚫ dest_addr 表示目地机的 IP 地址和端口号信息，&lt;br&gt;
+Hardware Development Manual&lt;br&gt;
+⚫ addrlen 常常被赋值为 sizeof （struct sockaddr）。&lt;br&gt;
+⚫ sendto 函数也返回实际发送的数据字节长度或在出现发送错误时返回 - 1。&lt;/p&gt;
+&lt;h3 id=&#34;i2c应用编程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#i2c应用编程&#34;&gt;#&lt;/a&gt; 📉I2C 应用编程&lt;/h3&gt;
+&lt;h3 id=&#34;驱动内核&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#驱动内核&#34;&gt;#&lt;/a&gt; 📉驱动内核&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/10/02/C++/</guid>
+            <title>C/C++</title>
+            <link>http://example.com/2023/10/02/C++/</link>
+            <category>C/C+</category>
+            <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;C&lt;ins&gt; 基础入门&lt;br&gt;
+》1C&lt;/ins&gt; 初识&lt;br&gt;
+ 2 数据类型&lt;br&gt;
+ 2.1 整型&lt;br&gt;
+ 2.2 sizeof 关键字&lt;br&gt;
+ 2.3 实型 (浮点型)&lt;br&gt;
+ 2.4 字符型&lt;br&gt;
+ 2.5 转义字符&lt;br&gt;
+ 2.6 字符串型&lt;br&gt;
+ 2.7 布尔类型 bool&lt;br&gt;
+2.8 数据的输入&lt;br&gt;
+》3 运算符&lt;br&gt;
+》4 程序流程结构&lt;br&gt;
+ 5 数组 &amp;quot;&lt;br&gt;
+6 函数&lt;br&gt;
+ 7 指针&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;8 结构体&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;强制类型转换&lt;/strong&gt;：（数据类型）变量名&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c++&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;char&lt;/span&gt; ch = &lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;a&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;br&gt;count &amp;lt;&amp;lt; (&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt;)ch &amp;lt;&amp;lt; end1;	&lt;span class=&#34;hljs-comment&#34;&gt;//打印命令，将字符型变量char型强制转换成int型&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;水平制表符 \t:       8 个空格，有利于对齐，整齐输出数据&lt;/p&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929173605629.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;C 中的 &lt;code&gt;\n &lt;/code&gt;     =      C++ 中的 &lt;code&gt;&amp;lt;&amp;lt; end1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;两个 \ 输出一个 \&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/10/02/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+            <title></title>
+            <link>http://example.com/2023/10/02/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+            <pubDate>Mon, 02 Oct 2023 15:45:20 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;c-数据结构-操作系统-计网&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#c-数据结构-操作系统-计网&#34;&gt;#&lt;/a&gt; C、数据结构、操作系统、计网&lt;/h4&gt;
+&lt;h4 id=&#34;linux-arm&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux-arm&#34;&gt;#&lt;/a&gt; Linux、ARM&lt;/h4&gt;
+&lt;h4 id=&#34;qt-c&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#qt-c&#34;&gt;#&lt;/a&gt; QT、C++&lt;/h4&gt;
+&lt;h4 id=&#34;驱动开发与系统移植&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#驱动开发与系统移植&#34;&gt;#&lt;/a&gt; 驱动开发与系统移植&lt;/h4&gt;
+&lt;h3 id=&#34;内核开发&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#内核开发&#34;&gt;#&lt;/a&gt; 内核开发 *&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/17/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
             <title>BAT学习记录</title>
-            <link>http://example.com/2023/08/16/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-            <pubDate>Wed, 16 Aug 2023 21:11:09 +0800</pubDate>
+            <link>http://example.com/2023/08/17/BAT%EF%BC%88%E6%89%B9%E5%A4%84%E7%90%86%EF%BC%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+            <category>BAT</category>
+            <pubDate>Thu, 17 Aug 2023 19:20:29 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4前言在这里记录一下bat批处理的基础指令学习总结供日后回忆也给和我一样是小白们一个学习的开端思路font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;前言：在这里记录一下 BAT（批处理）的基础指令学习总结，供日后回忆，也给和我一样是小白们一个学习的开端思路&lt;/font&gt;&lt;/h2&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h2 id=&#34;font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-face宋体-size4背景源于我的工作经历我开始也是不很懂批处理脚本在工作中会遇到一些批处理的脚本也会用到批处理脚本但是每次用到的时候都是找别人要这样总是不妥的-正所谓求人不如求自己这也是我开始批处理脚本的开端font&#34;&gt;#&lt;/a&gt; &lt;font face=&#34;宋体&#34; size=4&gt;背景：源于我的工作经历，我开始也是不很懂批处理脚本，在工作中会遇到一些批处理的脚本也会用到批处理脚本，但是每次用到的时候，都是找别人要，这样总是不妥的。正所谓求人，不如求自己，这也是我开始批处理脚本的开端&lt;/font&gt;&lt;/h2&gt;
@@ -46,157 +762,24 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/08/14/%E5%BC%80%E5%AD%A6%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92%EF%BC%9A/</guid>
-            <title>你的努力在别人眼里一文不值</title>
-            <link>http://example.com/2023/08/14/%E5%BC%80%E5%AD%A6%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92%EF%BC%9A/</link>
-            <pubDate>Mon, 14 Aug 2023 14:16:09 +0800</pubDate>
-            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h1 id=&#34;你的努力在别人眼里一文不值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你的努力在别人眼里一文不值&#34;&gt;#&lt;/a&gt; 你的努力在别人眼里一文不值&lt;/h1&gt;
-&lt;p&gt;1、把没剪完的视频剪完&lt;/p&gt;
-&lt;p&gt;2、传达、找的老婆&lt;/p&gt;
-&lt;p&gt;3、接着熟悉 linux&lt;/p&gt;
-&lt;p&gt;4、买手机&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/</guid>
-            <title>公司</title>
-            <link>http://example.com/2023/08/14/%E5%85%AC%E5%8F%B8/</link>
-            <pubDate>Mon, 14 Aug 2023 11:01:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;聚鑫微电子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#聚鑫微电子&#34;&gt;#&lt;/a&gt; 聚鑫微电子：&lt;/h2&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h4 id=&#34;fpga工程师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#fpga工程师&#34;&gt;#&lt;/a&gt;   FPGA 工程师：&lt;/h4&gt;
-&lt;p&gt;    岗位职责 ：&lt;/p&gt;
-&lt;p&gt;      1、FPGA 原型开发与系统验证，负责 FPGA 代码编写、模块设计、接口设计及仿真、调试；&lt;/p&gt;
-&lt;p&gt;      2、FPGA 的资源及时序优化，分析并解决开发过程中的问题；&lt;/p&gt;
-&lt;p&gt;      3、编写逻辑需求分析，概要设计工作；&lt;/p&gt;
-&lt;p&gt;      4、配合软、硬件设计人员完成相关任务目标。&lt;/p&gt;
-&lt;p&gt;    任职资格：&lt;/p&gt;
-&lt;p&gt;     2、有 FPGA 芯片开发经验，熟练掌握 Verilog 语言，有 Xilinx FPGA 开发经验优先；&lt;/p&gt;
-&lt;p&gt;      3、了解 FPGA 设计中逻辑综合、布局布线、时序优化的方法；&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;高级硬件工程师嵌入式硬件开发&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#高级硬件工程师嵌入式硬件开发&#34;&gt;#&lt;/a&gt;   高级硬件工程师（嵌入式硬件开发）:&lt;/h4&gt;
-&lt;p&gt;    工作职责：&lt;/p&gt;
-&lt;p&gt;      1、主导完成系统级产品的硬件方案设计、验证，把产品推向量产；&lt;/p&gt;
-&lt;p&gt;      2、组织完成对友商产品的分析和评估，输出对比分析报告及提升方案；&lt;/p&gt;
-&lt;p&gt;      3、组织完成和客户的需求对接以及需求分析；&lt;/p&gt;
-&lt;p&gt;      4、指导系统级研发测试和量产测试；&lt;/p&gt;
-&lt;p&gt;      5、参与制定生产方案，指导工装夹具等的开发；&lt;/p&gt;
-&lt;p&gt;      6、参与方案开发，主导系统开发文档的输出；&lt;/p&gt;
-&lt;p&gt;     任职要求：&lt;/p&gt;
-&lt;p&gt;      1、电子或信息类相关专业本科及以上学历，3 年以上工作经验，211/985 学校优先；&lt;/p&gt;
-&lt;p&gt;      2、精通模拟电路设计。数字电路设计以及微弱模拟信号调理和数字信号处理方法；&lt;/p&gt;
-&lt;p&gt;      3、熟悉应用 Cadence 或者 PADS 等相关 EDA 工具；&lt;/p&gt;
-&lt;p&gt;      4、熟悉相关测量仪器的使用，熟知该测量仪器的测量原理，包括示波器、频谱分析仪、信号发生器、逻辑分析仪等；&lt;/p&gt;
-&lt;p&gt;      5、有音频或者视频系统级解决方案开发经验者优先；&lt;/p&gt;
-&lt;p&gt;      7、熟悉常见总线协议和通讯接口如：I2C、SPI、UART、USB2.0、USB3.0、MIPI-CSI2、RGMII、PCIE 等&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;嵌入式软件工程师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#嵌入式软件工程师&#34;&gt;#&lt;/a&gt; 嵌入式软件工程师：&lt;/h4&gt;
-&lt;p&gt;   嵌入式软件开发、Linux、驱动开发、Android、ARM 开发&lt;/p&gt;
-&lt;p&gt;    岗位职责：&lt;/p&gt;
-&lt;p&gt;      1、根据功能和性能需求给出软件解决方案；&lt;/p&gt;
-&lt;p&gt;      2、承担 ARM 平台嵌入式软件开发；&lt;/p&gt;
-&lt;p&gt;      3、承担 ARM 平台软件算力优化；&lt;/p&gt;
-&lt;p&gt;       4、解决软件开发和客户使用过程中出现的问题；&lt;/p&gt;
-&lt;p&gt;       5、配合算法和 kernel driver 进行系统联调；&lt;/p&gt;
-&lt;p&gt;       6、实现软件新需求。&lt;/p&gt;
-&lt;p&gt;    任职要求：&lt;/p&gt;
-&lt;p&gt;      1、计算机或信息类相关专业本科及以上学历，3 年以上开发经验；&lt;/p&gt;
-&lt;p&gt;      2、熟练掌握 C/C++ 语言；&lt;/p&gt;
-&lt;p&gt;      3、有较为丰富的 ARM/DSP/GPU/NPU 开发经验；&lt;/p&gt;
-&lt;p&gt;      4、有 linux 下应用程序及驱动程序开发经验；&lt;/p&gt;
-&lt;p&gt;      5、熟悉 linux 操作系统内核；&lt;/p&gt;
-&lt;p&gt;      6、熟悉高通 / MTK 等手机平台的 camera 架构；&lt;/p&gt;
-&lt;p&gt;      7、有 camera 相关内核驱动开发经验或软件优化经验者优先；&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/</guid>
-            <title>超级电容</title>
-            <link>http://example.com/2023/08/10/%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9/</link>
-            <category>jQuery</category>
-            <category>表格</category>
-            <category>表单验证</category>
-            <pubDate>Thu, 10 Aug 2023 17:42:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介：&lt;/h4&gt;
-&lt;p&gt;  为了达到存贮非常高的能量并且能量可以在极短的时间内释放的性能，科学家研制出了单体高达数千法拉甚至数万法拉的电容，即我们俗称的：超级电容。&lt;/p&gt;
-&lt;p&gt;  超级电法容器的充电速度快，功率大，循环寿命长，工作方式灵活，但能量密度小，不适合长时间储存电能，因此适用于那些瞬时释放大功率的场景。&lt;/p&gt;
-&lt;p&gt;  这主要体现在：&lt;/p&gt;
-&lt;p&gt;    功率密度远高于蓄电池，达 102～104kW/kg。&lt;/p&gt;
-&lt;p&gt;    循环寿命长，在 50 万次至 100 万次的充放电循环后性能变化很小，容量和内阻仅降低 10%～20%。&lt;/p&gt;
-&lt;p&gt;    工作温限宽，可达 - 40℃～+80℃。&lt;/p&gt;
-&lt;p&gt;    免维护，对过充电和过放电的承受能力强，可稳定地反复充放电，理论上是不需要进行维护。&lt;/p&gt;
-&lt;p&gt;    绿色环保，整个生产过程中不使用重金属和其他有害的化学物质，且自身寿命较长，是一种新型的绿色环保电源。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 分类：&lt;/h4&gt;
-&lt;p&gt;  一、根据储能机理，可将超级电容器分为双电层电容器、法拉第准电容器两大类。&lt;/p&gt;
-&lt;p&gt;  其中，双层电容是指像陶瓷电容器和电解电容器一样没有电介质的电容器。它使用的是固体（电极）和液体（电解液）在界面上形成的电气双层（双电层）的状态来取代了电介质。双层电容电极是活性炭多孔化电极，引出电极为铝箔，中间用电解电容器纸作为两个电极的隔膜，在除了引出电极，多孔化活性炭和隔膜外的所有空间均填充电解液，这样做可以获得比深度腐蚀的铝箔的实际面积与空间面积比大得多的面积。同样，具有流动性的电解液可以与多孔化的活性炭电极紧密接触，从而使实际电极具有更大的有效极板面积，最多可达每克 200㎡。尽管超级电容器的实际电极使用活性碳粉，但仍比电解液的离子半径大得多，因此就形成了极大电容量的超级电容。&lt;/p&gt;
-&lt;p&gt;  电化学原理的超级电容（也称法拉第电容或者赝电容）。将双层电容的两个碳电极中的一个换成金属电极，由于两个电极的电极电位不再相同，必将形成原电池，在充放电过程中必将产生化学效应。这种结构使得在这样的装置中，既存在双电层效应，又存在电化学过程，构成了双层电容器和电池的组合，即电化学原理的超级电容，法拉第电容。&lt;/p&gt;
-&lt;p&gt;  二、根据电极材料，可以分为碳电极双层超级电容器、金属氧化物电极超级电容器、有机聚合物电极超级电容器。&lt;/p&gt;
-&lt;p&gt;  三、根据电解质种类，可分为水系超级电容器和有机系超级电容器。&lt;/p&gt;
-&lt;p&gt;  四、根据电解质的状态，可分为固体电解质超级电容器、液体电解质超级电容器。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;对比&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#对比&#34;&gt;#&lt;/a&gt; 对比：&lt;/h4&gt;
-&lt;p&gt;  超级电容器是介于传统电容器和锂电池之间的一种&lt;/p&gt;
-&lt;p&gt;  和传统电容器一样是物理反应，只涉及电子的迁移，所以充放电速度较快，工作温度要求低，使用次数长，但超级电容器具有着表面积更大，层数更多，双电层效应等优势，因此能量密度比传统电容器更高。&lt;/p&gt;
-&lt;p&gt;  锂电池涉及的是化学反应，他存储的能量更多，工作温度更加严格，寿命损耗严重。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;功率密度：同样重量的电池 以什么速度去释放能量&lt;/p&gt;
-&lt;h4 id=&#34;存在的问题研究的方向&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存在的问题研究的方向&#34;&gt;#&lt;/a&gt; 存在的问题，研究的方向：&lt;/h4&gt;
-&lt;p&gt;  可自愈、抗冻（已经有些基础）&lt;/p&gt;
-&lt;p&gt;  可拉伸、可弯曲（柔性器件必然要求）&lt;/p&gt;
-&lt;p&gt;  目前存在的问题是电压窗口太低，另个一个就是比电容，一届届的学生都有所提高，但还是待提高&lt;/p&gt;
-&lt;p&gt;  另外一个就是功能性，可自愈能力和抗冻能力和 top 报道的还是有差距吧&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/10/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-            <title>Linux学习记录</title>
-            <link>http://example.com/2023/08/10/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
-            <pubDate>Thu, 10 Aug 2023 12:54:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;-more-&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-more-&#34;&gt;#&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo new &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Shell 命令是支持自动补全功能的。&lt;br&gt;
-比如我们输入字母 “ifc”，然后按下 TAB 键，结果就会补全 ifconfig&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://baidu.com/&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ sudo apt-get install package-name&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;可以看出上述命令是由 “apt-get” 和 “install” 组合在一起的，“package-name” 就是要安装的软件名字，“apt-get” 负责下载软件，“install” 负责安装软件。&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo generate&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs bash&#34;&gt;$ hexo deploy&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/08/Rhino/</guid>
-            <title>Rhino</title>
-            <link>http://example.com/2023/08/08/Rhino/</link>
-            <pubDate>Tue, 08 Aug 2023 22:59:09 +0800</pubDate>
-            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;抽离结构线 —&amp;gt; 可调节的混接曲线&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+            <guid isPermalink="true">http://example.com/2023/08/17/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
             <title>Markdown使用说明</title>
-            <link>http://example.com/2023/08/07/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-            <pubDate>Mon, 07 Aug 2023 22:29:09 +0800</pubDate>
+            <link>http://example.com/2023/08/17/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+            <category>Markdown</category>
+            <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
             <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h2 id=&#34;一-空格-换行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-空格-换行&#34;&gt;#&lt;/a&gt; 一、空格、换行&lt;/h2&gt;
-&lt;p&gt;tab 效果：这里有 —&amp;gt; &lt;br&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/178e1ebfaf974a3f962cbf9ed310a7d5.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;tab 效果：这里有 —&amp;gt; &lt;/p&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/178e1ebfaf974a3f962cbf9ed310a7d5.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;空格效果：这里有 —&amp;gt;  &lt;br&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/f4b020b979374ed0bf584a62ccc08b54.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;空格效果：这里有 —&amp;gt;  &lt;/p&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/f4b020b979374ed0bf584a62ccc08b54.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;换行：tab 或空格后加一个空格&lt;/p&gt;
 &lt;p&gt;这里有 —&amp;gt; &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/bd956dc8223a4edb8ce6e744253c3705.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/bd956dc8223a4edb8ce6e744253c3705.png&#34;/&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;以下是渲染效果：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这句话前面有个 tab，且它下面有两个空行&lt;/p&gt;
@@ -231,8 +814,8 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;五-插入图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-插入图片&#34;&gt;#&lt;/a&gt; 五、插入图片&lt;/h2&gt;
 &lt;p&gt;  采用相对路径，&lt;strong&gt;注意&lt;/strong&gt;图片地址和.md 在同一文件夹下：&lt;/p&gt;
-&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;![Alternative text](link &amp;quot;optional title&amp;quot;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&#34;20230821204027.jpg&#34; alt=&#34;这是图片&#34; title=&#34;Magic Gardens&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;&amp;#123;% image link optional title %&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tag-plugin image&#34;&gt;&lt;div class=&#34;image-bg&#34;&gt;&lt;img src=&#34;20230821204027.jpg&#34; alt=&#34;Magic Gardens&#34;/&gt;&lt;/div&gt;&lt;div class=&#34;image-meta&#34;&gt;&lt;span class=&#34;image-caption center&#34;&gt;Magic Gardens&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;注释：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Alternative text：替代文本，即当图片不能正常显示的时候显示的文本。这个字段中不能有空格，如果一定要填空格可以使用 &lt;code&gt;%20&lt;/code&gt;  代替，我一般是使用下划线代替空格～&lt;/p&gt;
@@ -242,107 +825,27 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-            <title>ESP32学习记录</title>
-            <link>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
-            <pubDate>Mon, 07 Aug 2023 21:54:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）   利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;h4 id=&#34;点亮led灯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#点亮led灯&#34;&gt;#&lt;/a&gt; 点亮 LED 灯&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs python&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; machine&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; time&lt;br&gt;&lt;br&gt;pin2 = machine.Pin(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;, machine.Pin.OUT)&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;hljs-literal&#34;&gt;True&lt;/span&gt;:&lt;br&gt;    pin2. value(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;    time. sleep(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;    pin2. value(&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;)&lt;br&gt;    time. sleep(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;h4 id=&#34;pwm呼吸灯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pwm呼吸灯&#34;&gt;#&lt;/a&gt; PWM 呼吸灯&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs python&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;from&lt;/span&gt; machine &lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; Pin, PWM&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;import&lt;/span&gt; time&lt;br&gt;&lt;br&gt;led2 = PWM(Pin(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;))&lt;br&gt;led2 = freq(&lt;span class=&#34;hljs-number&#34;&gt;1000&lt;/span&gt;)&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;hljs-literal&#34;&gt;True&lt;/span&gt;:&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;# 控制整体的重复(1.从不亮便慢变亮  2. 从亮慢慢到不亮)&lt;/span&gt;&lt;br&gt;    &lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;# 1.从不亮慢慢变亮&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;hljs-keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;hljs-built_in&#34;&gt;range&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;1024&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;):&lt;br&gt;	led2.duty(i)&lt;br&gt;	time.sleep_ms(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;)&lt;br&gt;&lt;br&gt;	&lt;span class=&#34;hljs-comment&#34;&gt;# 2.从亮慢慢到不亮&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;hljs-keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;hljs-built_in&#34;&gt;range&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;1023&lt;/span&gt;, -&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;, -&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;):&lt;br&gt;	led2. duty(i)&lt;br&gt;	time.sleep_ms(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;h4 id=&#34;连接wifi热点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接wifi热点&#34;&gt;#&lt;/a&gt; 连接 WIFI 热点&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-            <title>读书笔记</title>
-            <link>http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-            <pubDate>Mon, 07 Aug 2023 14:51:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;盖一座大房子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#盖一座大房子&#34;&gt;#&lt;/a&gt; 盖一座大房子&lt;/h1&gt;
-&lt;h4 id=&#34;➊二八定律&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#➊二八定律&#34;&gt;#&lt;/a&gt; ➊二八定律：&lt;/h4&gt;
-&lt;p&gt;   将时间分配给更重要的事&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h4 id=&#34;❷事情优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❷事情优先级&#34;&gt;#&lt;/a&gt; ❷事情优先级：&lt;/h4&gt;
-&lt;p&gt;   什么重要就先做什么&lt;/p&gt;
-&lt;h4 id=&#34;❸没有最好的时机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❸没有最好的时机&#34;&gt;#&lt;/a&gt; ❸没有最好的时机：&lt;/h4&gt;
-&lt;p&gt;   不要想着一切准备好了才去做，这已经晚&lt;br&gt;
-了！！！&lt;/p&gt;
-&lt;h4 id=&#34;❹学会理财&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❹学会理财&#34;&gt;#&lt;/a&gt; ❹学会理财&lt;/h4&gt;
-&lt;h4 id=&#34;❺环境时间周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❺环境时间周期&#34;&gt;#&lt;/a&gt; ❺环境时间周期：&lt;/h4&gt;
-&lt;p&gt;   3-4 年会产生厌倦心理，不妨造当换个环境&lt;/p&gt;
-&lt;h4 id=&#34;❻做自己喜欢的事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❻做自己喜欢的事&#34;&gt;#&lt;/a&gt; ❻做自己喜欢的事：&lt;/h4&gt;
-&lt;p&gt;   且视他人之疑目如盏盏鬼火，大胆地去走你的夜路&lt;br&gt;
-   要么撞得头破血流，要么我把南墙撞倒&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/Git/</guid>
+            <guid isPermalink="true">http://example.com/2023/08/17/Git/</guid>
             <title>Git</title>
-            <link>http://example.com/2023/08/07/Git/</link>
-            <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h6 id=&#34;git是一款免费-开源的分布式版本控制系统github是用git做版本控制的代码托管平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git是一款免费-开源的分布式版本控制系统github是用git做版本控制的代码托管平台&#34;&gt;#&lt;/a&gt;   Git 是一款免费、开源的分布式版本控制系统 Github 是用 Git 做版本控制的代码托管平台&lt;/h6&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;hr&gt;
+            <link>http://example.com/2023/08/17/Git/</link>
+            <category>Git</category>
+            <pubDate>Thu, 17 Aug 2023 18:52:05 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;复制一下代码，即可推送到远程仓库：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;git remote rm origin&lt;br&gt;git init&lt;br&gt;git add . &lt;br&gt;git commit -m “第N次修改” &lt;br&gt;git remote add origin git@github.com:zhaodaer/Notes.git&lt;br&gt;git pull origin main&lt;br&gt;git push -u origin main&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs c&#34;&gt;git remote rm origin&lt;br&gt;git init&lt;br&gt;git add .&lt;br&gt;git commit -m “第N次修改”&lt;br&gt;git remote add origin git@github.com:zhaodaer/Stories.git&lt;br&gt;git pull origin main&lt;br&gt;git push -u origin main&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;1-使用git工具将本地代码推送到github远程仓库的具体步骤如下&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-使用git工具将本地代码推送到github远程仓库的具体步骤如下&#34;&gt;#&lt;/a&gt; 1、使用 Git 工具将本地代码推送到 GitHub 远程仓库的具体步骤如下：&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;Git 是目前世界上最先进的分布式版本控制系统。&lt;/li&gt;
-&lt;li&gt;Git 安装在终端输入 &lt;code&gt;sudo apt-get install git&lt;/code&gt;  即可。&lt;/li&gt;
-&lt;li&gt;初始化一个 Git 仓库，使用 &lt;code&gt;git init&lt;/code&gt;  命令。&lt;/li&gt;
-&lt;li&gt;添加文件到 Git 仓库，分两步： 使用命令 &lt;code&gt;git add &amp;lt;file&amp;gt;&lt;/code&gt; ，注意，可反复多次使用，添加多个文件； 使用命令 &lt;code&gt;git commit -m &amp;lt;message&amp;gt;&lt;/code&gt; ，完成。&lt;/li&gt;
-&lt;li&gt;要随时掌握工作区的状态，使用 git status 命令。&lt;/li&gt;
-&lt;li&gt;如果 git status 告诉你有文件被修改过，用 git diff 可以查看修改内容。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;HEAD&lt;/code&gt;  指向的版本就是当前版本，因此，Git 允许我们在版本的历史之间穿梭，使用命令 &lt;code&gt;git reset --hard commit_id&lt;/code&gt; 。&lt;/li&gt;
-&lt;li&gt;穿梭前，用 &lt;code&gt;git log&lt;/code&gt;  可以查看提交历史，以便确定要回退到哪个版本。&lt;/li&gt;
-&lt;li&gt;要重返未来，用 &lt;code&gt;git reflog&lt;/code&gt;  查看命令历史，以便确定要回到未来的哪个版本。&lt;/li&gt;
-&lt;li&gt;本地仓库由 git 维护的三棵 “树” 组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。&lt;/li&gt;
-&lt;li&gt;命令 &lt;code&gt;git rm&lt;/code&gt;  用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。&lt;/li&gt;
+&lt;li&gt;在本地项目文件夹打开 Git Bash&lt;/li&gt;
+&lt;li&gt;git init             初始化 git 仓库&lt;/li&gt;
+&lt;li&gt;git add .          将项目文件夹所有文件放入暂存区&lt;/li&gt;
+&lt;li&gt;git commit -m “第二次修改” 提交项目文件夹所有文件 - 提交文件&lt;/li&gt;
+&lt;li&gt;git remote add origin &lt;a href=&#34;mailto:git@github.com&#34;&gt;git@github.com&lt;/a&gt;:zhaodaer/Notes.git   添加远程连接&lt;/li&gt;
+&lt;li&gt;git pull origin main           // 把本地仓库的变化连接到远程仓库 main&lt;/li&gt;
+&lt;li&gt;git push -u origin main       // 把本地仓库的文件推送到远程仓库 main&lt;/li&gt;
 &lt;/ol&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</guid>
-            <title>计划表</title>
-            <link>http://example.com/2023/08/07/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/</link>
-            <pubDate>Mon, 07 Aug 2023 11:31:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h6 id=&#34;-more-&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-more-&#34;&gt;#&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h6&gt;
-&lt;h6 id=&#34;只有做好了计划人生才能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#只有做好了计划人生才能&#34;&gt;#&lt;/a&gt; 只有做好了计划，人生才能&lt;/h6&gt;
-&lt;h4 id=&#34;学习永无止境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#学习永无止境&#34;&gt;#&lt;/a&gt; 学习（永无止境）：&lt;/h4&gt;
-&lt;p&gt;​			边学边补，哪里不会去学哪里，不要全学&lt;/p&gt;
-&lt;p&gt;​				需要补充的知识有：&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;工作游刃有余&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工作游刃有余&#34;&gt;#&lt;/a&gt; 工作（游刃有余）：&lt;/h4&gt;
-&lt;p&gt;​		全栈工程师，既要广度，也要深度&lt;/p&gt;
-&lt;h5 id=&#34;emsp-想找的工作有&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#emsp-想找的工作有&#34;&gt;#&lt;/a&gt; emsp; 想找的工作有：&lt;/h5&gt;
-&lt;p&gt;​			FPGA、嵌入式、硬件&lt;/p&gt;
-&lt;h5 id=&#34;emsp-想去的公司&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#emsp-想去的公司&#34;&gt;#&lt;/a&gt; emsp; 想去的公司：&lt;/h5&gt;
-&lt;p&gt;​			大疆、华为&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;生活儒雅随和&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生活儒雅随和&#34;&gt;#&lt;/a&gt; 生活（儒雅随和）：&lt;/h4&gt;
-&lt;p&gt;​		理财：&lt;/p&gt;
-&lt;p&gt;​		锻炼：&lt;/p&gt;
-&lt;p&gt;​		游戏：&lt;/p&gt;
-&lt;p&gt;​		车：&lt;/p&gt;
-&lt;p&gt;​		打扮：&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;爱好随心所欲天马行空&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#爱好随心所欲天马行空&#34;&gt;#&lt;/a&gt; 爱好（随心所欲，天马行空）：&lt;/h4&gt;
-&lt;p&gt;​		永无止境地探索&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;若出现 error: remote origin already exists.&lt;/p&gt;
+&lt;p&gt;则  &lt;code&gt;git remote rm origin &lt;/code&gt;  删除关联的 origin 的远程库&lt;/p&gt;
+&lt;h4 id=&#34;2-使用githubpicgo搭建图床使用githubpicgo搭建图床保姆级教程来了-知乎-zhihucom&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-使用githubpicgo搭建图床使用githubpicgo搭建图床保姆级教程来了-知乎-zhihucom&#34;&gt;#&lt;/a&gt; 2、[使用 Github+picGo 搭建图床](&lt;a href=&#34;https://zhuanlan.zhihu.com/p/489236769&#34;&gt;使用 Github+picGo 搭建图床，保姆级教程来了 - 知乎 (zhihu.com)&lt;/a&gt;)&lt;/h4&gt;
  ]]></description>
         </item>
     </channel>
