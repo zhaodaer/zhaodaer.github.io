@@ -200,4 +200,75 @@
     
   </entry>
   
+  <entry>
+    <title>Rhino</title>
+    <link href="http://example.com/2023/08/08/Rhino/"/>
+    <id>http://example.com/2023/08/08/Rhino/</id>
+    <published>2023-08-08T14:59:09.000Z</published>
+    <updated>2023-10-02T07:53:37.442Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>抽离结构线 —&gt; 可调节的混接曲线</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;抽离结构线 —&amp;gt; 可调节的混接曲线&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Rhino" scheme="http://example.com/tags/Rhino/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ESP32学习记录</title>
+    <link href="http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2023/08/07/ESP32%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+    <published>2023-08-07T13:54:09.000Z</published>
+    <updated>2023-10-02T07:53:19.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）   利用 Thonny    和 Micropython 进行编程调试</p><span id="more"></span><hr><ol><li><h4 id="点亮led灯"><a class="markdownIt-Anchor" href="#点亮led灯">#</a> 点亮 LED 灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> machine<br><span class="hljs-keyword">import</span> time<br><br>pin2 = machine.Pin(<span class="hljs-number">2</span>, machine.Pin.OUT)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    pin2. value(<span class="hljs-number">1</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br>    pin2. value(<span class="hljs-number">0</span>)<br>    time. sleep(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure><ol start="2"><li><h4 id="pwm呼吸灯"><a class="markdownIt-Anchor" href="#pwm呼吸灯">#</a> PWM 呼吸灯</h4></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> machine <span class="hljs-keyword">import</span> Pin, PWM<br><span class="hljs-keyword">import</span> time<br><br>led2 = PWM(Pin(<span class="hljs-number">2</span>))<br>led2 = freq(<span class="hljs-number">1000</span>)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    <span class="hljs-comment"># 控制整体的重复(1.从不亮便慢变亮  2. 从亮慢慢到不亮)</span><br>    <br>    <span class="hljs-comment"># 1.从不亮慢慢变亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1024</span>, <span class="hljs-number">1</span>):<br>led2.duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br><br><span class="hljs-comment"># 2.从亮慢慢到不亮</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1023</span>, -<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>):<br>led2. duty(i)<br>time.sleep_ms(<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure><ol start="3"><li><h4 id="连接wifi热点"><a class="markdownIt-Anchor" href="#连接wifi热点">#</a> 连接 WIFI 热点</h4></li></ol><hr>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;  ESP32 是一款流行的 WiFi 和蓝牙片上系统 （SoC）   利用 Thonny    和 Micropython 进行编程调试&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ESP32" scheme="http://example.com/tags/ESP32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读书笔记</title>
+    <link href="http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2023-08-07T06:51:09.000Z</published>
+    <updated>2023-10-02T07:55:44.964Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h1 id="盖一座大房子"><a class="markdownIt-Anchor" href="#盖一座大房子">#</a> 盖一座大房子</h1><h4 id="➊二八定律"><a class="markdownIt-Anchor" href="#➊二八定律">#</a> ➊二八定律：</h4><p>   将时间分配给更重要的事</p><span id="more"></span><h4 id="❷事情优先级"><a class="markdownIt-Anchor" href="#❷事情优先级">#</a> ❷事情优先级：</h4><p>   什么重要就先做什么</p><h4 id="❸没有最好的时机"><a class="markdownIt-Anchor" href="#❸没有最好的时机">#</a> ❸没有最好的时机：</h4><p>   不要想着一切准备好了才去做，这已经晚<br>了！！！</p><h4 id="❹学会理财"><a class="markdownIt-Anchor" href="#❹学会理财">#</a> ❹学会理财</h4><h4 id="❺环境时间周期"><a class="markdownIt-Anchor" href="#❺环境时间周期">#</a> ❺环境时间周期：</h4><p>   3-4 年会产生厌倦心理，不妨造当换个环境</p><h4 id="❻做自己喜欢的事"><a class="markdownIt-Anchor" href="#❻做自己喜欢的事">#</a> ❻做自己喜欢的事：</h4><p>   且视他人之疑目如盏盏鬼火，大胆地去走你的夜路<br>   要么撞得头破血流，要么我把南墙撞倒</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;盖一座大房子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#盖一座大房子&quot;&gt;#&lt;/a&gt; 盖一座大房子&lt;/h1&gt;
+&lt;h4 id=&quot;➊二八定律&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#➊二八定律&quot;&gt;#&lt;/a&gt; ➊二八定律：&lt;/h4&gt;
+&lt;p&gt;   将时间分配给更重要的事&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="读书笔记" scheme="http://example.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
 </feed>

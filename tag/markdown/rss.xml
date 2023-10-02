@@ -10,9 +10,12 @@
         <category>BAT</category>
         <category>C/C+</category>
         <category>Git</category>
-        <category>Linux</category>
+        <category>ESP32</category>
         <category>Markdown</category>
+        <category>Rhino</category>
+        <category>Linux</category>
         <category>数据结构和算法</category>
+        <category>读书笔记</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/08/17/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
             <title>Markdown使用说明</title>

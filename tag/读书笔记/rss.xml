@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>E=MC2 • Posts by &#34;读书笔记&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 07 Aug 2023 14:51:09 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Aug 2023 14:51:09 +0800</lastBuildDate>
+        <category>BAT</category>
+        <category>C/C+</category>
+        <category>Git</category>
+        <category>ESP32</category>
+        <category>Markdown</category>
+        <category>Rhino</category>
+        <category>Linux</category>
+        <category>数据结构和算法</category>
+        <category>读书笔记</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+            <title>读书笔记</title>
+            <link>http://example.com/2023/08/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+            <category>读书笔记</category>
+            <pubDate>Mon, 07 Aug 2023 14:51:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;盖一座大房子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#盖一座大房子&#34;&gt;#&lt;/a&gt; 盖一座大房子&lt;/h1&gt;
+&lt;h4 id=&#34;➊二八定律&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#➊二八定律&#34;&gt;#&lt;/a&gt; ➊二八定律：&lt;/h4&gt;
+&lt;p&gt;   将时间分配给更重要的事&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h4 id=&#34;❷事情优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❷事情优先级&#34;&gt;#&lt;/a&gt; ❷事情优先级：&lt;/h4&gt;
+&lt;p&gt;   什么重要就先做什么&lt;/p&gt;
+&lt;h4 id=&#34;❸没有最好的时机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❸没有最好的时机&#34;&gt;#&lt;/a&gt; ❸没有最好的时机：&lt;/h4&gt;
+&lt;p&gt;   不要想着一切准备好了才去做，这已经晚&lt;br&gt;
+了！！！&lt;/p&gt;
+&lt;h4 id=&#34;❹学会理财&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❹学会理财&#34;&gt;#&lt;/a&gt; ❹学会理财&lt;/h4&gt;
+&lt;h4 id=&#34;❺环境时间周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❺环境时间周期&#34;&gt;#&lt;/a&gt; ❺环境时间周期：&lt;/h4&gt;
+&lt;p&gt;   3-4 年会产生厌倦心理，不妨造当换个环境&lt;/p&gt;
+&lt;h4 id=&#34;❻做自己喜欢的事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#❻做自己喜欢的事&#34;&gt;#&lt;/a&gt; ❻做自己喜欢的事：&lt;/h4&gt;
+&lt;p&gt;   且视他人之疑目如盏盏鬼火，大胆地去走你的夜路&lt;br&gt;
+   要么撞得头破血流，要么我把南墙撞倒&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
