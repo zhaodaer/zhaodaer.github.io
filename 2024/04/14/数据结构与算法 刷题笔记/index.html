@@ -1,0 +1,662 @@
+
+<!DOCTYPE html><html lang="zh-CN - en - zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0" theme-name="Stellar" theme-version="1.27.0">
+  
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>数据结构与算法笔记 - 有我必成</title>
+
+  
+    <meta name="description" content="1111">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构与算法笔记">
+<meta property="og:url" content="http://example.com/2024/04/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%20%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="有我必成">
+<meta property="og:description" content="1111">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-04-14T13:53:42.829Z">
+<meta property="article:modified_time" content="2024-04-14T13:56:33.199Z">
+<meta property="article:author" content="Daer">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="学习笔记">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.27.0">
+
+  
+
+  
+
+  
+</head>
+<body>
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="undefined" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">有我必成</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="探索" href="/explore/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a><a class="nav-item" title="关于我" href="/about/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2024/04/14/QT%E5%BC%80%E5%8F%91%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">QT笔记</span></a><a class="item title" href="/2024/04/14/Linux%E7%B3%BB%E7%BB%9FC%20C++%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%20%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">Linux笔记</span></a><a class="item title" href="/2024/04/14/Linux%E5%86%85%E6%A0%B8%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">内核笔记</span></a><a class="item title" href="/2024/04/14/FreeRTOS%E7%9F%A5%E8%AF%86%E7%82%B9%20%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">FreeRTOS笔记</span></a><a class="item title" href="/2024/04/14/%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/"><span class="title">项目收集</span></a><a class="item title" href="/2024/04/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%20%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/"><span class="title">数据结构与算法笔记</span></a><a class="item title" href="/2024/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%81%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/"><span class="title">计算机网络笔记</span></a><a class="item title" href="/2024/04/14/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/"><span class="title">操作系统笔记</span></a><a class="item title" href="/2024/04/14/hello-world/"><span class="title">Hello World</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2024-04-14T13:53:42.829Z">2024-04-14</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2024-04-14T13:56:33.199Z">2024-04-14</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>数据结构与算法笔记</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>1111</p>
+<span id="more"></span>
+<p>&#x3D;&#x3D;2024.03.24&#x3D;&#x3D;</p>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p><strong>数组是存放在连续内存空间上的相同类型数据的集合</strong></p>
+<p>通过 <font color=red>下标索引</font> 的方式可以获取到下标所对应的数据</p>
+<p>![[Pasted image 20240324171048.png]]</p>
+<p><strong>数组在内存空间的地址是连续的，&#x3D;&#x3D;不能删除，只能覆盖&#x3D;&#x3D;</strong></p>
+<p>对于二维数组<strong>在C++中在地址空间上是连续的，但在JAVA中是不连续的</strong>。</p>
+<p>&emsp; </p>
+<h2 id="1-二分查找"><a href="#1-二分查找" class="headerlink" title="1. 二分查找"></a>1. 二分查找</h2><p><strong>一种在有序数组中&#x3D;&#x3D;查找特定元素&#x3D;&#x3D;的算法</strong></p>
+<p><font face="华文楷体" color=green size=4>我是绿色</font></p>
+<p>通过将待查找的值与数组中间元素进行比较，从而将待查找的范围缩小一半。如果待查找的值等于中间元素，则查找成功；如果待查找的值小于中间元素，则在左半部分继续查找；如果待查找的值大于中间元素，则在右半部分继续查找。通过不断缩小待查找范围，最终可以确定元素是否存在于数组中</p>
+<p>当数组为<strong>有序数组</strong>，同时题目还强调<strong>数组中无重复元素</strong>时，可以想想是不是可以用二分查找<br>&emsp;  </p>
+<h4 id="二分法的-两种-写法"><a href="#二分法的-两种-写法" class="headerlink" title="二分法的&#x3D;&#x3D;两种&#x3D;&#x3D;写法"></a>二分法的&#x3D;&#x3D;两种&#x3D;&#x3D;写法</h4><p>左闭右闭  -&gt;   Middle - 1</p>
+<p>左开右开  -&gt;   Middle</p>
+<p><strong>二分法的关键是对区间的定义理解清楚，在循环中根据查找区间的定义来做边界处理，也即循环不变量规则</strong><br>&emsp;  </p>
+<h4 id="力扣题"><a href="#力扣题" class="headerlink" title="&#x3D;&#x3D;力扣题&#x3D;&#x3D;"></a>&#x3D;&#x3D;力扣题&#x3D;&#x3D;</h4><h5 id="34-在排序数组中查找元素的第一个和最后一个位置"><a href="#34-在排序数组中查找元素的第一个和最后一个位置" class="headerlink" title="&#x3D;&#x3D;34  在排序数组中查找元素的第一个和最后一个位置&#x3D;&#x3D;"></a>&#x3D;&#x3D;34  在排序数组中查找元素的第一个和最后一个位置&#x3D;&#x3D;</h5><h5 id="35-搜索插入位置"><a href="#35-搜索插入位置" class="headerlink" title="&#x3D;&#x3D;35  搜索插入位置&#x3D;&#x3D;"></a>&#x3D;&#x3D;35  搜索插入位置&#x3D;&#x3D;</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</span><br><span class="line">请必须使用时间复杂度为 O(log n) 的算法</span><br></pre></td></tr></table></figure>
+<p>![[Pasted image 20240330150849.png]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;</span><br><span class="line">        int left = 0;</span><br><span class="line">        int right = nums.size() - 1;  </span><br><span class="line">        while(left &lt;= right) &#123;</span><br><span class="line">            int middle = left + (right - left)/2;</span><br><span class="line">            if(nums[middle] &gt; target) &#123;</span><br><span class="line">                right = middle - 1;</span><br><span class="line">            &#125; else if(nums[middle] &lt; target) &#123;</span><br><span class="line">                left = middle + 1;</span><br><span class="line">            &#125; else return middle;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 四种情况：</span><br><span class="line">        // 1. targrt最小，插入到数组第一个，应返回0. 此时left = right = 0，直接返回right即可</span><br><span class="line">        // 2. target为数组中的某个目标值，此时middle = target。 返回middle即可</span><br><span class="line">        // 3. 目标值并不存在，插入两个数之间，此时搜索的为[left，right]，则返回right + 1即可</span><br><span class="line">        // 4. target最大，插入数组末尾，返回right + 1即可</span><br><span class="line">        //  综上，返回right + 1</span><br><span class="line"></span><br><span class="line">        return right + 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="704-二分查找"><a href="#704-二分查找" class="headerlink" title="&#x3D;&#x3D;704  二分查找&#x3D;&#x3D;"></a>&#x3D;&#x3D;704  二分查找&#x3D;&#x3D;</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1</span><br></pre></td></tr></table></figure>
+
+<h6 id="左闭右闭写法："><a href="#左闭右闭写法：" class="headerlink" title="左闭右闭写法："></a>左闭右闭写法：</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> right = nums.<span class="built_in">size</span>() - <span class="number">1</span>;    <span class="comment">//定义target在左闭右闭的区间里</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left &lt;= right)&#123;</span><br><span class="line">            <span class="type">int</span> middle = left + ((right - left) / <span class="number">2</span>);   <span class="comment">// 防止溢出 等同于(left + right)/2</span></span><br><span class="line">            <span class="keyword">if</span> (nums[middle] &gt; target) &#123;</span><br><span class="line">                right = middle - <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (nums[middle] &lt; target) &#123;</span><br><span class="line">                left = middle + <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> middle;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h6 id="左闭右开写法："><a href="#左闭右开写法：" class="headerlink" title="左闭右开写法："></a>左闭右开写法：</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> right = nums.<span class="built_in">size</span>();    <span class="comment">//定义target在左闭右开的区间里</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="type">int</span> middle = left + ((right - left) / <span class="number">2</span>);   <span class="comment">// 防止溢出 等同于(left + right)/2</span></span><br><span class="line">            <span class="keyword">if</span> (nums[middle] &gt; target) &#123;</span><br><span class="line">                right = middle;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (nums[middle] &lt; target) &#123;</span><br><span class="line">                left = middle;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> middle;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+<p>&emsp;&emsp;</p>
+<p>&#x3D;&#x3D;2024.03.25&#x3D;&#x3D;</p>
+<h2 id="2-移除数组中的某个元素"><a href="#2-移除数组中的某个元素" class="headerlink" title="2. 移除数组中的某个元素"></a>2. 移除数组中的某个元素</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line"> 给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。</span><br><span class="line"></span><br><span class="line">不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并**原地**修改输入数组。</span><br><span class="line"></span><br><span class="line">元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="暴力法"><a href="#暴力法" class="headerlink" title="暴力法"></a>暴力法</h4><p>两层 for循环，第一层 for循环用于遍历寻找所需要删除的val，第二层 for循环用于后面的值覆盖前面所删除的值。</p>
+<p>时间复杂度：O(n^2)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int removeElement(vector&lt;int&gt;&amp; nums, int val) &#123;</span><br><span class="line">        int size = nums.size();</span><br><span class="line">        </span><br><span class="line">        for(int i= 0; i &lt; size; i++)&#123;</span><br><span class="line">            if (nums[i] == val)&#123;</span><br><span class="line">                for(int j = i + 1; j &lt; size; j++)&#123;</span><br><span class="line">                    nums[j - 1] = nums[j];</span><br><span class="line">                &#125;</span><br><span class="line">                i--;</span><br><span class="line">                size--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return size;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>&emsp; </p>
+<h4 id="快慢指针法"><a href="#快慢指针法" class="headerlink" title="快慢指针法"></a>快慢指针法</h4><p><strong>通过一个快指针和慢指针在一个for循环下完成两个for循环的工作</strong></p>
+<p>快指针用于寻找所需要删除的val，然后将快指针所寻找到的val的下一个元素赋值给慢指针。</p>
+<p>一个 for循环就能解决，时间复杂度：O(n)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int removeElement(vector&lt;int&gt;&amp; nums, int val) &#123;</span><br><span class="line">        int slowIndex = 0;</span><br><span class="line">        </span><br><span class="line">        for(int fastIndex = 0; fastIndex &lt; nums.size(); fastIndex++)&#123;</span><br><span class="line">            if (nums[fastIndex] != val)&#123;</span><br><span class="line">                nums[slowIndex] = nums[fastIndex];</span><br><span class="line">                slowIndex++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return slowIndex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>&#x3D;&#x3D;2024.03.26&#x3D;&#x3D;</p>
+<h2 id="3-有序数组的平方"><a href="#3-有序数组的平方" class="headerlink" title="3. 有序数组的平方"></a>3. 有序数组的平方</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给你一个按非递减顺序排序的整数数组nums，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。</span><br></pre></td></tr></table></figure>
+
+<p>![[977.有序数组的平方.gif]]</p>
+<p>代码：</p>
+<p>时间复杂度为O(n)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; sortedSquares(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">		//定义一个大小为nums，元素都为0的数组reuslt</span><br><span class="line">        vector&lt;int&gt; result(nums.size(), 0);</span><br><span class="line">        //定义数组result的下标索引k</span><br><span class="line">        int k = nums.size() - 1;</span><br><span class="line"></span><br><span class="line">        for(int i = 0, j = nums.size() - 1; i &lt;= j; ) &#123;</span><br><span class="line">            if(nums[i] * nums[i] &gt;= nums[j] * nums[j]) &#123;</span><br><span class="line">                result[k] = nums[i] * nums[i];</span><br><span class="line">                k--;</span><br><span class="line">                i++;</span><br><span class="line">                &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                result[k] = nums[j] * nums[j];</span><br><span class="line">                k--;</span><br><span class="line">                j--;</span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<p>&#x3D;&#x3D;2024.03.27&#x3D;&#x3D;</p>
+<h2 id="4-长度最小的子数组"><a href="#4-长度最小的子数组" class="headerlink" title="4. 长度最小的子数组"></a>4. 长度最小的子数组</h2><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/minimum-size-subarray-sum/">力扣题209</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的连续 子数组，并返回其长度。如果不存在符合条件的子数组，返回 0</span><br></pre></td></tr></table></figure>
+
+<h3 id="采用滑动窗口（双指针）的方法："><a href="#采用滑动窗口（双指针）的方法：" class="headerlink" title="采用滑动窗口（双指针）的方法："></a>采用滑动窗口（双指针）的方法：</h3><p>j 为终止位置，用于循环遍历数组的每个元素（第一层for循环）<br>i 为起始位置，当 j 找到了和大于 s 的数组长度时，起始位置开始往后移，直到找到最小的长度 subLength （while循环）</p>
+<hr>
+<p>![[209.长度最小的子数组.gif]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int minSubArrayLen(int s, vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int result = INT32_MAX;</span><br><span class="line">        int sum = 0; // 滑动窗口数值之和</span><br><span class="line">        int i = 0; // 滑动窗口起始位置</span><br><span class="line">        int subLength = 0; // 滑动窗口的长度</span><br><span class="line">        for (int j = 0; j &lt; nums.size(); j++) &#123;</span><br><span class="line">            sum += nums[j];</span><br><span class="line">            // 注意这里使用while，每次更新 i（起始位置），并不断比较子序列是否符合条件</span><br><span class="line">            while (sum &gt;= s) &#123;</span><br><span class="line">                subLength = (j - i + 1); // 取子序列的长度</span><br><span class="line">                result = result &lt; subLength ? result : subLength;</span><br><span class="line">                sum -= nums[i++]; // 这里体现出滑动窗口的精髓之处，不断变更i（子序列的起始位置）</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        // 如果result没有被赋值的话，就返回0，说明没有符合条件的子序列</span><br><span class="line">        return result == INT32_MAX ? 0 : result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="5-螺旋矩阵Ⅱ"><a href="#5-螺旋矩阵Ⅱ" class="headerlink" title="5. 螺旋矩阵Ⅱ"></a>5. 螺旋矩阵Ⅱ</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个正整数 n，生成一个包含 1 到 n^2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">输入: 3 输出: [ [ 1, 2, 3 ], [ 8, 9, 4 ], [ 7, 6, 5 ] ]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1 2 3</span><br><span class="line">8 9 4</span><br><span class="line">7 6 5</span><br></pre></td></tr></table></figure>
+
+<p>![[Pasted image 20240329214913.png]]1    2    3   4<br>12 13  14  5<br>11  16  15  6<br>10   9   8   7</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; generateMatrix(int n) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res(n, vector&lt;int&gt;(n, 0)); // 使用vector定义一个二维数组</span><br><span class="line">        int startx = 0, starty = 0; // 定义每循环一个圈的起始位置</span><br><span class="line">        int loop = n / 2; // 每个圈循环几次，例如n为奇数3，那么loop = 1 只是循环一圈，矩阵中间的值需要单独处理</span><br><span class="line">        int mid = n / 2; // 矩阵中间的位置，例如：n为3， 中间的位置就是(1，1)，n为5，中间位置为(2, 2)</span><br><span class="line">        int count = 1; // 用来给矩阵中每一个空格赋值</span><br><span class="line">        int offset = 1; // 需要控制每一条边遍历的长度，每次循环右边界收缩一位</span><br><span class="line">        int i,j;</span><br><span class="line">        </span><br><span class="line">        //后置递减运算符，循环体&#123;&#125;会先执行，然后loop--</span><br><span class="line">        while (loop --) &#123;</span><br><span class="line">            i = startx;</span><br><span class="line">            j = starty;</span><br><span class="line"></span><br><span class="line">            // 下面开始的四个for就是模拟转了一圈</span><br><span class="line">            // 模拟填充上行从左到右(左闭右开)</span><br><span class="line">            for (j = starty; j &lt; n - offset; j++) &#123;</span><br><span class="line">                res[startx][j] = count++;</span><br><span class="line">            &#125;</span><br><span class="line">            // 模拟填充右列从上到下(左闭右开)</span><br><span class="line">            for (i = startx; i &lt; n - offset; i++) &#123;</span><br><span class="line">                res[i][j] = count++;</span><br><span class="line">            &#125;</span><br><span class="line">            // 模拟填充下行从右到左(左闭右开)</span><br><span class="line">            for (; j &gt; starty; j--) &#123;</span><br><span class="line">                res[i][j] = count++;</span><br><span class="line">            &#125;</span><br><span class="line">            // 模拟填充左列从下到上(左闭右开)</span><br><span class="line">            for (; i &gt; startx; i--) &#123;</span><br><span class="line">                res[i][j] = count++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 第二圈开始的时候，起始位置要各自加1， 例如：第一圈起始位置是(0, 0)，第二圈起始位置是(1, 1)</span><br><span class="line">            startx++;</span><br><span class="line">            starty++;</span><br><span class="line"></span><br><span class="line">            // offset 控制每一圈里每一条边遍历的长度</span><br><span class="line">            offset += 1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 如果n为奇数的话，需要单独给矩阵最中间的位置赋值</span><br><span class="line">        if (n % 2) &#123;</span><br><span class="line">            res[mid][mid] = count;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1><h1 id="哈希表（Hash-table）"><a href="#哈希表（Hash-table）" class="headerlink" title="哈希表（Hash table）"></a>哈希表（Hash table）</h1><p>也称散列表</p>
+<p><strong>当我们遇到了要快速判断一个元素是否出现集合里的时候，可以考虑哈希表</strong><br>但这是<strong>牺牲了空间换取了时间</strong></p>
+<h3 id="key、value-与-哈希函数"><a href="#key、value-与-哈希函数" class="headerlink" title="key、value 与 哈希函数"></a>key、value 与 哈希函数</h3><p>key值通过哈希函数映射到哈希表中</p>
+<p>数组其实也是一张哈希表，数组下标索引为key值，通过下标可以直接访问数组中的元素</p>
+<h3 id="哈希碰撞"><a href="#哈希碰撞" class="headerlink" title="哈希碰撞"></a>哈希碰撞</h3><p>拉链法、线性探测法</p>
+<h3 id="三种哈希表"><a href="#三种哈希表" class="headerlink" title="三种哈希表"></a>三种哈希表</h3><p><strong>数组</strong>   数值、范围小用数组</p>
+<p><strong>set</strong>     数值、范围大用set</p>
+<p><strong>map</strong>   key对应value用map</p>
+<h3 id="力扣题-1"><a href="#力扣题-1" class="headerlink" title="力扣题"></a>力扣题</h3><h5 id="242-有效的字母异位词"><a href="#242-有效的字母异位词" class="headerlink" title="242.有效的字母异位词"></a>242.有效的字母异位词</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。</span><br><span class="line">示例 1: 输入: s = &quot;anagram&quot;, t = &quot;nagaram&quot; 输出: true</span><br><span class="line">示例 2: 输入: s = &quot;rat&quot;, t = &quot;car&quot; 输出: false</span><br><span class="line">**说明:** 你可以假设字符串只包含小写字母。</span><br></pre></td></tr></table></figure>
+<p>&#96;&#96;</p>
+<p>![[242.有效的字母异位词.gif]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isAnagram(string s, string t) &#123;</span><br><span class="line">        int record[26] = &#123;0&#125;;</span><br><span class="line">        for (int i = 0; i &lt; s.size(); i++) &#123;</span><br><span class="line">            // 并不需要记住字符a的ASCII，只要求出一个相对数值就可以了</span><br><span class="line">            record[s[i] - &#x27;a&#x27;]++;</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0; i &lt; t.size(); i++) &#123;</span><br><span class="line">            record[t[i] - &#x27;a&#x27;]--;</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0; i &lt; 26; i++) &#123;</span><br><span class="line">            if (record[i] != 0) &#123;</span><br><span class="line">                // record数组如果有的元素不为零0，说明字符串s和t 一定是谁多了字符或者谁少了字符。</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        // record数组所有元素都为零0，说明字符串s和t是字母异位词</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="349-两个数组的交集"><a href="#349-两个数组的交集" class="headerlink" title="349. 两个数组的交集"></a>349. 两个数组的交集</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定两个数组，编写一个函数来计算它们的交集。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>![[Pasted image 20240401204409.png]]</p>
+<h5 id="用set来实现"><a href="#用set来实现" class="headerlink" title="用set来实现"></a>用set来实现</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; intersection(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) &#123;</span><br><span class="line">        //存放结果的result_set</span><br><span class="line">        unordered_set&lt;int&gt; result_set;</span><br><span class="line">  </span><br><span class="line">        //将nums1初始化成nums_set</span><br><span class="line">        unordered_set&lt;int&gt; nums_set(nums1.begin(), nums1.end());</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">        //循环遍历nums2中每一个元素（num）</span><br><span class="line">        for(int num : nums2) &#123;</span><br><span class="line">            //如果nums2中的值存在于nums1中，则插入result_set中</span><br><span class="line">            if(nums_set.find(num) != nums_set.end()) &#123;</span><br><span class="line">                result_set.insert(num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        //最后将reesult_set转化为vector</span><br><span class="line">        return vector&lt;int&gt;(result_set.begin(), result_set.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="用数组来实现"><a href="#用数组来实现" class="headerlink" title="用数组来实现"></a>用数组来实现</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; intersection(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) &#123;</span><br><span class="line">        int hash[1005] = &#123;0&#125;;</span><br><span class="line">        unordered_set&lt;int&gt; result_set;</span><br><span class="line">  </span><br><span class="line">        for(int num : nums1) &#123;</span><br><span class="line">            //将对应的 hash 数组中的元素标记为 1，表示该元素存在于 nums1 中</span><br><span class="line">            hash[num] = 1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //遍历 nums2 中的每个元素 num。</span><br><span class="line">        //如果 num 在 hash 数组中的对应位置为 1，则将其插入到结果集 result_set 中</span><br><span class="line"></span><br><span class="line">        for(int num : nums2) &#123;</span><br><span class="line">            if(hash[num] == 1) &#123;</span><br><span class="line">                result_set.insert(num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return vector&lt;int&gt;(result_set.begin(), result_set.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="202-快乐数"><a href="#202-快乐数" class="headerlink" title="202. 快乐数"></a>202. 快乐数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">编写一个算法来判断一个数 `n` 是不是快乐数。</span><br><span class="line">**「快乐数」** 定义为：</span><br><span class="line">- 对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。</span><br><span class="line">- 然后重复这个过程直到这个数变为 1，也可能是 **无限循环** 但始终变不到 1。</span><br><span class="line">- 如果这个过程 **结果为** 1，那么这个数就是快乐数。</span><br><span class="line">如果 `n` 是 _快乐数_ 就返回 `true` ；不是，则返回 `false` 。</span><br></pre></td></tr></table></figure>
+
+
+<p>![[Pasted image 20240402200102.png]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int getSum(int n) &#123;</span><br><span class="line">        int sum = 0;</span><br><span class="line">        while(n) &#123;</span><br><span class="line">            sum += (n % 10) * (n % 10);</span><br><span class="line">            n /= 10;</span><br><span class="line">        &#125;</span><br><span class="line">        return sum;</span><br><span class="line">    &#125;  </span><br><span class="line"></span><br><span class="line">    bool isHappy(int n) &#123;</span><br><span class="line">        unordered_set&lt;int&gt; set;</span><br><span class="line">        while(1) &#123;</span><br><span class="line">            int sum = getSum(n);</span><br><span class="line">            //如果sum为1，则为快乐数，直接返回</span><br><span class="line">            if(sum == 1) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">  </span><br><span class="line">            //如果sum在set中出现过了，则为出现了循环</span><br><span class="line">            if(set.find(sum) != set.end()) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            //否则，将sum再次插入set中</span><br><span class="line">            else &#123;</span><br><span class="line">                set.insert(sum);</span><br><span class="line">            &#125;</span><br><span class="line">            //进行多次迭代</span><br><span class="line">            n = sum;            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h4 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1. 两数之和"></a>1. 两数之和</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</span><br><span class="line"></span><br><span class="line">你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</span><br><span class="line"></span><br><span class="line">**示例:**</span><br><span class="line">给定 nums = [2, 7, 11, 15], target = 9</span><br><span class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>本题思路：</strong></p>
+<p>首先需要一个集合（map）来存放我们遍历过的元素，然后在遍历数组的时候去询问这个集合，某元素是否遍历过，也就是 是否出现在这个集合。</p>
+<p>例如上题，在遍历第一个元素 2 时，需要元素 7，于是去询问map中是否出现过7，此时map为空，于是将 2 的值（key）和下标（value）存进map中。然后遍历第二个元素，发现是 7，于是再去寻找map中是否有 7，发现有 7，于是返回二者下标。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;</span><br><span class="line">        //创建一个map，用于存储遍历过的元素</span><br><span class="line">        unordered_map&lt;int, int&gt; map;  </span><br><span class="line"></span><br><span class="line">        for(int i = 0; i &lt; nums.size(); i++) &#123;</span><br><span class="line">            //在map中查找是否有匹配的key，并将返回的迭代器赋值给 iter</span><br><span class="line">            auto iter = map.find(target - nums[i]);</span><br><span class="line"></span><br><span class="line">            //如果在map中找到了遍历过的key，则返回二者下标</span><br><span class="line">            if(iter != map.end()) &#123;</span><br><span class="line">                return &#123;iter-&gt;second, i&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            //否则，插入map中</span><br><span class="line">            map.insert(pair&lt;int,int&gt;(nums[i], i));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        //若最后没有符合的元素，则返回空下标</span><br><span class="line">        return &#123;&#125;;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="454-四数相加"><a href="#454-四数相加" class="headerlink" title="454. 四数相加"></a>454. 四数相加</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定四个包含整数的数组列表 A , B , C , D ,计算有多少个元组 (i, j, k, l) ，使得 A[i] + B[j] + C[k] + D[l] = 0。</span><br><span class="line"></span><br><span class="line">为了使问题简单化，所有的 A, B, C, D 具有相同的长度 N，且 0 ≤ N ≤ 500 。所有整数的范围在 -2^28 到 2^28 - 1 之间，最终结果不会超过 2^31 - 1 。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>![[Pasted image 20240403210409.png]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int fourSumCount(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2, vector&lt;int&gt;&amp; nums3, vector&lt;int&gt;&amp; nums4) &#123;</span><br><span class="line">        //定义了umap，其中key为a+b的值，value为a+b出现的次数</span><br><span class="line">        unordered_map&lt;int, int&gt; umap;</span><br><span class="line">  </span><br><span class="line">        //循环遍历nums1、nums2中的每一个元素，将两个数组中的任意元素两两相加</span><br><span class="line">        //将两个元素相加的和作为key存入umap中，当出现相同的key时，将其次数（value作为次数）相加</span><br><span class="line">        for(int a : nums1)&#123;</span><br><span class="line">            for(int b : nums2)&#123;</span><br><span class="line">                umap[a + b]++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">        int count = 0;</span><br><span class="line"></span><br><span class="line">        for(int c : nums3)&#123;</span><br><span class="line">            for(int d : nums4)&#123;</span><br><span class="line">                if(umap.find(0 -(c + d)) != umap.end())&#123;</span><br><span class="line">                   count += umap[0 - (c + d)];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h4 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a>15. 三数之和</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给你一个整数数组 `nums` ，判断是否存在三元组 `[nums[i], nums[j], nums[k]]` 满足 `i != j`、`i != k` 且 `j != k` ，同时还满足 `nums[i] + nums[j] + nums[k] == 0` 。请</span><br><span class="line"></span><br><span class="line">你返回所有和为 `0` 且不重复的三元组。</span><br><span class="line"></span><br><span class="line">**注意：**答案中不可以包含重复的三元组。</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>本题思路：</strong></p>
+<p>用双指针法，先对数组进行排序。定义三个指针，其中i 用作遍历数组中的每一个元素，left 和right 用于移动来寻找nums[i] + nums[left] + nums[right]  &#x3D; 0 的元素</p>
+<p>我们先去判断nums[i] + nums[left] + nums[right] 是否为0，若&gt;0 ，将left右移；同理&lt;0，right左移；若&#x3D;0，则返回result</p>
+<p>注意要进行去重的操作！！！</p>
+<p>![[15.三数之和.gif]]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; threeSum(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">  </span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; result;</span><br><span class="line"></span><br><span class="line">        //将数组进行排序</span><br><span class="line">        sort(nums.begin(), nums.end());</span><br><span class="line"></span><br><span class="line">        //遍历</span><br><span class="line">        for(int i = 0; i &lt; nums.size(); i++) &#123;</span><br><span class="line">            //如果第一个数大于0，则后面的数一定大于0，不可能出现三数之和等于0，直接返回</span><br><span class="line">            if(nums[i] &gt; 0) &#123;</span><br><span class="line">                return result;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            //a的去重：a与a的前一个若相同，则跳过本次循环，立即进行下一次的循环条件判定</span><br><span class="line">            if(i &gt; 0 &amp;&amp; nums[i] == nums[i - 1]) &#123;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">            //定义b， c</span><br><span class="line">            int left = i + 1;</span><br><span class="line">            int right = nums.size() - 1;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">            //判断三数之和是否等于0</span><br><span class="line">            while(left &lt; right) &#123;</span><br><span class="line">                if(nums[i] + nums[left] + nums[right] &lt; 0)&#123;</span><br><span class="line">                    left++;</span><br><span class="line">                &#125;</span><br><span class="line">                else if(nums[i] + nums[left] + nums[right] &gt; 0)&#123;</span><br><span class="line">                    right--;</span><br><span class="line">                &#125;</span><br><span class="line">                else &#123;</span><br><span class="line">                    result.push_back(vector&lt;int&gt;&#123;nums[i] , nums[left] , nums[right]&#125;);</span><br><span class="line"></span><br><span class="line">                    //b, c去重</span><br><span class="line">                    while(right &gt; left &amp;&amp; nums[right] == nums[right - 1]) right--;</span><br><span class="line">                    while(right &gt; left &amp;&amp; nums[left] == nums[left - 1]) left--;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">                    //找到答案后，双指针同时收缩</span><br><span class="line">                    left++;</span><br><span class="line">                    right--;</span><br><span class="line">                &#125;          </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a>18. 四数之和</h4><p>2024.04.14</p>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><h3 id="反转字符串"><a href="#反转字符串" class="headerlink" title="反转字符串"></a>反转字符串</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 `s` 的形式给出。</span><br><span class="line"></span><br><span class="line">不要给另外的数组分配额外的空间，你必须**[原地](https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95)修改输入数组**、使用 O(1) 的额外空间解决这一问题。</span><br></pre></td></tr></table></figure>
+
+<p>利用双指针法，以及swap() 库函数<br>![[344.反转字符串.gif]]</p>
+<h3 id="反转字符串Ⅱ"><a href="#反转字符串Ⅱ" class="headerlink" title="反转字符串Ⅱ"></a>反转字符串Ⅱ</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">collapse: open</span><br><span class="line">给定一个字符串 `s` 和一个整数 `k`，从字符串开头算起，每计数至 `2k` 个字符，就反转这 `2k` 字符中的前 `k` 个字符。</span><br><span class="line"></span><br><span class="line">- 如果剩余字符少于 `k` 个，则将剩余字符全部反转。</span><br><span class="line">- 如果剩余字符小于 `2k` 但大于或等于 `k` 个，则反转前 `k` 个字符，其余字符保持原样。</span><br></pre></td></tr></table></figure>
+
+<p>同样利用双指针法</p>
+<p>在for循环中 i 直接移动2k 个字符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for(int i = 0; i &lt; s.size(); i += 2 * k)</span><br></pre></td></tr></table></figure>
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>License</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2024/04/14/%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/">项目收集</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2024/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%81%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/">计算机网络笔记</a></div></section></div>
+
+
+
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Daer</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0">Stellar 1.27.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="toc-text">1. 二分查找</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%B3%95%E7%9A%84-%E4%B8%A4%E7%A7%8D-%E5%86%99%E6%B3%95"><span class="toc-text">二分法的&#x3D;&#x3D;两种&#x3D;&#x3D;写法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9B%E6%89%A3%E9%A2%98"><span class="toc-text">&#x3D;&#x3D;力扣题&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#34-%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE"><span class="toc-text">&#x3D;&#x3D;34  在排序数组中查找元素的第一个和最后一个位置&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE"><span class="toc-text">&#x3D;&#x3D;35  搜索插入位置&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#704-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="toc-text">&#x3D;&#x3D;704  二分查找&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B7%A6%E9%97%AD%E5%8F%B3%E9%97%AD%E5%86%99%E6%B3%95%EF%BC%9A"><span class="toc-text">左闭右闭写法：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B7%A6%E9%97%AD%E5%8F%B3%E5%BC%80%E5%86%99%E6%B3%95%EF%BC%9A"><span class="toc-text">左闭右开写法：</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%A7%BB%E9%99%A4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%85%83%E7%B4%A0"><span class="toc-text">2. 移除数组中的某个元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9A%B4%E5%8A%9B%E6%B3%95"><span class="toc-text">暴力法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E6%B3%95"><span class="toc-text">快慢指针法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9"><span class="toc-text">3. 有序数组的平方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84"><span class="toc-text">4. 长度最小的子数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E7%94%A8%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%88%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%89%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">采用滑动窗口（双指针）的方法：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5%E2%85%A1"><span class="toc-text">5. 螺旋矩阵Ⅱ</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-text">链表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E8%A1%A8%EF%BC%88Hash-table%EF%BC%89"><span class="toc-text">哈希表（Hash table）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#key%E3%80%81value-%E4%B8%8E-%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0"><span class="toc-text">key、value 与 哈希函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E7%A2%B0%E6%92%9E"><span class="toc-text">哈希碰撞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text">三种哈希表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9B%E6%89%A3%E9%A2%98-1"><span class="toc-text">力扣题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#242-%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D"><span class="toc-text">242.有效的字母异位词</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#349-%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86"><span class="toc-text">349. 两个数组的交集</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%A8set%E6%9D%A5%E5%AE%9E%E7%8E%B0"><span class="toc-text">用set来实现</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%A8%E6%95%B0%E7%BB%84%E6%9D%A5%E5%AE%9E%E7%8E%B0"><span class="toc-text">用数组来实现</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#202-%E5%BF%AB%E4%B9%90%E6%95%B0"><span class="toc-text">202. 快乐数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="toc-text">1. 两数之和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#454-%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0"><span class="toc-text">454. 四数相加</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="toc-text">15. 三数之和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="toc-text">18. 四数之和</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">反转字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E2%85%A1"><span class="toc-text">反转字符串Ⅱ</span></a></li></ol></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>Scroll to Top</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `Just`,
+      min: `minutes ago`,
+      hour: `hours ago`,
+      day: `days ago`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
+    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.27.0" async></script>
+
+<!-- optional -->
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"></script><script defer src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
+    js: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
+        }
+      });
+    })
+  }
+</script><script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\(","\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body></html>
